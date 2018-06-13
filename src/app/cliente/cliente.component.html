@@ -1,0 +1,52 @@
+<app-barralateral></app-barralateral>
+   <div class="container">
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col-sm d-flex align-items-stretch" *ngIf="viajeEncurso">
+                    <div class="card" style="width: 18rem;" (click)="ir('curso')" >
+                        <img class="card-img-top" src=".../100px180/" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Viaje en curso</h5>
+                            <p class="card-text">¡Mira los detalles del viaje que estas realizando!</p>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="col-sm d-flex align-items-stretch">
+                    <div class="card" style="width: 18rem;" (click)="ir('nuevo')" >
+                        <img class="card-img-top" src=".../100px180/" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Nuevo viaje</h5>
+                            <p class="card-text">Reserva un nuevo Viaje!</p>
+                        </div>
+                    </div>                    
+                </div>                
+                <div class="col-sm d-flex align-items-stretch ">
+                    <div class="card" style="width: 18rem;" (click)="ir('reservados')">
+                        <img class="card-img-top" src=".../100px180/" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Viajes reservados</h5>
+                            <p class="card-text"> Ve la lista de los proximos viajes</p>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="col-sm d-flex align-items-stretch">
+                    <div class="card" style="width: 18rem;" (click)="ir('terminados')" >
+                        <img class="card-img-top" src=".../100px180/" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Viajes Terminados</h5>
+                            <p class="card-text"> Ve la lista de los viajes que ya realizaste</p>
+                        </div>
+                    </div>                      
+                </div>
+                <div class="col-sm d-flex align-items-stretch">
+                    <div class="card" style="width: 18rem; " (click)="ir('asignados')" >
+                        <img class="card-img-top" src=".../100px180/" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Configuracion y datos de la cuenta</h5>
+                            <p class="card-text">Consulta tus datos y configura tu cuenta</p>
+                        </div>
+                    </div>                      
+                </div>
+            </div>                        
+        </div>
+   </div>

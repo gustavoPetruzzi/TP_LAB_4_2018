@@ -1,0 +1,23 @@
+<app-barralateral></app-barralateral>
+<div class="container">
+  <form [formGroup]="viajeForm">
+    <p-calendar [inline]="true"></p-calendar>
+    <div class="form-group">
+      <label for="hora">Hora</label>
+      <input id="hora" class="form-control"
+             formControlName="hora" 
+             placeholder="HH:MM" required>
+      <div *ngIf="viajeForm.controls.hora.invalid"
+            class="alert alert-danger">
+
+        <div *ngIf="viajeForm.controls.hora.required">
+          hora is required.
+        </div>
+        <div *ngIf="viajeForm.controls.hora.minlength">
+          hora must be at least 4 characters long.
+        </div>
+      </div>
+
+    </div>            
+  </form>
+</div>
