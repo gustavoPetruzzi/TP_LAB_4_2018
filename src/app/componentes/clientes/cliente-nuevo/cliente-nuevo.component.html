@@ -1,23 +1,48 @@
 <app-barralateral></app-barralateral>
+<script src="https://maps.googleapis.com/maps/api/js"></script>
 <div class="container">
-  <form [formGroup]="viajeForm">
-    <p-calendar [inline]="true"></p-calendar>
-    <div class="form-group">
-      <label for="hora">Hora</label>
-      <input id="hora" class="form-control"
-             formControlName="hora" 
-             placeholder="HH:MM" required>
-      <div *ngIf="viajeForm.controls.hora.invalid"
-            class="alert alert-danger">
+  <div class="jumbotron">
+    <div class="row" *ngIf="!formLleno">
+      <div class="col-sm">
+        <h1 class="text-center"> ¡Reserva tu proximo viaje! </h1>
 
-        <div *ngIf="viajeForm.controls.hora.required">
-          hora is required.
-        </div>
-        <div *ngIf="viajeForm.controls.hora.minlength">
-          hora must be at least 4 characters long.
-        </div>
+
+
+        <form [formGroup]="viajeForm" (submit)="llenarFormulario()">
+          <div class="form-group">
+            <label for="fecha">Fecha</label>
+            <p-calendar formControlName="fecha" ></p-calendar>
+          </div>
+
+          <div class="form-group">
+            <input placeholder="Origen" autocorrect="off" autocapitalize="off" spellcheck="off" type="text" class="form-control" #origen [formControl]="origenControl">
+          </div>
+          <div class="form-group">
+            <input placeholder="Destino" autocorrect="off" autocapitalize="off" spellcheck="off" type="text" class="form-control" #destino [formControl]="destinoControl">
+          </div>
+
+          <div class="form-group">
+            <label for="hora">Hora</label>
+            <p-calendar [timeOnly]="true" formControlName="hora"></p-calendar>
+            <div *ngIf="viajeForm.controls.hora.invalid"
+                  class="alert alert-danger">
+
+              <div *ngIf="!viajeForm.controls.hora.required">
+                hora is required.
+              </div>
+              <div *ngIf="!viajeForm.controls.hora.minlength">
+                hora must be at least 4 characters long.
+              </div>
+            </div>
+
+          </div>
+          <div class="form-group">
+          </div>
+          <button type="submit" class="btn btn-primary" [disabled]="!viajeForm.valid || captchaOk" >Reservar viaje</button>                    
+        </form>        
       </div>
-
-    </div>            
-  </form>
+    </div>
+    <div class="row">
+    </div>
+  </div>
 </div>

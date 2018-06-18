@@ -16,7 +16,8 @@ export class RemiseroService {
   }
 
   public viajes(idRemisero: number){
-    let datos = `id=${idRemisero}`;
+    let token = localStorage.getItem('token');
+    let datos = `id=${idRemisero}&token=${token}`;
     return this.nuevohttp.httpPostData("remisero/viajes", datos);
   }
 }

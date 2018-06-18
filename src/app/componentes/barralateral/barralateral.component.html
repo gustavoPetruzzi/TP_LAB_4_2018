@@ -1,10 +1,10 @@
 <nav class="navbar sticky-top navbar-dark bg-dark">
   <!-- Cambiarlo por el output -->
-  <a class="navbar-brand" href="#">Sticky top</a>
+  <a class="navbar-brand" href="#">Remiseria</a>
   <li routerLinkActive="active" *ngFor="let menuItem of menuItems" class="{{menuItem.class}}">
     <a class="navbar-brand" [routerLink]="[menuItem.path]" (click)="controlarBarra()">
         {{menuItem.title}}
     </a>
   </li>
-  <button class="btn btn-danger my-2 my-sm-0"(click)="salir()">Salir</button>
+  <button [hidden]="!logueado" class="btn btn-danger my-2 my-sm-0"(click)="salir()">Salir</button>
 </nav>

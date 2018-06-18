@@ -23,6 +23,8 @@ import { ClienteNuevoComponent } from './componentes/clientes/cliente-nuevo/clie
 import { NgxCaptchaModule } from 'ngx-captcha';
 // calendario
 import {CalendarModule} from 'primeng/calendar';
+import { AgmCoreModule } from '@agm/core';
+import { ClienteInfoNuevoComponent } from './componentes/clientes/cliente-info-nuevo/cliente-info-nuevo.component';
 export function tokenGetter() {
   return localStorage.getItem('token');
 }
@@ -36,7 +38,8 @@ export function tokenGetter() {
     ClienteComponent,
     RemiseroAsignadosComponent,
     BarralateralComponent,
-    ClienteNuevoComponent
+    ClienteNuevoComponent,
+    ClienteInfoNuevoComponent
   ],
   imports: [
     BrowserModule,
@@ -50,6 +53,10 @@ export function tokenGetter() {
     }),
     NgxCaptchaModule.forRoot({
       reCaptcha2SiteKey: '6Lf4rF4UAAAAAPiiMTDNqSA-8mQUd9XK1T_pdKdG', // optional, can be overridden with 'siteKey' component property
+    }),
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyCeoEzhaOnnzaVZpPGrcHb48vwKcyrJ9p4',
+      libraries: ["places", "geometry", "drawing"]
     }),
     NgbModule.forRoot(),
     FormsModule,

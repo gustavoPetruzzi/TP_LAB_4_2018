@@ -15,8 +15,10 @@ export class RemiseroComponent implements OnInit {
   usuario: string;
   tipo: string;
   token:tokenDecodificado;
+  // CAMBIAR VIAJEREMISERO
   viajesRemisero:viaje[];
   viajeEncurso:viaje;
+  
   constructor( private ruteador: Router, private auth: AuthService, private remiseroService: RemiseroService) { }
   algo:any;
   ngOnInit() {

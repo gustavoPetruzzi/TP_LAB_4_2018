@@ -1,34 +1,30 @@
 <app-barralateral></app-barralateral>
-<form (ngSubmit)="login()" #loginForm="ngForm">
-  <div class="form-group">
-    <label for="exampleInputEmail1"  >Usuario </label>
-    <input type="email" id="usuario"
-         class="form-control" [(ngModel)]="usuarioText" name="usuario" required pattern="[a-zA-Z][a-zA-Z ]+"
-         #usuario="ngModel" placeholder="Ingrese el usuario">  
-    <div [hidden]="usuario.valid  || usuario.pristine" class="alert alert-danger">
-      <div [hidden]="!usuario.hasError('required')">El usuario es requerido </div>
-      <div [hidden]="!usuario.hasError('pattern')">Se requiere mas de un caracter </div>
-    </div>
+<div class="container mt-5">
+  <div class="jumbotron">
+    <form (ngSubmit)="login()" #loginForm="ngForm">
+      <div class="form-group">
+        <label for="exampleInputEmail1"  >Usuario </label>
+        <input type="email" id="usuario"
+            class="form-control" [(ngModel)]="usuarioText" name="usuario" required pattern="[a-zA-Z][a-zA-Z ]+"
+            #usuario="ngModel" placeholder="Ingrese el usuario">  
+        <div [hidden]="usuario.valid  || usuario.pristine" class="alert alert-danger">
+          <div [hidden]="!usuario.hasError('required')">El usuario es requerido </div>
+          <div [hidden]="!usuario.hasError('pattern')">Se requiere mas de un caracter </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1"  >Contraseña</label>
+        <input type="password" class="form-control" [(ngModel)]="passwordText" id="exampleInputPassword1" 
+                required minlength="4" #password="ngModel" name="password" placeholder="Contraseña">
+        <div [hidden]="password.valid || password.pristine"
+            class="alert alert-danger">
+            <div [hidden]="!password.hasError('minlength')">La clave es minimo de 8 caracteres</div>
+            <div [hidden]="!password.hasError('required')">La clave es requerida</div>
+        </div>
+      </div>
+      <div class="form-group">
+      </div>
+      <button type="submit" class="btn btn-primary" [disabled]="!loginForm.form.valid || captchaOk" >Ingresar</button>
+    </form>
   </div>
-  <div class="form-group">
-    <label for="exampleInputPassword1"  >Contraseña</label>
-    <input type="password" class="form-control" [(ngModel)]="passwordText" id="exampleInputPassword1" 
-            required minlength="4" #password="ngModel" name="password" placeholder="Contraseña">
-    <div [hidden]="password.valid || password.pristine"
-        class="alert alert-danger">
-        <div [hidden]="!password.hasError('minlength')">La clave es minimo de 8 caracteres</div>
-        <div [hidden]="!password.hasError('required')">La clave es requerida</div>
-    </div>
-  </div>
-  <div class="form-group">
-    <ngx-recaptcha2
-      [size]="size"
-      [hl]="lang"
-      [theme]="theme"
-      [type]="type"
-      (expire)="handleExpire()"
-      (success)="handleSuccess($event)">
-    </ngx-recaptcha2>
-  </div>
-  <button type="submit" class="btn btn-primary" [disabled]="!loginForm.form.valid || captchaOk" >Ingresar</button>
-</form> 
+</div>

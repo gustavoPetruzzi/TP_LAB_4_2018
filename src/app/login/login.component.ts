@@ -23,6 +23,7 @@ export class LoginComponent implements OnInit {
     this.loginService.loguear(this.usuarioText, this.passwordText)
     .subscribe(data =>{
       localStorage.setItem('token', data.token);
+      localStorage.setItem('logueado', 'true');
       this.decodificado = this.auth.obtenerToken();
       if(this.decodificado){
         switch (this.decodificado.data.tipo) {

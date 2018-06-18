@@ -1,16 +1,15 @@
-export interface viaje {
-    origen_lat:string;
-    origen_long:string;
-    destino_long:string;
-    destino_lat:string;
-    id:number;
+export class viaje {
     fecha:string;
     hora:string;
     estado:string;
-    idRemisero:number;
     idCliente:number;
     monto:number;
-
+    constructor(fecha:string, hora:string, idCliente:number, estado?:string){
+        this.fecha = fecha;
+        this.hora = hora;
+        this.idCliente = idCliente;
+        this.estado = estado;
+    }
 
 
 }

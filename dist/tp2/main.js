@@ -109,10 +109,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _componentes_remiseros_remisero_asignados_remisero_asignados_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./componentes/remiseros/remisero-asignados/remisero-asignados.component */ "./src/app/componentes/remiseros/remisero-asignados/remisero-asignados.component.ts");
 /* harmony import */ var _componentes_barralateral_barralateral_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./componentes/barralateral/barralateral.component */ "./src/app/componentes/barralateral/barralateral.component.ts");
 /* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @angular/platform-browser/animations */ "./node_modules/@angular/platform-browser/fesm5/animations.js");
-/* harmony import */ var _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @angular/material/sidenav */ "./node_modules/@angular/material/esm5/sidenav.es5.js");
-/* harmony import */ var _componentes_clientes_cliente_nuevo_cliente_nuevo_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./componentes/clientes/cliente-nuevo/cliente-nuevo.component */ "./src/app/componentes/clientes/cliente-nuevo/cliente-nuevo.component.ts");
-/* harmony import */ var ngx_captcha__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ngx-captcha */ "./node_modules/ngx-captcha/ngx-dist/src/index.js");
-/* harmony import */ var ngx_captcha__WEBPACK_IMPORTED_MODULE_18___default = /*#__PURE__*/__webpack_require__.n(ngx_captcha__WEBPACK_IMPORTED_MODULE_18__);
+/* harmony import */ var _componentes_clientes_cliente_nuevo_cliente_nuevo_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./componentes/clientes/cliente-nuevo/cliente-nuevo.component */ "./src/app/componentes/clientes/cliente-nuevo/cliente-nuevo.component.ts");
+/* harmony import */ var ngx_captcha__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ngx-captcha */ "./node_modules/ngx-captcha/ngx-dist/src/index.js");
+/* harmony import */ var ngx_captcha__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(ngx_captcha__WEBPACK_IMPORTED_MODULE_17__);
+/* harmony import */ var primeng_calendar__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! primeng/calendar */ "./node_modules/primeng/calendar.js");
+/* harmony import */ var primeng_calendar__WEBPACK_IMPORTED_MODULE_18___default = /*#__PURE__*/__webpack_require__.n(primeng_calendar__WEBPACK_IMPORTED_MODULE_18__);
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -136,8 +137,9 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
-
 //reCaptcha
+
+// calendario
 
 function tokenGetter() {
     return localStorage.getItem('token');
@@ -155,7 +157,7 @@ var AppModule = /** @class */ (function () {
                 _cliente_cliente_component__WEBPACK_IMPORTED_MODULE_11__["ClienteComponent"],
                 _componentes_remiseros_remisero_asignados_remisero_asignados_component__WEBPACK_IMPORTED_MODULE_13__["RemiseroAsignadosComponent"],
                 _componentes_barralateral_barralateral_component__WEBPACK_IMPORTED_MODULE_14__["BarralateralComponent"],
-                _componentes_clientes_cliente_nuevo_cliente_nuevo_component__WEBPACK_IMPORTED_MODULE_17__["ClienteNuevoComponent"]
+                _componentes_clientes_cliente_nuevo_cliente_nuevo_component__WEBPACK_IMPORTED_MODULE_16__["ClienteNuevoComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
@@ -167,7 +169,7 @@ var AppModule = /** @class */ (function () {
                         blacklistedRoutes: ['localhost:3001/auth/']
                     }
                 }),
-                ngx_captcha__WEBPACK_IMPORTED_MODULE_18__["NgxCaptchaModule"].forRoot({
+                ngx_captcha__WEBPACK_IMPORTED_MODULE_17__["NgxCaptchaModule"].forRoot({
                     reCaptcha2SiteKey: '6Lf4rF4UAAAAAPiiMTDNqSA-8mQUd9XK1T_pdKdG',
                 }),
                 _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_7__["NgbModule"].forRoot(),
@@ -176,7 +178,7 @@ var AppModule = /** @class */ (function () {
                 _ruteando_ruteando_module__WEBPACK_IMPORTED_MODULE_9__["RuteandoModule"],
                 _asymmetrik_ngx_leaflet__WEBPACK_IMPORTED_MODULE_12__["LeafletModule"].forRoot(),
                 _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_15__["BrowserAnimationsModule"],
-                _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_16__["MatSidenavModule"]
+                primeng_calendar__WEBPACK_IMPORTED_MODULE_18__["CalendarModule"]
             ],
             providers: [],
             bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_2__["AppComponent"]]
@@ -314,7 +316,8 @@ var RutasRemisero = [
     { path: '/cliente', title: 'Viajes Terminados', icon: 'pe-7s-science', class: '' },
 ];
 var RutasCliente = [
-    { path: '/login', title: 'Nuevo Viaje', icon: 'pe-7s-graph', class: '' },
+    { path: '/cliente', title: 'Menu Principal', icon: 'pe-7s-graph', class: '' },
+    { path: '/cliente/nuevo', title: 'Nuevo Viaje', icon: 'pe-7s-graph', class: '' },
     { path: '/remisero', title: 'Viajes Terminados', icon: 'pe-7s-user', class: '' },
     { path: '/error', title: 'error', icon: 'pe-7s-rocket', class: 'active-pro' },
 ];
@@ -396,7 +399,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  cliente-nuevo works!\n</p>\n"
+module.exports = "<app-barralateral></app-barralateral>\n<div class=\"container\">\n  <div class=\"jumbotron\">\n    <div class=\"row\">\n      <div class=\"col-sm\">\n        <h1 class=\"text-center\"> ¡Reserva tu proximo viaje! </h1>\n        <form [formGroup]=\"viajeForm\">\n          <p-calendar ></p-calendar>\n\n          <div class=\"form-group\">\n            <label for=\"hora\">Hora</label>\n            <p-calendar [timeOnly]=\"true\"></p-calendar>\n            <div *ngIf=\"viajeForm.controls.hora.invalid\"\n                  class=\"alert alert-danger\">\n\n              <div *ngIf=\"viajeForm.controls.hora.required\">\n                hora is required.\n              </div>\n              <div *ngIf=\"viajeForm.controls.hora.minlength\">\n                hora must be at least 4 characters long.\n              </div>\n            </div>\n\n          </div>\n          <div class=\"form-group\">\n            <ngx-recaptcha2\n              [size]=\"size\"\n              [hl]=\"lang\"\n              [theme]=\"theme\"\n              [type]=\"type\"\n              (expire)=\"handleExpire()\"\n              (success)=\"handleSuccess($event)\">\n            </ngx-recaptcha2>\n          </div>\n          <button type=\"submit\" class=\"btn btn-primary\" [disabled]=\"!viajeForm.valid || !captchaOk\" >Ingresar</button>                    \n        </form>        \n      </div>\n    </div>\n  </div>\n</div>"
 
 /***/ }),
 
@@ -411,6 +414,8 @@ module.exports = "<p>\n  cliente-nuevo works!\n</p>\n"
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ClienteNuevoComponent", function() { return ClienteNuevoComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
+/* harmony import */ var _servicios_captcha_captcha_service_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../servicios/captcha/captcha-service.service */ "./src/app/servicios/captcha/captcha-service.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -421,10 +426,23 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
+
 var ClienteNuevoComponent = /** @class */ (function () {
-    function ClienteNuevoComponent() {
+    function ClienteNuevoComponent(captcha) {
+        this.captcha = captcha;
     }
     ClienteNuevoComponent.prototype.ngOnInit = function () {
+        this.viajeForm = new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormGroup"]({
+            hora: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]('', [
+                _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required,
+                _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].minLength(4),
+            ])
+        });
+    };
+    ClienteNuevoComponent.prototype.handleSuccess = function (evento) {
+        console.log(evento);
+        this.captchaOk = true;
     };
     ClienteNuevoComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -432,7 +450,7 @@ var ClienteNuevoComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./cliente-nuevo.component.html */ "./src/app/componentes/clientes/cliente-nuevo/cliente-nuevo.component.html"),
             styles: [__webpack_require__(/*! ./cliente-nuevo.component.css */ "./src/app/componentes/clientes/cliente-nuevo/cliente-nuevo.component.css")]
         }),
-        __metadata("design:paramtypes", [])
+        __metadata("design:paramtypes", [_servicios_captcha_captcha_service_service__WEBPACK_IMPORTED_MODULE_2__["CaptchaServiceService"]])
     ], ClienteNuevoComponent);
     return ClienteNuevoComponent;
 }());
@@ -914,6 +932,48 @@ var AuthService = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/servicios/captcha/captcha-service.service.ts":
+/*!**************************************************************!*\
+  !*** ./src/app/servicios/captcha/captcha-service.service.ts ***!
+  \**************************************************************/
+/*! exports provided: CaptchaServiceService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CaptchaServiceService", function() { return CaptchaServiceService; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _nuevohttp_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../nuevohttp.service */ "./src/app/servicios/nuevohttp.service.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var CaptchaServiceService = /** @class */ (function () {
+    function CaptchaServiceService(nuevoHttp) {
+        this.nuevoHttp = nuevoHttp;
+    }
+    CaptchaServiceService.prototype.obtenerCaptcha = function () {
+    };
+    CaptchaServiceService = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
+            providedIn: 'root'
+        }),
+        __metadata("design:paramtypes", [_nuevohttp_service__WEBPACK_IMPORTED_MODULE_1__["NuevohttpService"]])
+    ], CaptchaServiceService);
+    return CaptchaServiceService;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/servicios/loginservice.service.ts":
 /*!***************************************************!*\
   !*** ./src/app/servicios/loginservice.service.ts ***!
@@ -1040,7 +1100,8 @@ var RemiseroService = /** @class */ (function () {
         return this.nuevohttp.httpGet("ingreso/token");
     };
     RemiseroService.prototype.viajes = function (idRemisero) {
-        var datos = "id=" + idRemisero;
+        var token = localStorage.getItem('token');
+        var datos = "id=" + idRemisero + "&token=" + token;
         return this.nuevohttp.httpPostData("remisero/viajes", datos);
     };
     RemiseroService = __decorate([
@@ -1274,7 +1335,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /home/gustavo/Escritorio/programming/angular6/tp2/src/main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! /home/gustavo/Escritorio/programming/angular6/TP_LAB_4_2018/src/main.ts */"./src/main.ts");
 
 
 /***/ })

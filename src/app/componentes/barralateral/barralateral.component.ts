@@ -27,10 +27,6 @@ export const RutasEncargado: RouteInfo[] = [
     { path: '/error', title: 'error',  icon:'pe-7s-rocket', class: 'active-pro' },
 ];
 export const RutasPruebas: RouteInfo[] = [
-    { path: '/login', title: 'login',  icon: 'pe-7s-graph', class: '' },
-    { path: '/remisero', title: 'Remisero',  icon:'pe-7s-user', class: '' },
-    { path: '/cliente', title: 'cliente',  icon:'pe-7s-science', class: '' },
-    { path: '/error', title: 'error',  icon:'pe-7s-rocket', class: 'active-pro' },
 ];
 
 @Component({
@@ -39,6 +35,7 @@ export const RutasPruebas: RouteInfo[] = [
 })
 export class BarralateralComponent implements OnInit {
   menuItems: any[];
+  logueado: boolean;
   constructor(private auth: AuthService, private ruteador: Router) { }
 
   ngOnInit() {
@@ -62,13 +59,21 @@ export class BarralateralComponent implements OnInit {
                 break;
         }
     }
-        else{
+    else{
         this.menuItems = RutasPruebas.filter(menuItem => menuItem);
-    }      
+    }
+    if(localStorage.getItem('logueado') == 'true'){
+        this.logueado = true;
+    }
+    else{
+        this.logueado = false;
+    }
   }
   public salir(){
       localStorage.setItem('token', "");
+      localStorage.setItem('logueado', 'false');
       this.ruteador.navigate(['/login']);
+      this.logueado = false;
       this.controlarBarra();
   }
 }
