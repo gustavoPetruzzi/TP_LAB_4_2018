@@ -3,10 +3,16 @@
 <div class="container">
   <div class="jumbotron">
     <div class="row">
-      <div class="col-sm">
-        <div class="mapita" #mapa>
-          
-        </div>
+      <div class="col-sm" [hidden]="!cargoBien">
+        <h1 class="text-center"> Datos del viaje </h1>
+        <div class="mapita" #mapa></div>
+            <h2> Distancia: {{viaje.calcularDistancia()}} Km. </h2>
+          <h2> Monto: $ {{viaje.calcularMonto()}} </h2>
+          <button>Cancelar</button>
+          <button>Reservar</button>
+      </div>
+      <div class="col-sm" [hidden]="cargoBien">
+        <h1 class="text-center"> Hubo un error al procesar lo pedido</h1>
       </div>
     </div>
   </div>

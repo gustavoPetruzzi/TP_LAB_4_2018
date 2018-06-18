@@ -23,18 +23,23 @@ export class ClienteInfoNuevoComponent implements OnInit {
 
   @ViewChild('mapa') 
   public mapaElementRef: ElementRef;
-
+  public cargoBien:Boolean;
   ngOnInit() {
     this.data.currentMessage.subscribe(viaje =>{
-      console.log(viaje);
-      this.viaje = new viajeMaps(viaje.fecha, viaje.hora, "solicitado", 0, 0, viaje.origen, viaje.destino);
-      this.token = this.auth.obtenerToken();
-      this.viaje.idCliente = this.token.data.id;
-      console.log(this.viaje);
-      console.log(this.viaje.origen.longitud);
-      this.direccionService = new google.maps.DirectionsService;
-      this.direccionRenderer = new google.maps.DirectionsRenderer();
-      this.iniciarMapa();
+      if(typeof(viaje) === 'string'){
+        this.cargoBien = false;
+      }
+      else{
+        this.cargoBien = true;
+        this.viaje = new viajeMaps(viaje.fecha, viaje.hora, "solicitado", 0, 0, viaje.origen, viaje.destino);
+        this.token = this.auth.obtenerToken();
+        this.viaje.idCliente = this.token.data.id;
+        console.log(this.viaje);
+        console.log(this.viaje.origen.longitud);
+        this.direccionService = new google.maps.DirectionsService;
+        this.direccionRenderer = new google.maps.DirectionsRenderer();
+        this.iniciarMapa();
+      }
     });
   }
   

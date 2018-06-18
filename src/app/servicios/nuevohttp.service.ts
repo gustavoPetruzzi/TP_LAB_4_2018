@@ -6,8 +6,8 @@ import { cosa } from '../clases/token';
   providedIn: 'root'
 })
 export class NuevohttpService {
-  api = "http://localhost/backendTp2/index.php/";
-  //api = "http://remiseriagustavopetruzzi.000webhostapp.com/index.php/";
+  //api = "http://localhost/backendTp2/index.php/";
+  api = "http://remiseriagustavopetruzzi.000webhostapp.com/index.php/";
   cabecera = new HttpHeaders().set('Content-Type','application/x-www-form-urlencoded' );
   constructor( public nuevoHttp: HttpClient) {
   }
