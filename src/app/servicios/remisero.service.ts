@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { NuevohttpService } from './nuevohttp.service';
 import { catchError, map, tap } from 'rxjs/operators';
-import { viaje } from '../clases/viajes';
 @Injectable({
   providedIn: 'root'
 })
