@@ -4,6 +4,9 @@ import { ElementRef, NgZone, ViewChild } from '@angular/core';
 import { tokenDecodificado } from '../../../clases/tokenDecodificado';
 import { viajeMaps } from '../../../clases/viajeMaps';
 import { AuthService } from '../../../servicios/auth/auth.service';
+import { ClienteService } from '../../../servicios/cliente/cliente.service';
+
+
 import { MapsAPILoader } from '@agm/core';
 import {  } from 'googlemaps';
 @Component({
@@ -13,7 +16,7 @@ import {  } from 'googlemaps';
 })
 export class ClienteInfoNuevoComponent implements OnInit {
 
-  constructor(private data: DataService, private auth: AuthService) { }
+  constructor(private data: DataService, private auth: AuthService, private clienteService: ClienteService ) { }
   viaje: viajeMaps;
   token: tokenDecodificado;
   direccionService: google.maps.DirectionsService;
