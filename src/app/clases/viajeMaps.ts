@@ -10,19 +10,22 @@ export class viajeMaps extends viaje {
     origen:lugar;
     destino:lugar;
     distancia:number;
+    premium:number
     static readonly precio:number = 30;
     constructor(
-        fecha:string, 
-        hora:string, 
+        fecha:Date, 
+        hora:Date, 
         estado:string, 
         idCliente: number,
         monto:number,
         origen:lugar,
-        destino:lugar)
+        destino:lugar,
+        premium:Boolean)
         {
             super(fecha,hora,idCliente,estado);
             this.origen = origen;
             this.destino = destino;
+            this.premium = this.formatearPremium(premium);
         }
         
         public calcularDistancia(){
@@ -35,6 +38,13 @@ export class viajeMaps extends viaje {
 
         public calcularMonto(){
             return viajeMaps.precio * this.calcularDistancia();
+        }
+
+        private formatearPremium(tipo:Boolean){
+            if(tipo){
+                return 1;
+            }
+            return 0;
         }
 
 

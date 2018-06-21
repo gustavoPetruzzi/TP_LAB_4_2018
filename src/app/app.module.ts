@@ -23,8 +23,11 @@ import { ClienteNuevoComponent } from './componentes/clientes/cliente-nuevo/clie
 import { NgxCaptchaModule } from 'ngx-captcha';
 // calendario
 import {CalendarModule} from 'primeng/calendar';
+import {RadioButtonModule} from 'primeng/radiobutton';
 import { AgmCoreModule } from '@agm/core';
 import { ClienteInfoNuevoComponent } from './componentes/clientes/cliente-info-nuevo/cliente-info-nuevo.component';
+import { PrincipalComponent } from './componentes/encargado/principal/principal.component';
+import { RemiserosEncargadoComponent } from './componentes/encargado/remiseros-encargado/remiseros-encargado.component';
 export function tokenGetter() {
   return localStorage.getItem('token');
 }
@@ -39,7 +42,9 @@ export function tokenGetter() {
     RemiseroAsignadosComponent,
     BarralateralComponent,
     ClienteNuevoComponent,
-    ClienteInfoNuevoComponent
+    ClienteInfoNuevoComponent,
+    PrincipalComponent,
+    RemiserosEncargadoComponent
   ],
   imports: [
     BrowserModule,
@@ -64,7 +69,8 @@ export function tokenGetter() {
     RuteandoModule,
     LeafletModule.forRoot(),
     BrowserAnimationsModule,
-    CalendarModule
+    CalendarModule,
+    RadioButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

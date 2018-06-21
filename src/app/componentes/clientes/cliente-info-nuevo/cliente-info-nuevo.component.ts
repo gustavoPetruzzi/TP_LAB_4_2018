@@ -27,14 +27,22 @@ export class ClienteInfoNuevoComponent implements OnInit {
   @ViewChild('mapa') 
   public mapaElementRef: ElementRef;
   public cargoBien:Boolean;
+  public reservoViaje:boolean;
+  public errorReserva = false;
   ngOnInit() {
+    this.reservoViaje = false;
+    this.errorReserva = false;
     this.data.currentMessage.subscribe(viaje =>{
       if(typeof(viaje) === 'string'){
         this.cargoBien = false;
       }
       else{
         this.cargoBien = true;
-        this.viaje = new viajeMaps(viaje.fecha, viaje.hora, "solicitado", 0, 0, viaje.origen, viaje.destino);
+        let tipo:Boolean = false;
+        if(viaje.tipo == 'premium'){
+          tipo = true;
+        }
+        this.viaje = new viajeMaps(viaje.fecha, viaje.hora, "solicitado", 0, 0, viaje.origen, viaje.destino, tipo);
         this.token = this.auth.obtenerToken();
         this.viaje.idCliente = this.token.data.id;
         console.log(this.viaje);
@@ -75,6 +83,18 @@ export class ClienteInfoNuevoComponent implements OnInit {
         this.direccionRenderer.setDirections(response); 
       }
     });
+  }
+
+  public reservar(){
+    this.clienteService.nuevoViaje(this.viaje)
+    .subscribe(
+      data =>{
+        this.reservoViaje = true;
+      },
+      error =>{
+        this.errorReserva = true;
+      })
+    
   }
 
 }

@@ -11,6 +11,11 @@ import { ErrorComponent } from '../error/error.component';
 import { VerificarJWTService } from '../servicios/verificar-jwt.service';
 import { VerificarTipoService } from '../servicios/verificarTipo/verificar-tipo.service';
 import { VerificarTipoClienteService } from '../servicios/verificarTipo/verificar-tipo-cliente.service';
+import { VerificarEncargadoService } from '../servicios/verificarTipo/verificar-encargado.service';
+import { PrincipalComponent } from '../componentes/encargado/principal/principal.component';
+import { RemiserosEncargadoComponent } from '../componentes/encargado/remiseros-encargado/remiseros-encargado.component';
+
+
 const miRuteo = [
   { path: 'login', component: LoginComponent },
   { path: 'remisero',  canActivate:[VerificarJWTService,VerificarTipoService ],
@@ -22,6 +27,12 @@ const miRuteo = [
     children: [
       {path: '', component: ClienteComponent},
       {path: 'nuevo', component: ClienteNuevoComponent },
+      {path: 'infoNuevo', component: ClienteInfoNuevoComponent }
+    ] },
+  { path: 'encargado',  canActivate:[VerificarJWTService, VerificarEncargadoService],
+    children: [
+      {path: '', component: PrincipalComponent},
+      {path: 'remiseros', component: RemiserosEncargadoComponent },
       {path: 'infoNuevo', component: ClienteInfoNuevoComponent }
     ] },
   { path: 'error', component: ErrorComponent },

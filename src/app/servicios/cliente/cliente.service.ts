@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { NuevohttpService } from '../nuevohttp.service';
+import { viajeMaps } from '../../clases/viajeMaps';
 import {  } from '../../clases/';
 @Injectable({
   providedIn: 'root'
@@ -16,9 +17,9 @@ export class ClienteService {
   				 &destino_lat=${viaje.destino.latitud}
   				 &destino_long=${viaje.destino.longitud}
   				 &fecha=${viaje.fecha}
-  				 &hora=${viaje.hora}
+					 &hora=${viaje.hora}
+					 &premium=${viaje.premium}
   				 &token=${token}`;
-  	//????
-  	return this.nuevohttp.httpPostData("cliente/viajes", datos);
+  	return this.nuevoHttp.httpPostData("cliente/viajeNuevo", datos);
   }
 }

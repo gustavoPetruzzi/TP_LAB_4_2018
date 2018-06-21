@@ -1,6 +1,9 @@
 import { Injectable } from '@angular/core';
 import { NuevohttpService } from './nuevohttp.service';
 import { catchError, map, tap } from 'rxjs/operators';
+import {Observable } from 'rxjs';
+import { remisero } from '../clases/remisero';
+
 @Injectable({
   providedIn: 'root'
 })
@@ -10,8 +13,8 @@ export class RemiseroService {
     
   }
 
-  public listar(){
-    return this.nuevohttp.httpGet("ingreso/token");
+  public listaRemiseros():Observable<remisero[]>{
+    return this.nuevohttp.httpGet("remiseros/lista");
   }
 
   public viajes(idRemisero: number){

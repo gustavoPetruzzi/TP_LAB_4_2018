@@ -118,15 +118,14 @@ export class ClienteNuevoComponent implements OnInit {
       fecha: new FormControl('',[
         Validators.required,
       ]),
+      tipo: new FormControl('',[
+        Validators.required
+      ]),
+      
     })
   }
 
   //CAPTCHA
-  public handleSuccess(evento:any){
-    console.log(evento);
-    this.captchaOk = true;
-  }
-
   public llenarFormulario(){
     let origen = new lugar();
     let destino = new lugar();
@@ -138,25 +137,17 @@ export class ClienteNuevoComponent implements OnInit {
     destino.latitud = this.destino.lat();
     destino.longitud = this.destino.lng();
 
-    let viaje = new viajeMaps(
-      this.viajeForm.controls['fecha'].value,
-      this.viajeForm.controls['hora'].value,
-      "solicitado",
-      0,
-      0,
-      origen,
-      destino
-      );
-
     let mensaje = {
       fecha: this.viajeForm.controls['fecha'].value,
       hora: this.viajeForm.controls['hora'].value,
       origen: origen,
       destino: destino,
+      tipo: this.viajeForm.controls['tipo'].value,
     }
     this.data.changeMessage(mensaje);
     this.ruteador.navigate(['/cliente/infoNuevo']);
   }
+
 
 
 

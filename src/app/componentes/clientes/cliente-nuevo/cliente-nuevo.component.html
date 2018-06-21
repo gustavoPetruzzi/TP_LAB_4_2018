@@ -11,7 +11,7 @@
         <form [formGroup]="viajeForm" (submit)="llenarFormulario()">
           <div class="form-group">
             <label for="fecha">Fecha</label>
-            <p-calendar formControlName="fecha" ></p-calendar>
+            <p-calendar  formControlName="fecha" dateFormat="yy/mm/dd" ></p-calendar>
           </div>
 
           <div class="form-group">
@@ -23,7 +23,7 @@
 
           <div class="form-group">
             <label for="hora">Hora</label>
-            <p-calendar [timeOnly]="true" formControlName="hora"></p-calendar>
+            <p-calendar [timeOnly]="true" formControlName="hora" hourFormat="24"></p-calendar>
             <div *ngIf="viajeForm.controls.hora.invalid"
                   class="alert alert-danger">
 
@@ -37,12 +37,23 @@
 
           </div>
           <div class="form-group">
+            <h2 class="text-center">Tipo de vehiculo </h2>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" formControlName="tipo" value="comun" checked>
+              <label class="form-check-label" for="exampleRadios1">
+                Comun
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" formControlName="tipo" value="premium">
+              <label class="form-check-label">
+                Premium
+              </label>
+            </div>            
           </div>
           <button type="submit" class="btn btn-primary" [disabled]="!viajeForm.valid || captchaOk" >Reservar viaje</button>                    
         </form>        
       </div>
-    </div>
-    <div class="row">
     </div>
   </div>
 </div>

@@ -1,0 +1,47 @@
+<app-barralateral></app-barralateral>
+<div class="container">
+  <div class="jumbotron">
+    <div class="row">
+      <div class="col-sm">  
+        <table class="table" *ngIf="remiseros">
+          <thead>
+            <tr>
+              <th> Nombre </th>
+              <th> Apellido </th>
+              <th> Usuario </th>
+              <th> Vehiculo </th>
+              <th> Opciones </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let remisero of remiseros">
+              <td> {{ remisero.nombre }} </td>
+              <td> {{ remisero.apellido }} </td>
+              <td> {{ remisero.usuario }} </td>
+              <td *ngIf="remisero.vehiculo"> Asignado </td>
+              <td *ngIf="!remisero.vehiculo"> Sin asignar </td>
+              <td> <button class="btn btn-primary" (click)="ver(remisero)"> Ver </button>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-sm">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body" *ngIf="asignado">
+            <h5 class="card-title">{{asignado.nombre}} {{asignado.apellido}}</h5>
+            
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <div class="card-body" *ngIf="vehiculoAsignado">
+            <h5 class="card-title">{{vehiculoAsignado.modelo}}</h5>
+            <h5 class="card-title">{{ vehiculoAsignado.marca}}</h5>
+            
+            <h5 class="card-title">{{ vehiculoAsignado.premium}}</h5>
+            
+        </div>
+        </div>        
+      </div>
+    </div>
+  </div>
+</div>
