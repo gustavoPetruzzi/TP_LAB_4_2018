@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { LoginserviceService } from '../servicios/loginservice.service';
 import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 import { AuthService } from '../servicios/auth/auth.service';
+import {Message} from 'primeng/components/common/api';
 import { tokenDecodificado } from '../clases/tokenDecodificado';
 @Component({
   selector: 'app-login',
@@ -9,7 +10,7 @@ import { tokenDecodificado } from '../clases/tokenDecodificado';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-
+  msgs:Message[] = [];
   usuarioText:string;
   passwordText:string;
   decodificado:tokenDecodificado;
@@ -47,7 +48,8 @@ export class LoginComponent implements OnInit {
     },
       error =>{
         this.esperando = false;
-        console.log(error.error);
+        this.msgs = [];
+        this.msgs.push({severity:'error', summary:'error', detail:'Usuario y/o contraseña incorrecta'});
       },
       () => this.esperando = false
     );

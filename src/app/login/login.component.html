@@ -1,6 +1,7 @@
 <app-barralateral></app-barralateral>
 <div class="container mt-5">
   <div class="jumbotron">
+    <p-messages [(value)]="msgs"></p-messages>
     <form (ngSubmit)="login()" #loginForm="ngForm">
       <div class="form-group">
         <label for="exampleInputEmail1"  >Usuario </label>

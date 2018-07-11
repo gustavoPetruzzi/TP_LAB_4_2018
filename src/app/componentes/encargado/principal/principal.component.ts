@@ -20,8 +20,8 @@ export class PrincipalComponent implements OnInit {
       case 'vehiculos':
         this.ruteador.navigate(['/encargado/vehiculos']);
         break;
-      case 'asignados':
-        this.ruteador.navigate(['/encargado/asignados']);
+      case 'viajes':
+        this.ruteador.navigate(['/viajes']);
         break;
       case 'terminados':
         this.ruteador.navigate(['/encargado/terminados']);

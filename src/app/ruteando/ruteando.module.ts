@@ -4,7 +4,9 @@ import { RouterModule, Routes } from '@angular/router';
 import { RemiseroComponent } from '../componentes/remiseros/remisero/remisero.component';
 import { RemiseroAsignadosComponent } from '../componentes/remiseros/remisero-asignados/remisero-asignados.component';
 import { ClienteNuevoComponent } from '../componentes/clientes/cliente-nuevo/cliente-nuevo.component';
+import { ClienteModificarComponent } from '../componentes/clientes/cliente-modificar/cliente-modificar.component';
 import { ClienteInfoNuevoComponent } from '../componentes/clientes/cliente-info-nuevo/cliente-info-nuevo.component';
+import { ClienteCancelarComponent } from '../componentes/clientes/cliente-cancelar/cliente-cancelar.component';
 import { ClienteComponent } from '../cliente/cliente.component';
 import { LoginComponent } from '../login/login.component';
 import { ErrorComponent } from '../error/error.component';
@@ -14,6 +16,10 @@ import { VerificarTipoClienteService } from '../servicios/verificarTipo/verifica
 import { VerificarEncargadoService } from '../servicios/verificarTipo/verificar-encargado.service';
 import { PrincipalComponent } from '../componentes/encargado/principal/principal.component';
 import { RemiserosEncargadoComponent } from '../componentes/encargado/remiseros-encargado/remiseros-encargado.component';
+import { RemiserosNuevoComponent } from '../componentes/encargado/remiseros-nuevo/remiseros-nuevo.component';
+import { VistaVehiculosComponent } from '../componentes/vehiculos/vista-vehiculos/vista-vehiculos.component';
+import { VistaViajesComponent } from '../componentes/viajes/vista-viajes/vista-viajes.component';
+import { VerViajeComponent } from '../componentes/viajes/ver-viaje/ver-viaje.component';
 
 
 const miRuteo = [
@@ -27,17 +33,31 @@ const miRuteo = [
     children: [
       {path: '', component: ClienteComponent},
       {path: 'nuevo', component: ClienteNuevoComponent },
-      {path: 'infoNuevo', component: ClienteInfoNuevoComponent }
+      {path: 'modificar', component: ClienteModificarComponent },
+      {path: 'infoNuevo', component: ClienteInfoNuevoComponent },
+      {path: 'cancelar', component: ClienteCancelarComponent }
     ] },
   { path: 'encargado',  canActivate:[VerificarJWTService, VerificarEncargadoService],
     children: [
       {path: '', component: PrincipalComponent},
-      {path: 'remiseros', component: RemiserosEncargadoComponent },
-      {path: 'infoNuevo', component: ClienteInfoNuevoComponent }
+      { path: 'remiseros', 
+        children: [
+          {path: '', component: RemiserosEncargadoComponent },
+          {path: 'nuevo', component: RemiserosNuevoComponent },
+        ]},
+
+      {path: 'infoNuevo', component: ClienteInfoNuevoComponent },
+      { path: 'vehiculos', component: VistaVehiculosComponent },  
+    ] },
+  { path: 'viajes', 
+    children: [
+      { path: '', component: VistaViajesComponent },
+      { path: 'info', component: VerViajeComponent }
     ] },
   { path: 'error', component: ErrorComponent },
-  { path: '**', component: LoginComponent }
+  { path: '**', component: LoginComponent },
 ]
+
 @NgModule({
   imports: [
     CommonModule,

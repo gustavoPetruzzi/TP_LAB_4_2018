@@ -21,10 +21,11 @@ export const RutasCliente: RouteInfo[] = [
     { path: '/error', title: 'error',  icon:'pe-7s-rocket', class: 'active-pro' },
 ];
 export const RutasEncargado: RouteInfo[] = [
-    { path: '/login', title: 'login',  icon: 'pe-7s-graph', class: '' },
-    { path: '/remisero', title: 'Remisero',  icon:'pe-7s-user', class: '' },
-    { path: '/cliente', title: 'cliente',  icon:'pe-7s-science', class: '' },
-    { path: '/error', title: 'error',  icon:'pe-7s-rocket', class: 'active-pro' },
+    { path: '/encargado', title: 'Menu Principal',  icon: 'pe-7s-graph', class: '' },
+    { path: '/encargado/remiseros', title: 'Remiseros',  icon:'pe-7s-user', class: '' },
+    { path: '/encargado/vehiculos', title: 'Vehiculos',  icon:'pe-7s-science', class: '' },
+    { path: '/viajes', title: 'Viajes',  icon:'pe-7s-science', class: '' },
+    
 ];
 export const RutasPruebas: RouteInfo[] = [
 ];

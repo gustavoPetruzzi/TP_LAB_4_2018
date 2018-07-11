@@ -1,0 +1,39 @@
+<app-barralateral></app-barralateral>
+<div class="container">
+  <div class="jumbotron">
+    <p-messages [(value)]="msgs"></p-messages>
+    <div class="row">
+      <div class="col-sm">
+        <h2 class="text-center"> {{titulo}} </h2>
+        <form [formGroup]="remiseroForm" class="text-center">
+          <div class="form-group">
+              <label class="center-block">Nombre
+                <input class="form-control" formControlName="nombre">
+                <div [hidden]="!this.remiseroForm.controls['nombre'].invalid || this.remiseroForm.controls['nombre'].pristine" class="alert alert-danger">
+                  <div [hidden]="!this.remiseroForm.controls['nombre'].hasError('required')">El nombre es requerido </div>
+                </div>                
+              </label>              
+          </div>
+          <div class="form-group">
+            <label  class="center-block">Apellido
+              <input class="form-control" formControlName="apellido">
+                <div [hidden]="!this.remiseroForm.controls['apellido'].invalid || this.remiseroForm.controls['apellido'].pristine" class="alert alert-danger">
+                  <div [hidden]="!this.remiseroForm.controls['apellido'].hasError('required')">El apellido es requerido </div>
+                </div>              
+            </label>
+          </div>
+          <div class="form-group">
+            <label class="center-block">Usuario
+              <input class="form-control" formControlName="usuario">
+                <div [hidden]="!this.remiseroForm.controls['usuario'].invalid || this.remiseroForm.controls['usuario'].pristine" class="alert alert-danger">
+                  <div [hidden]="!this.remiseroForm.controls['usuario'].hasError('required')">El usuario es requerido </div>
+                </div>              
+            </label>
+          </div>
+        <button class="btn btn-primary" (click)="registrarse()" [hidden]="!nuevoRemisero" [disabled]="!remiseroForm.valid"> Agregar </button>
+        <button class="btn btn-primary" (click)="modificar()" [hidden]="nuevoRemisero" [disabled]="!remiseroForm.valid"> Modificar </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

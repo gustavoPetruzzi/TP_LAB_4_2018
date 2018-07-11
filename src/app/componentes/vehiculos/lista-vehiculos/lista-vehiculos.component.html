@@ -1,0 +1,21 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th> Marca </th>
+      <th> Modelo </th>
+      <th> año </th>
+      <th> Tipo </th>
+      <th> Modificar </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let vehiculo of vehiculos">
+      <td> {{vehiculo.marca}}</td>
+      <td> {{vehiculo.modelo}}</td>
+      <td> {{vehiculo.anio}}</td>
+      <td> {{vehiculo.premium | premium}}</td>
+      <td> <button class="btn btn-primary" (click)="ver( vehiculo )" > Modificar </button>
+
+    </tr>
+  </tbody>
+</table>

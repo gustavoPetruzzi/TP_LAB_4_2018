@@ -23,9 +23,10 @@ export class ClienteInfoNuevoComponent implements OnInit {
   direccionRenderer: google.maps.DirectionsRenderer;
 
   mapa:any;
-
+  mensaje:any;
   @ViewChild('mapa') 
   public mapaElementRef: ElementRef;
+  public modificado:Boolean;  
   public cargoBien:Boolean;
   public reservoViaje:boolean;
   public errorReserva = false;
@@ -42,7 +43,14 @@ export class ClienteInfoNuevoComponent implements OnInit {
         if(viaje.tipo == 'premium'){
           tipo = true;
         }
-        this.viaje = new viajeMaps(viaje.fecha, viaje.hora, "solicitado", 0, 0, viaje.origen, viaje.destino, tipo);
+        this.viaje = new viajeMaps(viaje.id,viaje.fecha, viaje.hora, viaje.estado, 0, 0, viaje.origen, viaje.destino, tipo);
+        this.modificado = viaje.modificar;
+        if(this.modificado){
+          this.mensaje ="¡Su Viaje ha sido modificado!";
+        }
+        else{
+          this.mensaje="¡Su viaje ha sido reservado!";
+        }
         this.token = this.auth.obtenerToken();
         this.viaje.idCliente = this.token.data.id;
         console.log(this.viaje);
@@ -89,12 +97,26 @@ export class ClienteInfoNuevoComponent implements OnInit {
     this.clienteService.nuevoViaje(this.viaje)
     .subscribe(
       data =>{
+        console.log(data);
         this.reservoViaje = true;
       },
       error =>{
         this.errorReserva = true;
       })
     
+  }
+  public modificar(){
+    //console.log(this.viaje);
+    this.clienteService.modificarViaje(this.viaje)
+    .subscribe(
+      data=>{
+        console.log(data);
+        this.reservoViaje = true;
+      },
+      error =>{
+        this.errorReserva = true;
+      }
+    )
   }
 
 }

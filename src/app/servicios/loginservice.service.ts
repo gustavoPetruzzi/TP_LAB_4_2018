@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { NuevohttpService } from './nuevohttp.service';
 import { cosa } from '../clases/token';
+import { usuario } from '../clases/usuario';
 import {Observable} from 'rxjs';
 
 @Injectable({
@@ -12,7 +13,7 @@ export class LoginserviceService {
 
   public loguear(usuario:string, password:string){
     let datos = `usuario=${usuario}&password=${password}`;
-    return this.nuevohttp.httpPostData('ingreso/in', datos);
-      
+    return this.nuevohttp.httpPostData('ingreso/in', datos);   
   }
+
 }

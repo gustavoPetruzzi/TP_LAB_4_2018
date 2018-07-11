@@ -1,6 +1,7 @@
 <app-barralateral></app-barralateral>
 <div class="container">
   <div class="jumbotron">
+    <button class="btn btn-primary btn-block" (click)="ir()"> Agregar Remisero</button>
     <div class="row">
       <div class="col-sm">  
         <table class="table" *ngIf="remiseros">
@@ -8,19 +9,17 @@
             <tr>
               <th> Nombre </th>
               <th> Apellido </th>
-              <th> Usuario </th>
               <th> Vehiculo </th>
               <th> Opciones </th>
             </tr>
           </thead>
           <tbody>
-            <tr *ngFor="let remisero of remiseros">
+            <tr *ngFor="let remisero of remiseros" (click)="ver(remisero)" >
               <td> {{ remisero.nombre }} </td>
               <td> {{ remisero.apellido }} </td>
-              <td> {{ remisero.usuario }} </td>
               <td *ngIf="remisero.vehiculo"> Asignado </td>
               <td *ngIf="!remisero.vehiculo"> Sin asignar </td>
-              <td> <button class="btn btn-primary" (click)="ver(remisero)"> Ver </button>
+              <td> <button class="btn btn-success" (click)="modificar(remisero)"> Modificar </button> </td>
             </tr>
           </tbody>
         </table>
@@ -28,20 +27,49 @@
       <div class="col-sm">
         <div class="card" style="width: 18rem;">
           <div class="card-body" *ngIf="asignado">
-            <h5 class="card-title">{{asignado.nombre}} {{asignado.apellido}}</h5>
-            
+            <h4> Chofer </h4>
+            <h5 class="card-title">Nombre: {{ asignado.nombre }}</h5>
+            <h5 class="card-title">Apellido: {{ asignado.apellido }}</h5>
+            <h5 class="card-title">Usuario: {{ asignado.usuario }}</h5>
+            <button class="btn btn-primary" (click)="mostrarListado()" [hidden]="vehiculoAsignado"> Asignar Vehiculo </button>
           </div>
         </div>
+      </div>
+      <div class="col-sm" >
         <div class="card" style="width: 18rem;">
           <div class="card-body" *ngIf="vehiculoAsignado">
-            <h5 class="card-title">{{vehiculoAsignado.modelo}}</h5>
-            <h5 class="card-title">{{ vehiculoAsignado.marca}}</h5>
-            
-            <h5 class="card-title">{{ vehiculoAsignado.premium}}</h5>
-            
-        </div>
-        </div>        
+            <h4> Vehiculo </h4>
+            <h5 class="card-title"> Modelo: {{vehiculoAsignado.modelo }}</h5>
+            <h5 class="card-title"> Marca: {{ vehiculoAsignado.marca}}</h5>            
+            <h5 class="card-title"> Tipo: {{ vehiculoAsignado.premium | premium }}</h5>
+            <button class="btn btn-primary" (click)="mostrarListado()" > Reasignar vehiculo </button>     
+            <button class="btn btn-danger" (click)="removerVehiculo( vehiculoAsignado.id )" > Remover vehiculo </button>     
+        </div>       
       </div>
+    </div>
+    <div class="row" *ngIf="mostrarVehiculos">
+      <div class="col-sm">
+        <h4 class="text-center"> Asignar a: {{asignado.nombre}} {{asignado.apellido}}</h4>
+        <table class="table">
+          <thead>
+            <tr>
+              <th> Modelo </th>
+              <th> Marca </th>
+              <th> Año </th>
+              <th> Tipo </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let noAsignado of noAsignados">
+              <td> {{ noAsignado.modelo }} </td>
+              <td> {{ noAsignado.marca }} </td>
+              <td> {{ noAsignado.anio }} </td>
+              <td> {{ noAsignado.premium | premium }} </td>
+              <td> <button class="btn btn-primary" (click)="asignar(noAsignado)"> asignar </button>
+            </tr>
+          </tbody>
+        </table>    
+      </div>      
     </div>
   </div>
 </div>

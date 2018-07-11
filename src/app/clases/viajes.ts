@@ -4,11 +4,19 @@ export class viaje {
     estado:string;
     idCliente:number;
     monto:number;
-    constructor(fecha:Date, hora:Date, idCliente:number, estado?:string){
-        this.fecha = this.formatearFecha(fecha)
-        this.hora = this.formatearHora(hora);
+    id:number;
+    constructor(id:number,fecha:any, hora:any, idCliente:number, estado?:string){
+        if( typeof(fecha)=== "string" && typeof(hora) === "string"){
+            this.fecha = fecha;
+            this.hora = hora;
+        }
+        else{
+            this.fecha = this.formatearFecha(fecha)
+            this.hora = this.formatearHora(hora);            
+        }
         this.idCliente = idCliente;
         this.estado = estado;
+        this.id = id;
     }
     private formatearFecha(fecha:Date){
         let formateada = fecha.getUTCFullYear() + '-' +

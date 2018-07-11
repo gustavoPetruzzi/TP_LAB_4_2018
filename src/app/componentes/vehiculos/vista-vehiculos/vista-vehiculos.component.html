@@ -1,0 +1,20 @@
+<app-barralateral></app-barralateral>
+<div class="container">
+    <div class="jumbotron">
+        <h2 class="text-center"> Vehiculos </h2>
+        <div class="row">
+            <button class="btn btn-primary btn-block" (click)="mostrarNuevo()"> Nuevo Auto </button>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <app-lista-vehiculos (enviarVehiculo)="mostrar($event)" [vehiculos]="autos" ></app-lista-vehiculos>
+            </div>
+            <div class="col-sm">
+                <app-modificar-vehiculos [dato]="auto" (enviarModificado)="modificado($event)"></app-modificar-vehiculos>
+            </div>
+            <div class="col-sm">
+                <app-nuevo-vehiculo [nuevo]="nuevoForm" (enviarNuevo)="agregado($event)"></app-nuevo-vehiculo>
+            </div>
+        </div>
+    </div>
+</div>

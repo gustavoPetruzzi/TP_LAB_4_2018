@@ -1,0 +1,35 @@
+<app-barralateral></app-barralateral>
+<div class="container">
+    <div class="jumbotron">
+        <h2 class="text-center"> Viaje </h2>
+        <div class="row" [hidden]="!cargoBien">
+            <div class="col-sm">
+                <div class="mapita" #mapa ></div>
+                <h2 class="text-center" > Fecha: {{verViaje.fecha}}</h2>
+                <h2 class="text-center" > Hora : {{verViaje.hora}} </h2>
+                <h2 class="text-center" > Estado : {{verViaje.estado}} </h2>
+                <div *ngIf="verViaje.estado != 'finalizado'">
+                    <h2 class="text-center" > Monto Aproximado :  $ {{verViaje.calcularMonto()}}</h2>
+                    <div class="text-center" *ngIf="tipo == 'cliente'">
+                        <button class="btn btn-primary" (click)="modificar()"> Modificar </button>
+                        <button class="btn btn-danger" (click)="cancelar()"> Cancelar </button>
+                    </div>
+                </div>
+                <div class="text-center" *ngIf="verViaje.estado == 'solicitado'">
+                    <div *ngIf="tipo == 'encargado'">
+                        <button class="btn btn-primary" (click)="asignar()"> Asignar </button>
+                    </div>
+                    <div *ngIf="tipo == 'remisero'">
+                        <button class="btn btn-primary" (click)="rechazar()"> Rechazar </button>
+                    </div>
+                </div>
+                <div *ngIf="verViaje.estado == 'finalizado'">
+                    <h2 class="text-center"> Monto : $ {{verViaje.calcularMonto()}} </h2>
+                </div>
+            </div>
+        </div>
+        <div class="row" [hidden]="cargoBien">
+            <h1 class="text-center"> Hubo un error al procesar lo pedido </h1>
+        </div>
+    </div>
+</div>

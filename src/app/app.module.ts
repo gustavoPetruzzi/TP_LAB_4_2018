@@ -23,11 +23,31 @@ import { ClienteNuevoComponent } from './componentes/clientes/cliente-nuevo/clie
 import { NgxCaptchaModule } from 'ngx-captcha';
 // calendario
 import {CalendarModule} from 'primeng/calendar';
+import { TableModule } from 'primeng/table';
 import {RadioButtonModule} from 'primeng/radiobutton';
-import { AgmCoreModule } from '@agm/core';
 import { ClienteInfoNuevoComponent } from './componentes/clientes/cliente-info-nuevo/cliente-info-nuevo.component';
 import { PrincipalComponent } from './componentes/encargado/principal/principal.component';
 import { RemiserosEncargadoComponent } from './componentes/encargado/remiseros-encargado/remiseros-encargado.component';
+import { PremiumPipe } from './pipes/premium.pipe';
+import { VistaVehiculosComponent } from './componentes/vehiculos/vista-vehiculos/vista-vehiculos.component';
+import { ListaVehiculosComponent } from './componentes/vehiculos/lista-vehiculos/lista-vehiculos.component';
+import { ModificarVehiculosComponent } from './componentes/vehiculos/modificar-vehiculos/modificar-vehiculos.component';
+import { NuevoVehiculoComponent } from './componentes/vehiculos/nuevo-vehiculo/nuevo-vehiculo.component';
+import { AgmCoreModule } from '@agm/core';
+import { DetalleViajesComponent } from './componentes/viajes/detalle-viajes/detalle-viajes.component';
+import { VistaViajesComponent } from './componentes/viajes/vista-viajes/vista-viajes.component';
+import { ViajePipe } from './pipes/viaje.pipe';
+import { VerViajeComponent } from './componentes/viajes/ver-viaje/ver-viaje.component';
+import {GMapModule} from 'primeng/gmap';
+import { RemiserosNuevoComponent } from './componentes/encargado/remiseros-nuevo/remiseros-nuevo.component';
+import {MessagesModule} from 'primeng/messages';
+import {MessageModule} from 'primeng/message';
+import {DropdownModule} from 'primeng/dropdown';
+import {InputTextareaModule} from 'primeng/inputtextarea';
+import {TooltipModule} from 'primeng/tooltip';
+import {ButtonModule} from 'primeng/button';
+import { ClienteModificarComponent } from './componentes/clientes/cliente-modificar/cliente-modificar.component';
+import { ClienteCancelarComponent } from './componentes/clientes/cliente-cancelar/cliente-cancelar.component';
 export function tokenGetter() {
   return localStorage.getItem('token');
 }
@@ -44,7 +64,19 @@ export function tokenGetter() {
     ClienteNuevoComponent,
     ClienteInfoNuevoComponent,
     PrincipalComponent,
-    RemiserosEncargadoComponent
+    RemiserosEncargadoComponent,
+    PremiumPipe,
+    VistaVehiculosComponent,
+    ListaVehiculosComponent,
+    ModificarVehiculosComponent,
+    NuevoVehiculoComponent,
+    DetalleViajesComponent,
+    VistaViajesComponent,
+    ViajePipe,
+    VerViajeComponent,
+    RemiserosNuevoComponent,
+    ClienteModificarComponent,
+    ClienteCancelarComponent
   ],
   imports: [
     BrowserModule,
@@ -70,7 +102,14 @@ export function tokenGetter() {
     LeafletModule.forRoot(),
     BrowserAnimationsModule,
     CalendarModule,
-    RadioButtonModule
+    RadioButtonModule,
+    TableModule,
+    MessageModule,
+    MessagesModule,
+    DropdownModule,
+    InputTextareaModule,
+    TooltipModule,
+    ButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

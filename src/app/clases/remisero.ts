@@ -5,6 +5,7 @@ export class remisero {
     apellido:string;
     usuario:string;
     vehiculo:number;
+    password:string;
 
     constructor(nombre:string, apellido:string, usuario:string, vehiculo?:number ){
         if(vehiculo){

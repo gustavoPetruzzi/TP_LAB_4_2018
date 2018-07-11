@@ -1,0 +1,33 @@
+
+<form [formGroup]="vehiculoForm" *ngIf="dato" class="text-center">
+  <h4 class="text-center">Modificar</h4>
+  <div class="form-row">
+    <div class="col">
+      <label class="center-block"> Marca
+        <select class="form-control" formControlName="marca">
+          <option  *ngFor="let marca of marcasAutos" [value]="marca">{{marca}}</option>
+        </select>
+      </label>
+    </div>
+    <div class="col">
+      <label class="center-block"> Modelo
+        <input class="form-control" formControlName="modelo">
+      </label>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="col">
+      <label class="center-block"> Año
+      <select class="form-control" formControlName="anio">
+        <option *ngFor="let anio of aniosAutos" [value]="anio" >{{anio}}</option>
+      </select>
+    </label>      
+    </div>
+    <div class="col">
+      <h5> Tipo: </h5>
+      <label class="center-block"><input [checked]="dato.premium == 1" type="radio" formControlName="tipo" value="1">Premium</label>
+      <label class="center-block"><input [checked]="dato.premium == 0" type="radio" formControlName="tipo" value="0">Comun</label>
+    </div>
+  </div>
+   <button class="btn btn-primary" (click)="modificar()">Modificar</button> 
+</form>

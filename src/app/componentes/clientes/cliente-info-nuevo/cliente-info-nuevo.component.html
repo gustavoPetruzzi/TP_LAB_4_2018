@@ -2,23 +2,26 @@
 <app-barralateral></app-barralateral>
 <div class="container">
   <div class="jumbotron">
-    <div class="row">
-      <div class="col-sm" [hidden]="!cargoBien || reservoViaje">
+    <div class="row" [hidden]="!cargoBien">
+      <div class="col-sm" [hidden]="reservoViaje">
         <h1 class="text-center"> Datos del viaje </h1>
         <div class="mapita" #mapa ></div>
           <h2> Distancia: {{viaje.calcularDistancia()}} Km. </h2>
           <h2> Monto: $ {{viaje.calcularMonto()}} </h2>
           <button class="btn btn-danger" >Cancelar</button>
-          <button (click)="reservar()" class="btn btn-primary" >Reservar</button>
+          <button [hidden]="modificado" (click)="reservar()" class="btn btn-primary" >Reservar</button>
+          <button [hidden]="!modificado" (click)="modificar()" class="btn btn-primary" >Modificar</button>
       </div>
       <div class="col-sm" [hidden]="!reservoViaje">
-        <h1 class="text-center"> ¡Su viaje ha sido reservado!</h1>
+        <h1 class="text-center"> {{mensaje}}</h1>
         <button class="btn btn-primary"> Reservar un nuevo viaje </button>
         <button class="btn btn-primary"> Menu principal </button>
       </div>
       <div class="col-sm" [hidden]="!errorReserva">
         <h1> Ha ocurrido un error reservando su viaje </h1> 
       </div>
+    </div>
+    <div class="row" [hidden]="cargoBien">
       <div class="col-sm" [hidden]="cargoBien">
         <h1 class="text-center"> Hubo un error al procesar lo pedido</h1>
       </div>

@@ -10,11 +10,12 @@ export class viajeMaps extends viaje {
     origen:lugar;
     destino:lugar;
     distancia:number;
-    premium:number
+    premium:number;
     static readonly precio:number = 30;
     constructor(
-        fecha:Date, 
-        hora:Date, 
+        id:number,
+        fecha:any, 
+        hora:any, 
         estado:string, 
         idCliente: number,
         monto:number,
@@ -22,7 +23,7 @@ export class viajeMaps extends viaje {
         destino:lugar,
         premium:Boolean)
         {
-            super(fecha,hora,idCliente,estado);
+            super(id,fecha,hora,idCliente,estado);
             this.origen = origen;
             this.destino = destino;
             this.premium = this.formatearPremium(premium);
@@ -37,7 +38,7 @@ export class viajeMaps extends viaje {
         }
 
         public calcularMonto(){
-            return viajeMaps.precio * this.calcularDistancia();
+            return (viajeMaps.precio * this.calcularDistancia()).toFixed(2);
         }
 
         private formatearPremium(tipo:Boolean){
@@ -50,3 +51,5 @@ export class viajeMaps extends viaje {
 
 
 }
+
+export const opcionesCancelar = ['Problemas personales', 'Demora del chofer', 'Otro'];

@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="jumbotron">
+    <div class="row" *ngIf="cargoBien">
+      <div class="col-sm">
+        <h3 class=" text-center first"> Motivo: </h3>
+        <form [formGroup]="cancelarForm" class="text-center">
+          <div class="row justify-content-center">
+            <p-dropdown [options]="motivos" formControlName="motivo"></p-dropdown>  
+          </div>
+          <div class="row justify-content-center">
+            <textarea [rows]="5" [cols]="30" autoResize="autoResize" pInputTextArea formControlName="mensaje" pTooltip="minimo: 20 caracteres, maximo 159 caracteres"></textarea>
+          </div>
+          <div class="row justify-content-center">
+            <p-button label="Cancelar" ></p-button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm" *ngIf="!cargoBien">
+        <h1 class="text-center"> Hubo un error al procesar lo pedido </h1>
+      </div>
+    </div>
+  </div>
+</div>

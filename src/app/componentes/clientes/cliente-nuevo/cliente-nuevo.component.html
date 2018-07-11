@@ -1,29 +1,27 @@
 <app-barralateral></app-barralateral>
-<script src="https://maps.googleapis.com/maps/api/js"></script>
 <div class="container">
   <div class="jumbotron">
-    <div class="row" *ngIf="!formLleno">
+    <div class="row">
       <div class="col-sm">
-        <h1 class="text-center"> ¡Reserva tu proximo viaje! </h1>
+        <h1 class="text-center"> {{titulo}} </h1>
 
 
 
         <form [formGroup]="viajeForm" (submit)="llenarFormulario()">
           <div class="form-group">
             <label for="fecha">Fecha</label>
-            <p-calendar  formControlName="fecha" dateFormat="yy/mm/dd" ></p-calendar>
+            <p-calendar [inline]="true"  formControlName="fecha" dateFormat="yy/mm/dd" ></p-calendar>
           </div>
-
           <div class="form-group">
             <input placeholder="Origen" autocorrect="off" autocapitalize="off" spellcheck="off" type="text" class="form-control" #origen [formControl]="origenControl">
           </div>
           <div class="form-group">
             <input placeholder="Destino" autocorrect="off" autocapitalize="off" spellcheck="off" type="text" class="form-control" #destino [formControl]="destinoControl">
           </div>
-
           <div class="form-group">
-            <label for="hora">Hora</label>
-            <p-calendar [timeOnly]="true" formControlName="hora" hourFormat="24"></p-calendar>
+            <label class="center-block">Hora
+              <p-calendar [timeOnly]="true" [inline]="true" formControlName="hora" hourFormat="24"></p-calendar>
+            </label>
             <div *ngIf="viajeForm.controls.hora.invalid"
                   class="alert alert-danger">
 

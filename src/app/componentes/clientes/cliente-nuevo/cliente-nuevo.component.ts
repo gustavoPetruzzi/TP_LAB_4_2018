@@ -3,12 +3,10 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { CaptchaServiceService } from '../../../servicios/captcha/captcha-service.service';
 import { DataService } from '../../../servicios/data/data.service';
 import { ElementRef, NgZone, ViewChild } from '@angular/core';
-import {  } from 'googlemaps';
-import { MapsAPILoader } from '@agm/core';
 import { Router } from '@angular/router';
+import { MapsAPILoader } from '@agm/core';
 import { lugar } from '../../../clases/lugar';
 import { viajeMaps } from '../../../clases/viajeMaps';
-//import { } from '@types/yandex-maps';
 
 @Component({
   selector: 'app-cliente-nuevo',
@@ -16,53 +14,56 @@ import { viajeMaps } from '../../../clases/viajeMaps';
   styleUrls: ['./cliente-nuevo.component.css']
 })
 export class ClienteNuevoComponent implements OnInit {
-  public origenControl: FormControl;
-  public destinoControl: FormControl;
   
+  @ViewChild('mapita') 
+  public mapitaElementRef: ElementRef;
+  
+  modificado:viajeMaps;
+  titulo:string;
+  latitude: number;
+  longitude: number;
+  zoom: number;
+  origenControl:FormControl;
+  destinoControl:FormControl;
   @ViewChild('origen') 
   public origenElementRef: ElementRef;
   
   @ViewChild('destino') 
   public destinoElementRef: ElementRef;
-
-  latitude: number;
-  longitude: number;
-  zoom: number;
-
   origen: google.maps.LatLng;
   destino: google.maps.LatLng;
 
   mensaje:any;
-
+  
   constructor(
+    private ruteador: Router,
+    private data: DataService,
     private mapsAPILoader: MapsAPILoader,
     private ngZone: NgZone,
-    private ruteador: Router,
-    private data: DataService
   ) {}
   viajeForm: FormGroup;
   captchaOk:boolean;
   ngOnInit() {
-    /*
-    var mapProp = {
-      center: new google.maps.LatLng(18.5793, 738143),
-      zoom: 15,
-      mapTypeId: google.maps.MapTypeId.ROADMAP
-    }
-    this.map = new google.maps.Map(this.gmapElement.nativeElement, mapProp);
-    */
-    /*
-    ymaps.ready(() =>{
-      this.iniciarMapa();
-    })
-    */
-    
-    
+    //-58.381592
+    this.modificado = null;
+    this.latitude = -34.603722;
+    this.longitude = -58.381592;
+    this.zoom = 12;
     this.origenControl = new FormControl();
     this.destinoControl = new FormControl();
-    
-
-    //this.posicionActual();
+    this.titulo = '¡Reserva tu proximo viaje!';
+    this.viajeForm = new FormGroup({
+      hora: new FormControl('', [
+        Validators.required,
+        Validators.minLength(4),
+      ]),
+      fecha: new FormControl('',[
+        Validators.required,
+      ]),
+      tipo: new FormControl('',[
+        Validators.required
+      ]),
+    })        
     this.mapsAPILoader.load().then(() => {
       let autocompleteOrigen = new google.maps.places.Autocomplete(this.origenElementRef.nativeElement, {
         types: ["address"]
@@ -108,21 +109,7 @@ export class ClienteNuevoComponent implements OnInit {
         });
       });
     });
-
-
-    this.viajeForm = new FormGroup({
-      hora: new FormControl('', [
-        Validators.required,
-        Validators.minLength(4),
-      ]),
-      fecha: new FormControl('',[
-        Validators.required,
-      ]),
-      tipo: new FormControl('',[
-        Validators.required
-      ]),
-      
-    })
+    
   }
 
   //CAPTCHA
@@ -143,22 +130,15 @@ export class ClienteNuevoComponent implements OnInit {
       origen: origen,
       destino: destino,
       tipo: this.viajeForm.controls['tipo'].value,
+      modificar: false,
+      estado: 'solicitado',
+      id: -1
     }
     this.data.changeMessage(mensaje);
     this.ruteador.navigate(['/cliente/infoNuevo']);
   }
 
 
-
-
-
-
-
-
-
-
-
-  /* GEOLOCALIZACION;
   private posicionActual() {
     if("geolocation" in navigator){
       navigator.geolocation.getCurrentPosition((position) =>{
@@ -168,7 +148,6 @@ export class ClienteNuevoComponent implements OnInit {
       })
     }
   }
-  */
 
 
 

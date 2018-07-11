@@ -1,0 +1,60 @@
+<app-barralateral></app-barralateral>
+<div class="container">
+  <div class="jumbotron">
+    <div class="row">
+      <div class="col-sm" *ngIf="cargoBien" >
+        <h1 class="text-center"> {{titulo}} </h1>
+
+
+
+        <form [formGroup]="viajeForm" (submit)="modificarViaje()">
+          <div class="form-group">
+            <label for="fecha">Fecha</label>
+            <p-calendar [inline]="true"  formControlName="fecha" dateFormat="yy/mm/dd" ></p-calendar>
+          </div>
+          <div class="form-group">
+            <input placeholder="Origen" autocorrect="off" autocapitalize="off" spellcheck="off" type="text" class="form-control" #origen [formControl]="origenControl">
+          </div>
+          <div class="form-group">
+            <input placeholder="Destino" autocorrect="off" autocapitalize="off" spellcheck="off" type="text" class="form-control" #destino [formControl]="destinoControl">
+          </div>
+          <div class="form-group">
+            <label class="center-block">Hora
+              <p-calendar [timeOnly]="true" [inline]="true" formControlName="hora" hourFormat="24"></p-calendar>
+            </label>
+            <div *ngIf="viajeForm.controls.hora.invalid"
+                  class="alert alert-danger">
+
+              <div *ngIf="!viajeForm.controls.hora.required">
+                hora is required.
+              </div>
+              <div *ngIf="!viajeForm.controls.hora.minlength">
+                hora must be at least 4 characters long.
+              </div>
+            </div>
+
+          </div>
+          <div class="form-group">
+            <h2 class="text-center">Tipo de vehiculo </h2>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" formControlName="tipo" value="comun" checked>
+              <label class="form-check-label" for="exampleRadios1">
+                Comun
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" formControlName="tipo" value="premium">
+              <label class="form-check-label">
+                Premium
+              </label>
+            </div>            
+          </div>
+          <button type="submit" class="btn btn-primary" [disabled]="!viajeForm.valid || captchaOk" >Modificar Viaje</button>                    
+        </form>        
+      </div>
+      <div class="col-sm" *ngIf="!cargoBien">
+        <h1 class="text-center"> Hubo un error al procesar lo pedido </h1>
+      </div>
+    </div>
+  </div>
+</div>
