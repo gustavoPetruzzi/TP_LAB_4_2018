@@ -1,0 +1,12 @@
+<app-barralateral></app-barralateral>
+<div class="container">
+  <div class="jumbotron">
+    <div class="row">
+      <form [formGroup]="nuevoClienteForm" class="text-center">
+        <label class="center-block">Nombre
+          <input class="form-control" formControlName="nombre">
+          <div [hidden]="!this.nuevoClienteForm.control['nombre'].invalid || this.remiseroForm.controls['nombre'].pristine" class="alert"
+      </form>
+    </div>
+  </div>
+</div>

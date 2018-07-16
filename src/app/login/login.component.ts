@@ -63,40 +63,16 @@ export class LoginComponent implements OnInit {
   public ingresar(usuario:string){
     switch (usuario) {
       case 'admin':
-        this.esperando = true;
-        this.loginService.loguear('admin', 'admin')
-        .subscribe(
-          data =>{
-            this.esperando = false;
-            localStorage.setItem('token', data.token);
-            localStorage.setItem('logueado', 'true');
-            this.ruteador.navigate(['/encargado']);
-          }
-        )
+        this.usuarioText = 'admin';
+        this.passwordText = 'admin';
         break;
       case 'remisero':
-        this.esperando = true;
-        this.loginService.loguear('juancito', '1111')
-        .subscribe(
-          data =>{
-            this.esperando = false;
-            localStorage.setItem('token', data.token);
-            localStorage.setItem('logueado', 'true');
-            this.ruteador.navigate(['/remisero']);            
-          }
-        )
+        this.usuarioText = 'juancito';
+        this.passwordText = '1111';
         break;
         case 'cliente':
-          this.esperando = true;
-          this.loginService.loguear('carlos', '2222')
-          .subscribe(
-            data =>{
-              this.esperando = false;
-              localStorage.setItem('token', data.token);
-              localStorage.setItem('logueado', 'true');
-              this.ruteador.navigate(['/cliente']);              
-            }
-          )
+          this.usuarioText = 'carlos';
+          this.passwordText = '2222';
           break;
       default:
         break;

@@ -50,6 +50,7 @@ import { ClienteModificarComponent } from './componentes/clientes/cliente-modifi
 import { ClienteCancelarComponent } from './componentes/clientes/cliente-cancelar/cliente-cancelar.component';
 import { RemiseroRechazarComponent } from './componentes/remiseros/remisero-rechazar/remisero-rechazar.component';
 import {CaptchaModule} from 'primeng/captcha';
+import { RegistroClienteComponent } from './componentes/registro/registro-cliente/registro-cliente.component';
 export function tokenGetter() {
   return localStorage.getItem('token');
 }
@@ -79,7 +80,8 @@ export function tokenGetter() {
     RemiserosNuevoComponent,
     ClienteModificarComponent,
     ClienteCancelarComponent,
-    RemiseroRechazarComponent
+    RemiseroRechazarComponent,
+    RegistroClienteComponent
   ],
   imports: [
     BrowserModule,

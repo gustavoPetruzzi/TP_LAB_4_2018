@@ -18,6 +18,7 @@ import { VerificarEncargadoService } from '../servicios/verificarTipo/verificar-
 import { PrincipalComponent } from '../componentes/encargado/principal/principal.component';
 import { RemiserosEncargadoComponent } from '../componentes/encargado/remiseros-encargado/remiseros-encargado.component';
 import { RemiserosNuevoComponent } from '../componentes/encargado/remiseros-nuevo/remiseros-nuevo.component';
+import { RegistroClienteComponent } from '../componentes/registro/registro-cliente/registro-cliente.component';
 import { VistaVehiculosComponent } from '../componentes/vehiculos/vista-vehiculos/vista-vehiculos.component';
 import { VistaViajesComponent } from '../componentes/viajes/vista-viajes/vista-viajes.component';
 import { VerViajeComponent } from '../componentes/viajes/ver-viaje/ver-viaje.component';
@@ -56,6 +57,11 @@ const miRuteo = [
       { path: '', component: VistaViajesComponent },
       { path: 'info', component: VerViajeComponent }
     ] },
+  { path: 'registro', 
+    children: [
+      { path: '', component: ErrorComponent },
+      { path: 'cliente', component: RegistroClienteComponent }
+    ] },  
   { path: 'error', component: ErrorComponent },
   { path: '**', component: LoginComponent },
 ]
