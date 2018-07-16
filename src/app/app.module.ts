@@ -48,6 +48,8 @@ import {TooltipModule} from 'primeng/tooltip';
 import {ButtonModule} from 'primeng/button';
 import { ClienteModificarComponent } from './componentes/clientes/cliente-modificar/cliente-modificar.component';
 import { ClienteCancelarComponent } from './componentes/clientes/cliente-cancelar/cliente-cancelar.component';
+import { RemiseroRechazarComponent } from './componentes/remiseros/remisero-rechazar/remisero-rechazar.component';
+import {CaptchaModule} from 'primeng/captcha';
 export function tokenGetter() {
   return localStorage.getItem('token');
 }
@@ -76,7 +78,8 @@ export function tokenGetter() {
     VerViajeComponent,
     RemiserosNuevoComponent,
     ClienteModificarComponent,
-    ClienteCancelarComponent
+    ClienteCancelarComponent,
+    RemiseroRechazarComponent
   ],
   imports: [
     BrowserModule,
@@ -109,7 +112,8 @@ export function tokenGetter() {
     DropdownModule,
     InputTextareaModule,
     TooltipModule,
-    ButtonModule
+    ButtonModule,
+    CaptchaModule
   ],
   providers: [],
   bootstrap: [AppComponent]

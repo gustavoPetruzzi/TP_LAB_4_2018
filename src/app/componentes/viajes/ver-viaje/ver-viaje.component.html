@@ -19,8 +19,10 @@
                     <div *ngIf="tipo == 'encargado'">
                         <button class="btn btn-primary" (click)="asignar()"> Asignar </button>
                     </div>
+                </div>
+                <div class="text-center" *ngIf="verViaje.estado == 'asignado'">
                     <div *ngIf="tipo == 'remisero'">
-                        <button class="btn btn-primary" (click)="rechazar()"> Rechazar </button>
+                        <button class="btn btn-danger" (click)="rechazar()"> Rechazar </button>
                     </div>
                 </div>
                 <div *ngIf="verViaje.estado == 'finalizado'">

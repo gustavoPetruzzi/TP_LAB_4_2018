@@ -29,4 +29,10 @@ export class ClienteService {
 		let datos = `idCliente=${viaje.idCliente}&origen_lat=${viaje.origen.latitud}&origen_long=${viaje.origen.longitud}&destino_lat=${viaje.destino.latitud}&destino_long=${viaje.destino.longitud}&fecha=${viaje.fecha}&hora=${viaje.hora}&id=${viaje.id}&estado=${viaje.estado}&premium=${viaje.premium}&token=${token}`;
 		return this.nuevoHttp.httpPostData('cliente/modificarviaje',datos)
 	}
+
+	public cancelarViaje(idViaje:number, motivo:string, mensaje:string){
+		let token = localStorage.getItem('token');
+		let datos = `idViaje=${idViaje}&motivo=${motivo}&mensaje=${mensaje}&token=${token}`;
+		return this.nuevoHttp.httpPostData('viajes/cancelar', datos);
+	}
 }

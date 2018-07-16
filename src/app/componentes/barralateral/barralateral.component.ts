@@ -10,15 +10,15 @@ declare interface RouteInfo {
 }
 export const RutasRemisero: RouteInfo[] = [
     { path: '/remisero', title: 'Menu principal',  icon: 'pe-7s-graph', class: '' },
-    { path: '/login', title: 'Viajes en curso',  icon: 'pe-7s-graph', class: '' },
-    { path: '/remisero/asignados', title: 'Viajes asignados',  icon:'pe-7s-user', class: '' },
-    { path: '/cliente', title: 'Viajes Terminados',  icon:'pe-7s-science', class: '' },
+    { path: '/viajes', title: 'Viajes',  icon: 'pe-7s-graph', class: '' },
+    { path: '/vehiculos', title: 'Vehiculo',  icon:'pe-7s-user', class: '' },
+    { path: '/error', title: 'Configuracion',  icon:'pe-7s-science', class: '' },
 ];
 export const RutasCliente: RouteInfo[] = [
     { path: '/cliente', title: 'Menu Principal',  icon: 'pe-7s-graph', class: '' },
     { path: '/cliente/nuevo', title: 'Nuevo Viaje',  icon: 'pe-7s-graph', class: '' },
-    { path: '/remisero', title: 'Viajes Terminados',  icon:'pe-7s-user', class: '' },
-    { path: '/error', title: 'error',  icon:'pe-7s-rocket', class: 'active-pro' },
+    { path: '/viajes', title: 'Viajes',  icon:'pe-7s-user', class: '' },
+    { path: '/error', title: 'Configuracion',  icon:'pe-7s-rocket', class: 'active-pro' },
 ];
 export const RutasEncargado: RouteInfo[] = [
     { path: '/encargado', title: 'Menu Principal',  icon: 'pe-7s-graph', class: '' },

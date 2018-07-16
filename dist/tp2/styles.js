@@ -212,7 +212,7 @@ module.exports = "@charset \"UTF-8\";\n.ui-widget {\n  font-family: \"Roboto\", 
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/* You can add global styles to this file, and also import other style files */\n\nbody { \n    margin: 0; \n    background-color: darkblue;\n}\n"
+module.exports = "/* You can add global styles to this file, and also import other style files */\n\nbody { \n    margin: 0; \n    background-color: darkblue;\n}\n\ndiv.card {\n  width: 250px;\n  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);\n  text-align: center;\n}\n"
 
 /***/ }),
 

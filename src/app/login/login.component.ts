@@ -60,4 +60,47 @@ export class LoginComponent implements OnInit {
     this.captchaOk = true;
   }
 
+  public ingresar(usuario:string){
+    switch (usuario) {
+      case 'admin':
+        this.esperando = true;
+        this.loginService.loguear('admin', 'admin')
+        .subscribe(
+          data =>{
+            this.esperando = false;
+            localStorage.setItem('token', data.token);
+            localStorage.setItem('logueado', 'true');
+            this.ruteador.navigate(['/encargado']);
+          }
+        )
+        break;
+      case 'remisero':
+        this.esperando = true;
+        this.loginService.loguear('juancito', '1111')
+        .subscribe(
+          data =>{
+            this.esperando = false;
+            localStorage.setItem('token', data.token);
+            localStorage.setItem('logueado', 'true');
+            this.ruteador.navigate(['/remisero']);            
+          }
+        )
+        break;
+        case 'cliente':
+          this.esperando = true;
+          this.loginService.loguear('carlos', '2222')
+          .subscribe(
+            data =>{
+              this.esperando = false;
+              localStorage.setItem('token', data.token);
+              localStorage.setItem('logueado', 'true');
+              this.ruteador.navigate(['/cliente']);              
+            }
+          )
+          break;
+      default:
+        break;
+    }
+  }
+
 }

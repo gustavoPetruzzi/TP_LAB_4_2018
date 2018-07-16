@@ -28,5 +28,16 @@
       <div class="loader" *ngIf="esperando"></div>
       <button type="submit" class="btn btn-primary" [hidden]="esperando" [disabled]="!loginForm.form.valid || captchaOk" >Ingresar</button>
     </form>
+    <div class="row">
+      <button type="text" class="btn btn-success btn-block" [hidden]="esperando" (click)="ingresar('admin')" >Ingresar admin</button>
+    </div>
+    <div class="row">
+      <button type="text" class="btn btn-info btn-block" [hidden]="esperando" (click)="ingresar('remisero')" >Ingresar remisero</button>
+    </div>
+    <div class="row">
+      <button type="text" class="btn btn-danger btn-block" [hidden]="esperando" (click)="ingresar('cliente')" >Ingresar cliente</button>
+    </div>
+
+
   </div>
 </div>

@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { RemiseroComponent } from '../componentes/remiseros/remisero/remisero.component';
 import { RemiseroAsignadosComponent } from '../componentes/remiseros/remisero-asignados/remisero-asignados.component';
+import { RemiseroRechazarComponent } from '../componentes/remiseros/remisero-rechazar/remisero-rechazar.component';
 import { ClienteNuevoComponent } from '../componentes/clientes/cliente-nuevo/cliente-nuevo.component';
 import { ClienteModificarComponent } from '../componentes/clientes/cliente-modificar/cliente-modificar.component';
 import { ClienteInfoNuevoComponent } from '../componentes/clientes/cliente-info-nuevo/cliente-info-nuevo.component';
@@ -27,7 +28,8 @@ const miRuteo = [
   { path: 'remisero',  canActivate:[VerificarJWTService,VerificarTipoService ],
     children: [
       {path: '', component: RemiseroComponent },
-      {path: 'asignados', component: RemiseroAsignadosComponent }
+      {path: 'asignados', component: RemiseroAsignadosComponent },
+      {path: 'rechazar', component: RemiseroRechazarComponent}
     ] },
   { path: 'cliente',  canActivate:[VerificarJWTService, VerificarTipoClienteService],
     children: [

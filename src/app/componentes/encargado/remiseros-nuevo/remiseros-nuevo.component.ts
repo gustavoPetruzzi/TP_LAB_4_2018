@@ -32,6 +32,7 @@ export class RemiserosNuevoComponent implements OnInit {
     });
     this.data.currentMessage.subscribe(remisero =>{
       if(typeof(remisero) == 'string'){
+        this.titulo = "Agregar Remisero";
         this.remiseroForm = new FormGroup({
           nombre: new FormControl('',[
             Validators.required

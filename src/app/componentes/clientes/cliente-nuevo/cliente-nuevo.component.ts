@@ -45,6 +45,7 @@ export class ClienteNuevoComponent implements OnInit {
   captchaOk:boolean;
   ngOnInit() {
     //-58.381592
+    this.captchaOk = true;
     this.modificado = null;
     this.latitude = -34.603722;
     this.longitude = -58.381592;
@@ -149,6 +150,9 @@ export class ClienteNuevoComponent implements OnInit {
     }
   }
 
+  public showResponse(evento:any){
+    this.captchaOk = true;
+  }
 
 
 }

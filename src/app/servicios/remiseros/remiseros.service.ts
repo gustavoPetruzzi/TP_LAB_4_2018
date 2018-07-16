@@ -21,4 +21,10 @@ export class RemiserosService {
     let datos = `nombre=${nombre}&apellido=${apellido}&usuario=${usuario}&password=${password}&token=${token}&id=${id}`;
     return this.nuevoHttp.httpPostData('remiseros/modificar', datos);
   }
+
+  public rechazarViaje(idViaje:number, motivo:string, mensaje:string){
+    let token = localStorage.getItem('token');
+    let datos = `idViaje=${idViaje}&motivo=${motivo}&mensaje=${mensaje}&token=${token}`;
+    return this.nuevoHttp.httpPostData('viajes/rechazar', datos);
+  }
 }

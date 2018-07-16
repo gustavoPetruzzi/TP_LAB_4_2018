@@ -22,6 +22,9 @@ export class VistaViajesComponent implements OnInit {
     else if( this.auth.obtenerToken().data.tipo == 'cliente'){
       this.viajesCliente();
     }
+    else if( this.auth.obtenerToken().data.tipo == 'remisero'){
+      this.viajesRemiseros();
+    }
   }
 
   public todosViajes(){
@@ -65,6 +68,28 @@ export class VistaViajesComponent implements OnInit {
             destino,
             element.premium));
       });    
+    })
+  }
+  public viajesRemiseros(){
+    this.servicioViajes.obtenerViajesRemiseros(this.auth.obtenerToken().data.id)
+    .subscribe(data =>{
+      data.forEach(element => {
+        let origen = new lugar(element.origen_lat, element.origen_long);
+        let destino = new lugar(element.destino_lat, element.destino_long);
+        this.viajes.push(
+          new viajeMaps(
+            element.id,
+            element.fecha,
+            element.hora,
+            element.estado,
+            element.idCliente,
+            element.monto,
+            origen,
+            destino,
+            element.premium
+          )
+        );
+      })
     })
   }
 

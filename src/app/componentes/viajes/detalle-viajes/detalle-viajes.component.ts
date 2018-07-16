@@ -21,7 +21,7 @@ export class DetalleViajesComponent implements OnInit {
           { field: 'fecha', header: 'Fecha' },
           { field: 'hora', header: 'Hora' },
           { field: 'estado', header: 'Estado' },
-          { field: 'premium', header: 'Tipo' },
+          { field: 'monto', header: 'Monto' },
       ];      
     }
     else{
@@ -30,7 +30,7 @@ export class DetalleViajesComponent implements OnInit {
         { field: 'fecha', header: 'Fecha' },
         { field: 'hora', header: 'Hora' },
         { field: 'estado', header: 'Estado' },
-        { field: 'premium', header: 'Tipo' },
+        { field: 'monto', header: 'Monto' },
     ];      
     }  
   }

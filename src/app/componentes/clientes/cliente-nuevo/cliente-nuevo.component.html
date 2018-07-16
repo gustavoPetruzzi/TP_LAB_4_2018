@@ -1,4 +1,5 @@
 <app-barralateral></app-barralateral>
+<!--<script src="https://www.google.com/recaptcha/api.js?render=explicit&onload=initRecaptcha" async defer></script>-->
 <div class="container">
   <div class="jumbotron">
     <div class="row">
@@ -26,10 +27,10 @@
                   class="alert alert-danger">
 
               <div *ngIf="!viajeForm.controls.hora.required">
-                hora is required.
+                La hora es requerida
               </div>
               <div *ngIf="!viajeForm.controls.hora.minlength">
-                hora must be at least 4 characters long.
+                la hora tiene que tener como minimo 4 caracteres
               </div>
             </div>
 
@@ -47,9 +48,10 @@
               <label class="form-check-label">
                 Premium
               </label>
-            </div>            
+            </div>
           </div>
-          <button type="submit" class="btn btn-primary" [disabled]="!viajeForm.valid || captchaOk" >Reservar viaje</button>                    
+          <button type="submit" class="btn btn-primary"  >Reservar viaje</button>                    
+         <!--<button type="submit" class="btn btn-primary" [disabled]="!viajeForm.valid" >Reservar viaje</button>                    -->
         </form>        
       </div>
     </div>

@@ -27,6 +27,7 @@ export class viajeMaps extends viaje {
             this.origen = origen;
             this.destino = destino;
             this.premium = this.formatearPremium(premium);
+            this.monto = parseFloat(this.calcularMonto());
         }
         
         public calcularDistancia(){
@@ -53,3 +54,4 @@ export class viajeMaps extends viaje {
 }
 
 export const opcionesCancelar = ['Problemas personales', 'Demora del chofer', 'Otro'];
+export const opcionesRechazar = ['Problemas personales', 'Problemas mecanicos', 'Otro'];

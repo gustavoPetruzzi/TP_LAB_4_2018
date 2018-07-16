@@ -42,8 +42,8 @@ export class RemiseroComponent implements OnInit {
 
   public ir(lugar:string){
     switch (lugar) {
-      case 'asignados':
-        this.ruteador.navigate(['/remisero/asignados']);
+      case 'viajes':
+        this.ruteador.navigate(['/viajes']);
         break;
       case 'terminados':
         this.ruteador.navigate(['/remisero/terminados']);

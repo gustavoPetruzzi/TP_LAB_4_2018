@@ -93,4 +93,9 @@ export class VerViajeComponent implements OnInit {
     this.ruteador.navigate(['/cliente/cancelar']);
   }
 
+  public rechazar(){
+    this.data.changeMessage(this.verViaje);
+    this.ruteador.navigate(['/remisero/rechazar']);
+  }
+
 }

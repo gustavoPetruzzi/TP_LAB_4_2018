@@ -20,4 +20,10 @@ export class ViajesService {
     let datos = `token=${token}&idCliente=${idCliente}`;
     return this.nuevoHttp.httpPostData("viajes/cliente", datos);
   }
+
+  public obtenerViajesRemiseros(idRemisero:number):Observable<Iviaje[]>{
+    let token = localStorage.getItem('token');
+    let datos = `token=${token}&idRemisero=${idRemisero}`;
+    return this.nuevoHttp.httpPostData("viajes/remisero", datos);
+  }
 }
