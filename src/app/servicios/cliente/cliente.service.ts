@@ -1,7 +1,9 @@
 import { Injectable } from '@angular/core';
 import { NuevohttpService } from '../nuevohttp.service';
 import { viajeMaps } from '../../clases/viajeMaps';
+import { AuthService } from '../auth/auth.service';
 import {  } from '../../clases/';
+
 @Injectable({
   providedIn: 'root'
 })
@@ -35,4 +37,11 @@ export class ClienteService {
 		let datos = `idViaje=${idViaje}&motivo=${motivo}&mensaje=${mensaje}&token=${token}`;
 		return this.nuevoHttp.httpPostData('viajes/cancelar', datos);
 	}
+  public registrar(nombre:string, apellido:string, usuario:string, password: string){
+		let tipo = 'cliente';
+		
+		let datos = `nombre=${nombre}&apellido=${apellido}&usuario=${usuario}&password=${password}&tipo=${tipo}`;
+		console.log(datos);
+    return this.nuevoHttp.httpPostData('ingreso/registro',datos);
+  }
 }

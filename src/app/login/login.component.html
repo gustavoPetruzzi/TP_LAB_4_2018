@@ -23,8 +23,6 @@
             <div [hidden]="!password.hasError('required')">La clave es requerida</div>
         </div>
       </div>
-      <div class="form-group">
-      </div>
       <div class="loader" *ngIf="esperando"></div>
       <button type="submit" class="btn btn-primary" [hidden]="esperando" [disabled]="!loginForm.form.valid || captchaOk" >Ingresar</button>
     </form>

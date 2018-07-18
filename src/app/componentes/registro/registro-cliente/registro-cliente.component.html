@@ -1,12 +1,71 @@
 <app-barralateral></app-barralateral>
 <div class="container">
   <div class="jumbotron">
+    <p-messages [(value)]="msgs"></p-messages>
     <div class="row">
-      <form [formGroup]="nuevoClienteForm" class="text-center">
-        <label class="center-block">Nombre
-          <input class="form-control" formControlName="nombre">
-          <div [hidden]="!this.nuevoClienteForm.control['nombre'].invalid || this.remiseroForm.controls['nombre'].pristine" class="alert"
-      </form>
+      <div class="col-sm">
+        <h2 class="text-center"> ¡Registrate!</h2>
+        <form [formGroup]="nuevoClienteForm" class="text-center">
+          <div class="form-row">
+            <div class="form-group col">
+
+                <label class="center-block">Nombre
+                  <input class="form-control" formControlName="nombre">
+                  <div [hidden]="!this.nuevoClienteForm.controls['nombre'].invalid || this.nuevoClienteForm.controls['nombre'].pristine" class="alert alert-danger">
+                    <div [hidden]="!this.nuevoClienteForm.controls['nombre'].hasError('required')"> El nombre es requerido </div>
+                  </div>
+                </label>
+              
+
+                <label class="center-block">Apellido
+                  <input class="form-control" formControlName="apellido">
+                  <div [hidden]="!this.nuevoClienteForm.controls['apellido'].invalid || this.nuevoClienteForm.controls['apellido'].pristine" class="alert alert-danger">
+                    <div [hidden]="!this.nuevoClienteForm.controls['apellido'].hasError('required')">El apellido es requerido </div>
+                  </div>
+                </label>
+
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col">
+
+                <label class="center-block">Usuario
+                  <input class="form-control" formControlName="usuario">
+                  <div [hidden]="!this.nuevoClienteForm.controls['usuario'].invalid || this.nuevoClienteForm.controls['usuario'].pristine" class="alert alert-danger">
+                    <div [hidden]="!this.nuevoClienteForm.controls['usuario'].hasError('required')">El usuario es requerido </div>
+                  </div>
+                </label>
+
+
+                <label class="center-block">password
+                  <input class="form-control" formControlName="password" type="password">
+                  <div [hidden]="!this.nuevoClienteForm.controls['password'].invalid || this.nuevoClienteForm.controls['password'].pristine" class="alert alert-danger">
+                    <div [hidden]="!this.nuevoClienteForm.controls['password'].hasError('required')"> El password es requerido </div>
+                  </div>
+                </label>
+
+            </div>
+          </div>
+          <h5 class="text-center"> Resuelve el captcha </h5>
+          <div class="form-group">
+            <canvas #myCanvas width="200" height="100">
+            </canvas>
+          </div>
+          <div class="form-group">
+            <label class="center-block"> 
+              <input class="form-control" formControlName="captcha">
+              <div [hidden]="!this.nuevoClienteForm.controls['captcha'].invalid || this.nuevoClienteForm.controls['captcha'].pristine" class="alert alert-danger">
+                <div [hidden]="!this.nuevoClienteForm.controls['captcha'].hasError('pattern')"> Solamente numeros</div>
+                <div [hidden]="!this.nuevoClienteForm.controls['captcha'].hasError('required')"> El captcha es requerido </div>
+              </div>
+            </label>
+          </div>
+          <div class="loader" *ngIf="esperando"></div>
+          <button class="btn btn-primary btn-block" [hidden]="esperando" [disabled]="!this.nuevoClienteForm.valid" (click)="registrarse()" >Registrarse</button>          
+        </form>
+        <br>
+        <button class="btn btn-success btn-block" routerLink="/login"> Inicio</button>
+      </div>
     </div>
   </div>
 </div>
