@@ -1,7 +1,8 @@
 import { Injectable } from '@angular/core';
 import { NuevohttpService } from '../nuevohttp.service';
 import { AuthService } from '../auth/auth.service';
-import { usuario } from '../../clases/usuario';
+import { UsuarioCompleto } from '../../clases/usuarioCompleto';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -26,5 +27,11 @@ export class RemiserosService {
     let token = localStorage.getItem('token');
     let datos = `idViaje=${idViaje}&motivo=${motivo}&mensaje=${mensaje}&token=${token}`;
     return this.nuevoHttp.httpPostData('viajes/rechazar', datos);
+  }
+
+  public buscarRemisero(id:number):Observable<UsuarioCompleto>{
+    let token= localStorage.getItem('token');
+    let datos = `id=${id}&token=${token}`;
+    return this.nuevoHttp.httpPostData('remisero/buscar', datos);
   }
 }

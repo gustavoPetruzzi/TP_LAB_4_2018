@@ -3,6 +3,8 @@ import { NuevohttpService } from '../nuevohttp.service';
 import { viajeMaps } from '../../clases/viajeMaps';
 import { AuthService } from '../auth/auth.service';
 import {  } from '../../clases/';
+import { UsuarioCompleto } from '../../clases/usuarioCompleto';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -43,5 +45,12 @@ export class ClienteService {
 		let datos = `nombre=${nombre}&apellido=${apellido}&usuario=${usuario}&password=${password}&tipo=${tipo}`;
 		console.log(datos);
     return this.nuevoHttp.httpPostData('ingreso/registro',datos);
-  }
+	}
+	public buscarCliente(id:number):Observable<UsuarioCompleto>{
+		let token= localStorage.getItem('token');
+		let datos= `id=${id}&token=${token}`;
+		return this.nuevoHttp.httpPostData('cliente/buscar', datos);
+	}
+
+	
 }

@@ -22,10 +22,12 @@ import { RegistroClienteComponent } from '../componentes/registro/registro-clien
 import { VistaVehiculosComponent } from '../componentes/vehiculos/vista-vehiculos/vista-vehiculos.component';
 import { VistaViajesComponent } from '../componentes/viajes/vista-viajes/vista-viajes.component';
 import { VerViajeComponent } from '../componentes/viajes/ver-viaje/ver-viaje.component';
+import { ConfiguracionCuentaComponent } from '../componentes/configuracion-cuenta/configuracion-cuenta.component';
 
 
 const miRuteo = [
   { path: 'login', component: LoginComponent },
+  { path: 'cuenta', component: ConfiguracionCuentaComponent},
   { path: 'remisero',  canActivate:[VerificarJWTService,VerificarTipoService ],
     children: [
       {path: '', component: RemiseroComponent },

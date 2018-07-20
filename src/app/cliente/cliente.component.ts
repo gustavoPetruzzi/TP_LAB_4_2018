@@ -25,6 +25,9 @@ export class ClienteComponent implements OnInit {
       case 'nuevo':
         this.ruteador.navigate(['/cliente/nuevo']);
         break;
+      case 'configuracion':
+        this.ruteador.navigate(['/cuenta']);
+        break;
       default:
         
         break;
