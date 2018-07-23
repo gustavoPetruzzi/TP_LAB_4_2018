@@ -48,6 +48,9 @@ export class RemiseroComponent implements OnInit {
       case 'terminados':
         this.ruteador.navigate(['/remisero/terminados']);
         break;
+      case 'configuracion':
+        this.ruteador.navigate(['/cuenta']);
+        break;
       default:
         
         break;

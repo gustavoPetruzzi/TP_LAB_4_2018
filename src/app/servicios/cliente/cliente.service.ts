@@ -52,5 +52,11 @@ export class ClienteService {
 		return this.nuevoHttp.httpPostData('cliente/buscar', datos);
 	}
 
+	public modificarCliente(usuario:UsuarioCompleto){
+		let token = localStorage.getItem('token');
+		let datos = `id=${usuario.id}&nombre=${usuario.nombre}&apellido=${usuario.apellido}&usuario=${usuario.usuario}&password=${usuario.password}&token=${token}`;
+		return this.nuevoHttp.httpPostData('cliente/modificar', datos);
+	}
+
 	
 }

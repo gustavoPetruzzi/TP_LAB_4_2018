@@ -4,63 +4,71 @@
     <p-messages [(value)]="msgs"></p-messages>
 
     <div class="row" *ngIf="!cargando">
-      <div class="col-sm-6">
-        <img  class="text-center" [src]="user.obtenerFoto()">
-        <p-fileUpload name="myfile[]" url="http://localhost/backendTp2/index.php/ingreso/subirFoto" (onBeforeSend)="arreglar($event)" (onUpload)="subirFoto($event)"></p-fileUpload>
+      <div class="col-sm-4">
+        <h2 class="text-center"> ¡Cambia tu imagen de perfil!</h2>
+        <img  class="img-thumbnail" width="304" height="200" [src]="foto">
+        <p-fileUpload mode="basic" name="foto" url="http://localhost/backendTp2/index.php/ingreso/subirFoto" (onBeforeSend)="arreglar($event)" (onUpload)="subirFoto($event)"></p-fileUpload>
       </div>
-    </div>
 
-
-    <div class="row" *ngIf="!cargando" >
       <div class="col-sm">
         <h2 class="text-center"> Modifica tu cuenta </h2>
         <form [formGroup]="modificaDatosForm" class="text-center">
-          <div class="form-group">
-            <label class="center-block">Nombre
-              <input class="form-control" formControlName="nombre">
-              <div [hidden]="!this.modificaDatosForm.controls['nombre'].invalid || this.modificaDatosForm.controls['nombre'].pristine" class="alert alert-danger">
-                <div [hidden]="!this.modificaDatosForm.controls['nombre'].hasError('required')"> El nombre es requerido </div>
+          <div class="row">
+            <div class="col">
+              <div class="form-group">
+                <label class="center-block">Nombre
+                  <input class="form-control" formControlName="nombre">
+                  <div [hidden]="!this.modificaDatosForm.controls['nombre'].invalid || this.modificaDatosForm.controls['nombre'].pristine" class="alert alert-danger">
+                    <div [hidden]="!this.modificaDatosForm.controls['nombre'].hasError('required')"> El nombre es requerido </div>
+                  </div>
+                </label>
               </div>
-            </label>
-          </div>
 
-          <div class="form-group">
-            <label class="center-block">Apellido
-              <input class="form-control" formControlName="apellido">
-              <div [hidden]="!this.modificaDatosForm.controls['apellido'].invalid || this.modificaDatosForm.controls['apellido'].pristine" class="alert alert-danger">
-                <div [hidden]="!this.modificaDatosForm.controls['apellido'].hasError('required')">El apellido es requerido</div>
+              <div class="form-group">
+                <label class="center-block">Apellido
+                  <input class="form-control" formControlName="apellido">
+                  <div [hidden]="!this.modificaDatosForm.controls['apellido'].invalid || this.modificaDatosForm.controls['apellido'].pristine" class="alert alert-danger">
+                    <div [hidden]="!this.modificaDatosForm.controls['apellido'].hasError('required')">El apellido es requerido</div>
+                  </div>
+                </label>
               </div>
-            </label>
-          </div>
-
-          <div class="form-group">
-            <label class="center-block"> Usuario
-              <input class="form-control" formControlName="usuario">
-              <div [hidden]="!this.modificaDatosForm.controls['usuario'].invalid || this.modificaDatosForm.controls['usuario'].pristine" class="alert alert-danger">
-                <div [hidden]="!this.modificaDatosForm.controls['usuario'].hasError('required')"> El usuario es requerido</div>
+            </div>
+            
+            <div class="col">
+              <div class="form-group">
+                <label class="center-block"> Usuario
+                  <input class="form-control" formControlName="usuario">
+                  <div [hidden]="!this.modificaDatosForm.controls['usuario'].invalid || this.modificaDatosForm.controls['usuario'].pristine" class="alert alert-danger">
+                    <div [hidden]="!this.modificaDatosForm.controls['usuario'].hasError('required')"> El usuario es requerido</div>
+                  </div>
+                </label>
               </div>
-            </label>
-          </div>
-          
-          <div class="form-group">
-            <label class="center-block"> Nuevo Password
-              <input class="form-control" formControlName="nuevoPassword">
-              <div [hidden]="!this.modificaDatosForm.controls['password'].invalid || this.modificaDatosForm.controls['usuario'].pristine" class="alert alert-danger">
-                <div [hidden]="!this.modificaDatosForm.controls['password'].hasError('required')"> el Password es requerido </div>
+              
+              <div class="form-group">
+                <label class="center-block"> Nuevo Password
+                  <input class="form-control" formControlName="nuevoPassword" type="password">
+                  <div [hidden]="!this.modificaDatosForm.controls['nuevoPassword'].invalid || this.modificaDatosForm.controls['nuevoPassword'].pristine" class="alert alert-danger">
+                    <div [hidden]="!this.modificaDatosForm.controls['nuevoPassword'].hasError('required')"> el Password es requerido </div>
+                  </div>
+                </label>
               </div>
-            </label>
+            </div>
           </div>
           <div class="form-group">
             <label class="center-block"> Password Actual
-              <input class="form-control" formControlName="password">
+              <input class="form-control" formControlName="password" type="password">
+              <div [hidden]="!this.modificaDatosForm.controls['password'].invalid || this.modificaDatosForm.controls['password'].pristine" class="alert alert-danger">
+                <div [hidden]="!this.modificaDatosForm.controls['password'].hasError('required')"> El nuevo password es requerido </div>
+              </div>
             </label>
           </div>
 
 
-          <button class="btn btn-primary btn-block" (click)="modificar()"> Modificar </button>
+          <button class="btn btn-primary btn-block" [disabled]="!this.modificaDatosForm.valid" (click)="modificar()"> Modificar </button>
         </form>
       </div>
     </div>
+
     <div class="row" *ngIf="cargando" >
       <div class="col-sm-4 offset-sm-4">
         <div class="lds-css ng-scope">

@@ -12,13 +12,13 @@ export const RutasRemisero: RouteInfo[] = [
     { path: '/remisero', title: 'Menu principal',  icon: 'pe-7s-graph', class: '' },
     { path: '/viajes', title: 'Viajes',  icon: 'pe-7s-graph', class: '' },
     { path: '/vehiculos', title: 'Vehiculo',  icon:'pe-7s-user', class: '' },
-    { path: '/error', title: 'Configuracion',  icon:'pe-7s-science', class: '' },
+    { path: '/cuenta', title: 'Configuracion',  icon:'pe-7s-science', class: '' },
 ];
 export const RutasCliente: RouteInfo[] = [
     { path: '/cliente', title: 'Menu Principal',  icon: 'pe-7s-graph', class: '' },
     { path: '/cliente/nuevo', title: 'Nuevo Viaje',  icon: 'pe-7s-graph', class: '' },
     { path: '/viajes', title: 'Viajes',  icon:'pe-7s-user', class: '' },
-    { path: '/error', title: 'Configuracion',  icon:'pe-7s-rocket', class: 'active-pro' },
+    { path: '/cuenta', title: 'Configuracion',  icon:'pe-7s-rocket', class: 'active-pro' },
 ];
 export const RutasEncargado: RouteInfo[] = [
     { path: '/encargado', title: 'Menu Principal',  icon: 'pe-7s-graph', class: '' },

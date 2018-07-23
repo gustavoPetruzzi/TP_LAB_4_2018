@@ -19,8 +19,8 @@ export class ClienteComponent implements OnInit {
 
   public ir(lugar:string){
     switch (lugar) {
-      case 'reservados':
-        this.ruteador.navigate(['/cliente/reservados']);
+      case 'viajes':
+        this.ruteador.navigate(['/viajes']);
         break;
       case 'nuevo':
         this.ruteador.navigate(['/cliente/nuevo']);

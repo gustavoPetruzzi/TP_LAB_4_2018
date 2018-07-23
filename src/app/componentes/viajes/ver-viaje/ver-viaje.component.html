@@ -2,6 +2,7 @@
 <div class="container">
     <div class="jumbotron">
         <h2 class="text-center"> Viaje </h2>
+        <p-messages [(value)]="msgs"></p-messages>
         <div class="row" [hidden]="!cargoBien">
             <div class="col-sm">
                 <div class="mapita" #mapa ></div>
@@ -21,9 +22,16 @@
                     </div>
                 </div>
                 <div class="text-center" *ngIf="verViaje.estado == 'asignado'">
-                    <div *ngIf="tipo == 'remisero'">
-                        <button class="btn btn-danger" (click)="rechazar()"> Rechazar </button>
+                    <div *ngIf="tipo == 'remisero' && fechaComenzar">
+                        <button class="btn btn-success btn-block" (click)="comenzar()"> Comenzar </button>
                     </div>
+                    <br>                    
+                    <div *ngIf="tipo == 'remisero'">
+                        <button class="btn btn-danger btn-block" (click)="rechazar()"> Rechazar </button>
+                    </div>
+                </div>
+                <div class="text-center" *ngIf="verViaje.estado == 'transcurso'">
+                    <button class="btn btn-success btn-block" (click)="finalizar()"> Finalizar </button>
                 </div>
                 <div *ngIf="verViaje.estado == 'finalizado'">
                     <h2 class="text-center"> Monto : $ {{verViaje.calcularMonto()}} </h2>

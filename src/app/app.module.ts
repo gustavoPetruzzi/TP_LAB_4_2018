@@ -53,6 +53,7 @@ import { RemiseroRechazarComponent } from './componentes/remiseros/remisero-rech
 import {CaptchaModule} from 'primeng/captcha';
 import { RegistroClienteComponent } from './componentes/registro/registro-cliente/registro-cliente.component';
 import { ConfiguracionCuentaComponent } from './componentes/configuracion-cuenta/configuracion-cuenta.component';
+import { RemiserosFinalizarComponent } from './componentes/remiseros/remiseros-finalizar/remiseros-finalizar.component';
 export function tokenGetter() {
   return localStorage.getItem('token');
 }
@@ -84,7 +85,8 @@ export function tokenGetter() {
     ClienteCancelarComponent,
     RemiseroRechazarComponent,
     RegistroClienteComponent,
-    ConfiguracionCuentaComponent
+    ConfiguracionCuentaComponent,
+    RemiserosFinalizarComponent
   ],
   imports: [
     BrowserModule,

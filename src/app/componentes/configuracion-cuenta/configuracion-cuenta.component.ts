@@ -16,6 +16,8 @@ export class ConfiguracionCuentaComponent implements OnInit {
 
   constructor(private auth: AuthService, private servicioCliente: ClienteService, private servicioRemisero:RemiserosService, private manejador:FotosService) { }
   cargando:Boolean;
+  cargandoFoto:Boolean;
+  foto:string;
   id:number;
   tipo:string;
   user:UsuarioCompleto;
@@ -28,16 +30,35 @@ export class ConfiguracionCuentaComponent implements OnInit {
     if(this.tipo == 'remisero'){
       this.servicioRemisero.buscarRemisero(this.id)
       .subscribe(data =>{
+
+        this.user = new UsuarioCompleto(data.id, data.nombre, data.apellido, data.usuario, data.password, data.foto, 'remisero');
+        this.foto = this.user.obtenerFoto();
+        console.log(this.foto);
+        console.log(this.user);
         this.cargando = false;
-        this.user = new UsuarioCompleto(data.id, data.nombre, data.apellido, data.usuario, data.password, data.foto);
-        
+        this.modificaDatosForm = new FormGroup({
+          nombre: new FormControl(this.user.nombre,[
+            Validators.required
+          ]),
+          apellido: new FormControl(this.user.apellido,[
+            Validators.required,
+          ]),
+          usuario: new FormControl(this.user.usuario,[
+            Validators.required
+          ]),
+          password: new FormControl('',[
+            Validators.required
+          ]),
+          nuevoPassword: new FormControl('')
+        })        
       })
     }
     else if(this.tipo == 'cliente'){
       this.servicioCliente.buscarCliente(this.id)
       .subscribe(data =>{
-        this.user = new UsuarioCompleto(data.id, data.nombre, data.apellido, data.usuario, data.password, data.foto);
+        this.user = new UsuarioCompleto(data.id, data.nombre, data.apellido, data.usuario, data.password, data.foto, 'cliente');
         console.log(this.user);
+        this.foto = this.user.obtenerFoto();
         console.log(this.user.obtenerFoto());
         console.log(data);
           this.cargando = false;
@@ -65,8 +86,23 @@ export class ConfiguracionCuentaComponent implements OnInit {
   }
 
   public modificar(){
-    if(this.user == this.modificaDatosForm.controls['password'].value){
+    if(this.user.password == this.modificaDatosForm.controls['password'].value){
+      if(this.tipo == 'remisero'){
+        let passwordViejo = this.user.password;
+        this.user.password = this.modificaDatosForm.controls['nuevoPassword'].value;
+        this.servicioRemisero.modificarAdmin(this.user.id, this.user.nombre, this.user.apellido, this.user.usuario, this.user.password)
+        .subscribe(data =>{
+          this.mostrarMensaje('success','¡Exito!', 'Se han modificado sus datos con exito');
 
+        })
+      }
+      else if(this.tipo == 'cliente'){
+        this.user.password = this.modificaDatosForm.controls['nuevoPassword'].value;
+        this.servicioCliente.modificarCliente(this.user)
+        .subscribe(data =>{
+          this.mostrarMensaje('success', '¡Exito!', 'Se han modificado sus datos con exito');
+        })
+      }
     }
     else{
       this.mostrarMensaje('error','error','La contraseña no coincide');
@@ -81,11 +117,32 @@ export class ConfiguracionCuentaComponent implements OnInit {
   public arreglar($event){
     $event.formData.append('id', this.id.toString());
     $event.formData.append('usuario', this.user.usuario);
+    $event.formData.append('tipo', this.user.tipo);
     
   }
 
-  public subirFoto($event){
-    console.log($event);
+  public subirFoto($event:XMLHttpRequest){
+    this.foto = './assets/Blocks-1s-200px.gif';
+    if(this.tipo == 'cliente'){
+      console.log($event);
+      this.servicioCliente.buscarCliente(this.user.id)
+      .subscribe(data =>{
+        this.user = new UsuarioCompleto(data.id, data.nombre, data.apellido, data.usuario, data.password, data.foto, 'cliente');
+        this.mostrarMensaje('success', '¡Exito!', 'Su foto se ha actualizado correctamente');
+        this.foto = this.user.obtenerFoto();
+
+      })
+    }
+    else if(this.tipo == 'remisero'){
+      console.log($event);
+      this.servicioRemisero.buscarRemisero(this.user.id)
+      .subscribe(data =>{        
+        this.user = new UsuarioCompleto(data.id, data.nombre, data.apellido, data.usuario, data.password, data.foto, 'remisero');
+        this.mostrarMensaje('success', '¡Exito!', 'Su foto se ha actualizado correctamente');
+        this.foto = this.user.obtenerFoto();
+      })
+    }
+    
   }
 
 }

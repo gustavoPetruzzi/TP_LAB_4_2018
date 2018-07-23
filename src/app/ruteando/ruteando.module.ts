@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { RemiseroComponent } from '../componentes/remiseros/remisero/remisero.component';
 import { RemiseroAsignadosComponent } from '../componentes/remiseros/remisero-asignados/remisero-asignados.component';
 import { RemiseroRechazarComponent } from '../componentes/remiseros/remisero-rechazar/remisero-rechazar.component';
+import { RemiserosFinalizarComponent } from '../componentes/remiseros/remiseros-finalizar/remiseros-finalizar.component';
 import { ClienteNuevoComponent } from '../componentes/clientes/cliente-nuevo/cliente-nuevo.component';
 import { ClienteModificarComponent } from '../componentes/clientes/cliente-modificar/cliente-modificar.component';
 import { ClienteInfoNuevoComponent } from '../componentes/clientes/cliente-info-nuevo/cliente-info-nuevo.component';
@@ -18,6 +19,7 @@ import { VerificarEncargadoService } from '../servicios/verificarTipo/verificar-
 import { PrincipalComponent } from '../componentes/encargado/principal/principal.component';
 import { RemiserosEncargadoComponent } from '../componentes/encargado/remiseros-encargado/remiseros-encargado.component';
 import { RemiserosNuevoComponent } from '../componentes/encargado/remiseros-nuevo/remiseros-nuevo.component';
+
 import { RegistroClienteComponent } from '../componentes/registro/registro-cliente/registro-cliente.component';
 import { VistaVehiculosComponent } from '../componentes/vehiculos/vista-vehiculos/vista-vehiculos.component';
 import { VistaViajesComponent } from '../componentes/viajes/vista-viajes/vista-viajes.component';
@@ -32,7 +34,8 @@ const miRuteo = [
     children: [
       {path: '', component: RemiseroComponent },
       {path: 'asignados', component: RemiseroAsignadosComponent },
-      {path: 'rechazar', component: RemiseroRechazarComponent}
+      {path: 'rechazar', component: RemiseroRechazarComponent},
+      {path: 'finalizar/:idViaje/:monto', component: RemiserosFinalizarComponent}
     ] },
   { path: 'cliente',  canActivate:[VerificarJWTService, VerificarTipoClienteService],
     children: [

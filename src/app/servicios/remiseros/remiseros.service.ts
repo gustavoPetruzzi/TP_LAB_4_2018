@@ -34,4 +34,23 @@ export class RemiserosService {
     let datos = `id=${id}&token=${token}`;
     return this.nuevoHttp.httpPostData('remisero/buscar', datos);
   }
+
+  public comenzarViaje(idViaje){
+    let token = localStorage.getItem('token');
+    let datos = `idViaje=${idViaje}&token=${token}`;
+    return this.nuevoHttp.httpPostData('remisero/comenzar', datos);
+  }
+
+  public finalizarViajeEfectivo(idViaje:number, monto:number){
+    let token = localStorage.getItem('token');
+    let datos = `idViaje=${idViaje}&monto=${monto}&token=${token}`;
+    return this.nuevoHttp.httpPostData('remisero/finalizarefectivo', datos);
+  }
+
+  public finalizarViajeCuentaCorriente(idViaje:number, monto:number){
+    let token = localStorage.getItem('token');
+    let datos = `idViaje=${idViaje}&monto=${monto}&token=${token}`;
+    return this.nuevoHttp.httpPostData('remisero/finalizarcuentacorriente', datos);
+  }
+
 }
