@@ -1,6 +1,6 @@
 # Remisería Humberto
 ## Trabajo practico para el final de laboratorio IV en la UTN FRA
-(imagen utn)
+
 
 ---
 
@@ -26,3 +26,5 @@ tipo de auto(premium o comun), entre otra funcionalidades.
 
 El remisero, es el encargado de tomar el viaje, pudiendo rechazar el mismo. Ademas, es el encargado de cobrarle
 al cliente, ya sea a traves de efectivo o cuenta corriente.
+
+!(https://imgur.com/a/qqJUNVK)
