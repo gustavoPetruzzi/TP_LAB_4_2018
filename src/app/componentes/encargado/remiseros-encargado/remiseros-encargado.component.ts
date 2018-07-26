@@ -15,22 +15,60 @@ export class RemiserosEncargadoComponent implements OnInit {
   constructor(private ruteador: Router, private remiseroService: RemiseroService, private vehiculoService: VehiculoService, private dataServicio: DataService ) { }
   remiseros:remisero[];
   asignado:remisero;
+  cargando:Boolean;
   vehiculos:vehiculo[];
   vehiculoAsignado:vehiculo;
   noAsignados:vehiculo[];
   mostrarVehiculos:Boolean;
 
   ngOnInit() {
+    this.cargando = true;
+    /*
     this.obtenerRemiseros();
     this.obtenerVehiculos();
     this.obtenerVehiculosSinAsignar();
     this.mostrarVehiculos = false;
-  }
-
-  public obtenerRemiseros(){
+    */
     this.remiseroService.listaRemiseros()
     .subscribe(data =>{
       this.remiseros = data;
+
+      this.vehiculoService.vehiculos()
+      .subscribe(data =>{
+        this.vehiculos = data;
+        this.vehiculoService.noAsignados()
+        .subscribe(data =>{
+          this.noAsignados = data;
+          this.mostrarVehiculos = false;
+          this.cargando = false;
+        })        
+
+      })      
+
+      /*
+      setTimeout(() => {
+        this.cargando = false;
+      }, 1500);
+      */
+    })
+
+  }
+
+  public obtenerRemiseros(){
+    this.cargando = true;
+    this.remiseroService.listaRemiseros()
+    .subscribe(data =>{
+      this.remiseros = data;
+    this.vehiculoService.vehiculos()
+    .subscribe(data =>{
+      this.vehiculos = data;
+    })
+
+      /*
+      setTimeout(() => {
+        this.cargando = false;
+      }, 1500);
+      */
     })
   }
 

@@ -9,6 +9,7 @@ import { ClienteNuevoComponent } from '../componentes/clientes/cliente-nuevo/cli
 import { ClienteModificarComponent } from '../componentes/clientes/cliente-modificar/cliente-modificar.component';
 import { ClienteInfoNuevoComponent } from '../componentes/clientes/cliente-info-nuevo/cliente-info-nuevo.component';
 import { ClienteCancelarComponent } from '../componentes/clientes/cliente-cancelar/cliente-cancelar.component';
+import { ClienteEncuestaComponent } from '../componentes/clientes/cliente-encuesta/cliente-encuesta.component';
 import { ClienteComponent } from '../cliente/cliente.component';
 import { LoginComponent } from '../login/login.component';
 import { ErrorComponent } from '../error/error.component';
@@ -18,7 +19,9 @@ import { VerificarTipoClienteService } from '../servicios/verificarTipo/verifica
 import { VerificarEncargadoService } from '../servicios/verificarTipo/verificar-encargado.service';
 import { PrincipalComponent } from '../componentes/encargado/principal/principal.component';
 import { RemiserosEncargadoComponent } from '../componentes/encargado/remiseros-encargado/remiseros-encargado.component';
+import { AsignarViajeComponent } from '../componentes/encargado/asignar-viaje/asignar-viaje.component';
 import { RemiserosNuevoComponent } from '../componentes/encargado/remiseros-nuevo/remiseros-nuevo.component';
+import { GananciasComponent } from '../componentes/encargado/estadisticas/ganancias/ganancias.component';
 
 import { RegistroClienteComponent } from '../componentes/registro/registro-cliente/registro-cliente.component';
 import { VistaVehiculosComponent } from '../componentes/vehiculos/vista-vehiculos/vista-vehiculos.component';
@@ -43,7 +46,8 @@ const miRuteo = [
       {path: 'nuevo', component: ClienteNuevoComponent },
       {path: 'modificar', component: ClienteModificarComponent },
       {path: 'infoNuevo', component: ClienteInfoNuevoComponent },
-      {path: 'cancelar', component: ClienteCancelarComponent }
+      {path: 'cancelar', component: ClienteCancelarComponent },
+      {path: 'encuesta/:idViaje', component: ClienteEncuestaComponent}
     ] },
   { path: 'encargado',  canActivate:[VerificarJWTService, VerificarEncargadoService],
     children: [
@@ -52,9 +56,14 @@ const miRuteo = [
         children: [
           {path: '', component: RemiserosEncargadoComponent },
           {path: 'nuevo', component: RemiserosNuevoComponent },
+          {path: 'asignar/:idViaje', component: AsignarViajeComponent },
         ]},
-
-      {path: 'infoNuevo', component: ClienteInfoNuevoComponent },
+      { path: 'ganancias', canActivate:[VerificarJWTService, VerificarEncargadoService],
+        children: [
+          {path: '', component: GananciasComponent}
+        ]},
+      
+        {path: 'infoNuevo', component: ClienteInfoNuevoComponent },
       { path: 'vehiculos', component: VistaVehiculosComponent },  
     ] },
   { path: 'viajes', 

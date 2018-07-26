@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { NuevohttpService } from '../nuevohttp.service';
 import { Observable } from 'rxjs';
 import { Iviaje } from '../../clases/Iviaje';
+import { Imonto } from '../../clases/iMonto';
 @Injectable({
   providedIn: 'root'
 })
@@ -31,5 +32,17 @@ export class ViajesService {
     let token = localStorage.getItem('token');
     let datos = `token=${token}&idViaje=${idViaje}`;
     return this.nuevoHttp.httpPostData('viajes/buscar', datos);
+  }
+
+  public obtenerViajeFecha(fecha:string):Observable<Iviaje[]>{
+    let token = localStorage.getItem('token');
+    let datos = `token=${token}&fecha=${fecha}`;
+    return this.nuevoHttp.httpPostData('viajes/fecha', datos);
+  }
+
+  public montos():Observable<Imonto[]>{
+    let token = localStorage.getItem('token');
+    let datos = `token=${token}`;
+    return this.nuevoHttp.httpPostData('estadisticas/ganancias', datos);
   }
 }

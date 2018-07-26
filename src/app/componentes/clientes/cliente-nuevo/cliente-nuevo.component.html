@@ -50,8 +50,11 @@
               </label>
             </div>
           </div>
-          <button type="submit" class="btn btn-primary"  >Reservar viaje</button>                    
-         <!--<button type="submit" class="btn btn-primary" [disabled]="!viajeForm.valid" >Reservar viaje</button>                    -->
+          <div class="form-group">
+            <p-captcha siteKey="6Lf4rF4UAAAAAPiiMTDNqSA-8mQUd9XK1T_pdKdG" (onResponse)="showResponse($event)"></p-captcha>
+          </div>
+          <!--<button type="submit" class="btn btn-primary"  >Reservar viaje</button> -->              
+         <button type="submit" class="btn btn-primary" [disabled]="!viajeForm.valid" >Reservar viaje</button>
         </form>        
       </div>
     </div>

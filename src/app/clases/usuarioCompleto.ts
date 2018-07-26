@@ -20,7 +20,8 @@ export class UsuarioCompleto extends usuario{
         }
     }
     public obtenerFoto(){
-        let ruta = "http://localhost/backendTp2/fotos/";
+        //let ruta = "http://localhost/backendTp2/fotos/";
+        let ruta = "https://remiseriagustavopetruzzi.000webhostapp.com/fotos/";
         return ruta + this.foto;
     }
 }

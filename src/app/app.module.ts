@@ -54,6 +54,16 @@ import {CaptchaModule} from 'primeng/captcha';
 import { RegistroClienteComponent } from './componentes/registro/registro-cliente/registro-cliente.component';
 import { ConfiguracionCuentaComponent } from './componentes/configuracion-cuenta/configuracion-cuenta.component';
 import { RemiserosFinalizarComponent } from './componentes/remiseros/remiseros-finalizar/remiseros-finalizar.component';
+import { AsignarViajeComponent } from './componentes/encargado/asignar-viaje/asignar-viaje.component';
+import { OcupadoDirective } from './ocupado.directive';
+import { ClienteEncuestaComponent } from './componentes/clientes/cliente-encuesta/cliente-encuesta.component';
+import {RatingModule} from 'primeng/rating';
+import {CheckboxModule} from 'primeng/checkbox';
+import {MultiSelectModule} from 'primeng/multiselect';
+import {SliderModule} from 'primeng/slider';
+import {ChartModule} from 'primeng/chart';
+
+import { GananciasComponent } from './componentes/encargado/estadisticas/ganancias/ganancias.component';
 export function tokenGetter() {
   return localStorage.getItem('token');
 }
@@ -86,7 +96,11 @@ export function tokenGetter() {
     RemiseroRechazarComponent,
     RegistroClienteComponent,
     ConfiguracionCuentaComponent,
-    RemiserosFinalizarComponent
+    RemiserosFinalizarComponent,
+    AsignarViajeComponent,
+    OcupadoDirective,
+    ClienteEncuestaComponent,
+    GananciasComponent
   ],
   imports: [
     BrowserModule,
@@ -121,7 +135,11 @@ export function tokenGetter() {
     TooltipModule,
     ButtonModule,
     CaptchaModule,
-    FileUploadModule
+    FileUploadModule,
+    RatingModule,
+    MultiSelectModule,
+    SliderModule,
+    ChartModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

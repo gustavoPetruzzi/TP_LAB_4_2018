@@ -4,10 +4,10 @@ export class remisero {
     nombre:string;
     apellido:string;
     usuario:string;
-    vehiculo:number;
+    vehiculo:any;
     password:string;
 
-    constructor(nombre:string, apellido:string, usuario:string, vehiculo?:number ){
+    constructor(nombre:string, apellido:string, usuario:string, vehiculo?:any ){
         if(vehiculo){
             this.vehiculo = vehiculo;
         }

@@ -7,7 +7,8 @@
       <div class="col-sm-4">
         <h2 class="text-center"> ¡Cambia tu imagen de perfil!</h2>
         <img  class="img-thumbnail" width="304" height="200" [src]="foto">
-        <p-fileUpload mode="basic" name="foto" url="http://localhost/backendTp2/index.php/ingreso/subirFoto" (onBeforeSend)="arreglar($event)" (onUpload)="subirFoto($event)"></p-fileUpload>
+        <!--<p-fileUpload mode="basic" name="foto" url="http://localhost/backendTp2/index.php/ingreso/subirFoto" (onBeforeSend)="arreglar($event)" (onUpload)="subirFoto($event)"></p-fileUpload>-->
+        <p-fileUpload mode="basic" name="foto" url="https://remiseriagustavopetruzzi.000webhostapp.com/index.php/ingreso/subirFoto" (onBeforeSend)="arreglar($event)" (onUpload)="subirFoto($event)"></p-fileUpload>
       </div>
 
       <div class="col-sm">
@@ -63,8 +64,8 @@
             </label>
           </div>
 
-
-          <button class="btn btn-primary btn-block" [disabled]="!this.modificaDatosForm.valid" (click)="modificar()"> Modificar </button>
+          <i [hidden]="!modificando" class="pi pi-spin pi-spinner" style="font-size: 3em"></i>
+          <button class="btn btn-primary btn-block" [hidden]="modificando" [disabled]="!this.modificaDatosForm.valid" (click)="modificar()"> Modificar </button>
         </form>
       </div>
     </div>

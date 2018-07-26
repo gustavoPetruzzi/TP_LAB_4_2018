@@ -22,6 +22,7 @@ export class ConfiguracionCuentaComponent implements OnInit {
   tipo:string;
   user:UsuarioCompleto;
   modificaDatosForm:FormGroup;
+  modificando:Boolean;
   msgs:any;
   ngOnInit() {
     this.cargando = true;
@@ -86,13 +87,17 @@ export class ConfiguracionCuentaComponent implements OnInit {
   }
 
   public modificar(){
+    this.modificando = true;
     if(this.user.password == this.modificaDatosForm.controls['password'].value){
       if(this.tipo == 'remisero'){
         let passwordViejo = this.user.password;
         this.user.password = this.modificaDatosForm.controls['nuevoPassword'].value;
         this.servicioRemisero.modificarAdmin(this.user.id, this.user.nombre, this.user.apellido, this.user.usuario, this.user.password)
         .subscribe(data =>{
-          this.mostrarMensaje('success','¡Exito!', 'Se han modificado sus datos con exito');
+          setTimeout(() => {
+            this.modificando = false;
+            this.mostrarMensaje('success','¡Exito!', 'Se han modificado sus datos con exito');
+          }, 2500);
 
         })
       }
@@ -100,7 +105,10 @@ export class ConfiguracionCuentaComponent implements OnInit {
         this.user.password = this.modificaDatosForm.controls['nuevoPassword'].value;
         this.servicioCliente.modificarCliente(this.user)
         .subscribe(data =>{
-          this.mostrarMensaje('success', '¡Exito!', 'Se han modificado sus datos con exito');
+          setTimeout(() => {
+            this.modificando = false;
+            this.mostrarMensaje('success','¡Exito!', 'Se han modificado sus datos con exito');
+          }, 2500);
         })
       }
     }

@@ -1,0 +1,134 @@
+<app-barralateral></app-barralateral>
+<div class="container">
+  <div class="jumbotron">
+    <p-messages [(value)]="msgs"></p-messages>
+    <div class="row" *ngIf="!cargando && !yaHecha">
+      <div class="col-sm-4 offset-sm-4">
+        <h3 class="text-center"> ¡Completa la encuesta!</h3>
+        <form [formGroup]="encuestaForm" class="text-center">
+          <div class="form-group">
+            
+            <label class="center-block">¿Como calificaria al remisero?
+              <p-rating formControlName="puntajeRemisero" [cancel]="false"></p-rating>
+              <div [hidden]="!this.encuestaForm.controls['puntajeRemisero'].invalid || this.encuestaForm.controls['puntajeRemisero'].pristine" class=" alert alert-danger">
+                <div [hidden]="!this.encuestaForm.controls['puntajeRemisero'].hasError('required')"> Esta calificacion es requerida</div>
+              </div>
+            </label>
+
+            <label class="center-block">¿Como calificaria el estado del vehiculo?
+              <p-rating formControlName="puntajeVehiculo" [cancel]="false"></p-rating>
+              <div [hidden]="!this.encuestaForm.controls['puntajeVehiculo'].invalid || this.encuestaForm.controls['puntajeVehiculo'].pristine" class=" alert alert-danger">
+                <div [hidden]="!this.encuestaForm.controls['puntajeVehiculo'].hasError('required')"> Esta calificacion es requerida</div>
+              </div>
+            </label>
+            <br>
+
+            <label class="center-block">¿Recomendaria la remiseria a un amigo, familiar o conocido?
+              <br>
+              <p-radioButton name="groupname" value="1" label="Si" formControlName="recomendaria"></p-radioButton>            
+              <br>
+              <p-radioButton name="groupname" value="0" label="No" formControlName="recomendaria"></p-radioButton>            
+            </label>
+
+            <label class="center-block">¿Cual o cuales fueron los mejores aspectos del viaje? 
+              <br>
+              <p-multiSelect [options]="mejores" formControlName="seleccionados"></p-multiSelect>
+              <div [hidden]="!this.encuestaForm.controls['seleccionados'].invalid || this.encuestaForm.controls['seleccionados'].pristine" class="alert alert-danger">
+                <div [hidden]="!this.encuestaForm.controls['seleccionados'].hasError('required')"> Esta calificacion es requerida </div>
+              </div>
+            </label>
+
+            <label class="center-block">¿Como calificaria el sistema de reserva de viaje?
+              <p-slider formControlName="puntajeReserva"></p-slider>
+              <div [hidden]="!this.encuestaForm.controls['puntajeReserva'].invalid || this.encuestaForm.controls['puntajeReserva'].pristine" class="alert alert-danger">
+                <div [hidden]="!this.encuestaForm.controls['puntajeReserva'].hasError('required')"> Esta calificacion es requerida </div>
+              </div>
+            </label>
+            <label class="center-block">¿Como calificaria el sistema de cobranza de viaje?
+              <p-slider formControlName="puntajeCobranza"></p-slider>
+              <div [hidden]="!this.encuestaForm.controls['puntajeCobranza'].invalid || this.encuestaForm.controls['puntajeCobranza'].pristine" class="alert alert-danger">
+                <div [hidden]="!this.encuestaForm.controls['puntajeCobranza'].hasError('required')"> Esta calificacion es requerida </div>
+              </div>
+            </label>            
+            <br>
+            <label class="center-block">Realiza algun comentario sobre nuestro servicio
+              <textarea [rows]="12" [cols]="50" autoResize="autoResize" pInputTextArea formControlName="mensaje" pTooltip="minimo: 20 caracteres, maximo 159 caracteres"></textarea>
+              <div [hidden]="!this.encuestaForm.controls['mensaje'].invalid || this.encuestaForm.controls['mensaje'].pristine" class="alert alert-danger">
+                <div [hidden]="!this.encuestaForm.controls['mensaje'].hasError('required')"> El mensaje es requerido</div>
+                <div [hidden]="!this.encuestaForm.controls['mensaje'].hasError('maxLenght')"> La cantidad maxima de caracteres es 159</div>
+              </div>
+            </label>
+          </div>
+          <i [hidden]="!subiendo" class="pi pi-spin pi-spinner" style="font-size: 3em"></i>
+          <button class="btn btn-primary btn-block" [hidden]="subiendo || subido" [disabled]="!this.encuestaForm.valid" (click)="subir()"> Enviar</button>
+        </form>
+      </div>
+    </div>
+    <div class="row" *ngIf="!cargando && yaHecha">
+      <h2 class="text-center"> ¡Ya ha realizado la encuesta para este viaje! </h2>
+    </div>
+    <div class="row" *ngIf="cargando" >
+      <div class="col-sm-4 offset-sm-4">
+        <div class="lds-css ng-scope">
+          <div class="lds-blocks" style="100%;height:100%"><div style="left:38px;top:38px;animation-delay:0s"></div>
+          <div style="left:80px;top:38px;animation-delay:0.125s"></div>
+          <div style="left:122px;top:38px;animation-delay:0.25s"></div>
+          <div style="left:38px;top:80px;animation-delay:0.875s"></div>
+          <div style="left:122px;top:80px;animation-delay:0.375s"></div>
+          <div style="left:38px;top:122px;animation-delay:0.75s"></div>
+          <div style="left:80px;top:122px;animation-delay:0.625s"></div>
+          <div style="left:122px;top:122px;animation-delay:0.5s"></div>
+        </div>
+        <style type="text/css">
+        
+        @keyframes lds-blocks {
+          0% {
+            background: #72cbfd;
+          }
+          12.5% {
+            background: #72cbfd;
+          }
+          12.625% {
+            background: #0b1d27;
+          }
+          100% {
+            background: #0b1d27;
+          }
+        }
+        @-webkit-keyframes lds-blocks {
+          0% {
+            background: #72cbfd;
+          }
+          12.5% {
+            background: #72cbfd;
+          }
+          12.625% {
+            background: #0b1d27;
+          }
+          100% {
+            background: #0b1d27;
+          }
+        }
+        .lds-blocks {
+          position: relative;
+        }
+        .lds-blocks div {
+          position: absolute;
+          width: 40px;
+          height: 40px;
+          background: #0b1d27;
+          -webkit-animation: lds-blocks 1s linear infinite;
+          animation: lds-blocks 1s linear infinite;
+        }
+        .lds-blocks {
+          width: 200px !important;
+          height: 200px !important;
+          -webkit-transform: translate(-100px, -100px) scale(1) translate(100px, 100px);
+          transform: translate(-100px, -100px) scale(1) translate(100px, 100px);
+        }
+        </style>
+      </div>
+    </div>   
+
+  </div>
+</div>

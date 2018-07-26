@@ -2,9 +2,10 @@
 <div class="container">
   <div class="jumbotron">
     <h1 class="text-center"> Remiseros </h1>
-    <button class="btn btn-primary btn-block" (click)="ir()"> Agregar Remisero</button>
     <div class="row">
-      <div class="col-sm">  
+      <button class="btn btn-primary btn-block" (click)="ir()"> Agregar Remisero</button>
+     
+      <div class="col-sm" >  
         <table class="table" *ngIf="remiseros">
           <thead>
             <tr>
@@ -25,7 +26,7 @@
           </tbody>
         </table>
       </div>
-      <div class="col-sm">
+      <div class="col-sm" >
         <div class="card" style="width: 18rem;">
           <div class="card-body" *ngIf="asignado">
             <h4> Chofer </h4>
@@ -36,7 +37,7 @@
           </div>
         </div>
       </div>
-      <div class="col-sm" >
+      <div class="col-sm"  >
         <div class="card" style="width: 18rem;">
           <div class="card-body" *ngIf="vehiculoAsignado">
             <h4> Vehiculo </h4>
@@ -71,6 +72,6 @@
           </tbody>
         </table>    
       </div>      
-    </div>
+    </div>    
   </div>
 </div>

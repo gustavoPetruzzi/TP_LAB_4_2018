@@ -25,6 +25,7 @@ export const RutasEncargado: RouteInfo[] = [
     { path: '/encargado/remiseros', title: 'Remiseros',  icon:'pe-7s-user', class: '' },
     { path: '/encargado/vehiculos', title: 'Vehiculos',  icon:'pe-7s-science', class: '' },
     { path: '/viajes', title: 'Viajes',  icon:'pe-7s-science', class: '' },
+    { path: '/encargado/ganancias', title: 'Ganancias',  icon:'pe-7s-science', class: '' },
     
 ];
 export const RutasPruebas: RouteInfo[] = [

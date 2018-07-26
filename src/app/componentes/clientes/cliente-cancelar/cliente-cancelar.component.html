@@ -12,8 +12,7 @@
             <textarea [rows]="12" [cols]="50" autoResize="autoResize" pInputTextArea formControlName="mensaje" pTooltip="minimo: 20 caracteres, maximo 159 caracteres"></textarea>
           </div>
           <div class="row justify-content-center">
-            <button (click)="cancelarViaje()" [hidden]="cancelando || cancelado" class="btn btn-primary" [disabled]="!cancelarForm.valid" > <i class="pi pi-check"></i> Enviar</button>
-            <button (click)="volver()" [hidden]="cancelando || cancelado" class="btn btn-danger" > <i class="pi pi-ban"></i> Cancelar</button>
+            <button (click)="cancelarViaje()" [hidden]="cancelando || cancelado" class="btn btn-primary btn-block" [disabled]="!cancelarForm.valid" > <i class="pi pi-check"></i> Enviar</button>
             <i [hidden]="!cancelando" class="pi pi-spin pi-spinner" style="font-size: 3em"></i>
             <button [hidden]="!cancelado" class="btn btn-primary btn-block" (click)="volver()">Menu principal</button>
           </div>

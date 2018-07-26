@@ -14,7 +14,9 @@ export class VistaViajesComponent implements OnInit {
   constructor(private auth: AuthService, private servicioViajes: ViajesService) { }
   viajes:viajeMaps[];
   viaje: viajeMaps;
+  cargando:Boolean;
   ngOnInit() {
+    
     this.viajes = new Array();
     if(this.auth.obtenerToken().data.tipo == 'encargado'){
       this.todosViajes();
@@ -28,6 +30,7 @@ export class VistaViajesComponent implements OnInit {
   }
 
   public todosViajes(){
+    this.cargando = true;
     this.servicioViajes.obternerViajes()
     .subscribe(data =>{
       console.log(data);
@@ -46,10 +49,14 @@ export class VistaViajesComponent implements OnInit {
             destino,
             element.premium));
       });
+      setTimeout(() => {
+        this.cargando = false;
+      }, 2500);          
     });
   }
 
   public viajesCliente(){
+    this.cargando = true;
     this.servicioViajes.obtenerViajesClientes(this.auth.obtenerToken().data.id)
     .subscribe(data => {
       console.log(data);
@@ -67,10 +74,14 @@ export class VistaViajesComponent implements OnInit {
             origen,
             destino,
             element.premium));
-      });    
+      });
+      setTimeout(() => {
+        this.cargando = false;
+      }, 2500);
     })
   }
   public viajesRemiseros(){
+    this.cargando = true;
     this.servicioViajes.obtenerViajesRemiseros(this.auth.obtenerToken().data.id)
     .subscribe(data =>{
       data.forEach(element => {
@@ -90,6 +101,9 @@ export class VistaViajesComponent implements OnInit {
           )
         );
       })
+      setTimeout(() => {
+        this.cargando = false;
+      }, 2500);      
     })
   }
 

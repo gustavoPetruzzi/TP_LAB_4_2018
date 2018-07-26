@@ -6,6 +6,7 @@ export class viajeMaps extends viaje {
     hora:string;
     estado:string;
     idCliente:number;
+    idRemisero:number;
     monto:number;
     origen:lugar;
     destino:lugar;

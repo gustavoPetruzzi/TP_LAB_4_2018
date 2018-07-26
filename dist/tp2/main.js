@@ -138,17 +138,34 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var primeng_message__WEBPACK_IMPORTED_MODULE_36___default = /*#__PURE__*/__webpack_require__.n(primeng_message__WEBPACK_IMPORTED_MODULE_36__);
 /* harmony import */ var primeng_dropdown__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! primeng/dropdown */ "./node_modules/primeng/dropdown.js");
 /* harmony import */ var primeng_dropdown__WEBPACK_IMPORTED_MODULE_37___default = /*#__PURE__*/__webpack_require__.n(primeng_dropdown__WEBPACK_IMPORTED_MODULE_37__);
-/* harmony import */ var primeng_inputtextarea__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! primeng/inputtextarea */ "./node_modules/primeng/inputtextarea.js");
-/* harmony import */ var primeng_inputtextarea__WEBPACK_IMPORTED_MODULE_38___default = /*#__PURE__*/__webpack_require__.n(primeng_inputtextarea__WEBPACK_IMPORTED_MODULE_38__);
-/* harmony import */ var primeng_tooltip__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! primeng/tooltip */ "./node_modules/primeng/tooltip.js");
-/* harmony import */ var primeng_tooltip__WEBPACK_IMPORTED_MODULE_39___default = /*#__PURE__*/__webpack_require__.n(primeng_tooltip__WEBPACK_IMPORTED_MODULE_39__);
-/* harmony import */ var primeng_button__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! primeng/button */ "./node_modules/primeng/button.js");
-/* harmony import */ var primeng_button__WEBPACK_IMPORTED_MODULE_40___default = /*#__PURE__*/__webpack_require__.n(primeng_button__WEBPACK_IMPORTED_MODULE_40__);
-/* harmony import */ var _componentes_clientes_cliente_modificar_cliente_modificar_component__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ./componentes/clientes/cliente-modificar/cliente-modificar.component */ "./src/app/componentes/clientes/cliente-modificar/cliente-modificar.component.ts");
-/* harmony import */ var _componentes_clientes_cliente_cancelar_cliente_cancelar_component__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ./componentes/clientes/cliente-cancelar/cliente-cancelar.component */ "./src/app/componentes/clientes/cliente-cancelar/cliente-cancelar.component.ts");
-/* harmony import */ var _componentes_remiseros_remisero_rechazar_remisero_rechazar_component__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! ./componentes/remiseros/remisero-rechazar/remisero-rechazar.component */ "./src/app/componentes/remiseros/remisero-rechazar/remisero-rechazar.component.ts");
-/* harmony import */ var primeng_captcha__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! primeng/captcha */ "./node_modules/primeng/captcha.js");
-/* harmony import */ var primeng_captcha__WEBPACK_IMPORTED_MODULE_44___default = /*#__PURE__*/__webpack_require__.n(primeng_captcha__WEBPACK_IMPORTED_MODULE_44__);
+/* harmony import */ var primeng_fileupload__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! primeng/fileupload */ "./node_modules/primeng/fileupload.js");
+/* harmony import */ var primeng_fileupload__WEBPACK_IMPORTED_MODULE_38___default = /*#__PURE__*/__webpack_require__.n(primeng_fileupload__WEBPACK_IMPORTED_MODULE_38__);
+/* harmony import */ var primeng_inputtextarea__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! primeng/inputtextarea */ "./node_modules/primeng/inputtextarea.js");
+/* harmony import */ var primeng_inputtextarea__WEBPACK_IMPORTED_MODULE_39___default = /*#__PURE__*/__webpack_require__.n(primeng_inputtextarea__WEBPACK_IMPORTED_MODULE_39__);
+/* harmony import */ var primeng_tooltip__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! primeng/tooltip */ "./node_modules/primeng/tooltip.js");
+/* harmony import */ var primeng_tooltip__WEBPACK_IMPORTED_MODULE_40___default = /*#__PURE__*/__webpack_require__.n(primeng_tooltip__WEBPACK_IMPORTED_MODULE_40__);
+/* harmony import */ var primeng_button__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! primeng/button */ "./node_modules/primeng/button.js");
+/* harmony import */ var primeng_button__WEBPACK_IMPORTED_MODULE_41___default = /*#__PURE__*/__webpack_require__.n(primeng_button__WEBPACK_IMPORTED_MODULE_41__);
+/* harmony import */ var _componentes_clientes_cliente_modificar_cliente_modificar_component__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ./componentes/clientes/cliente-modificar/cliente-modificar.component */ "./src/app/componentes/clientes/cliente-modificar/cliente-modificar.component.ts");
+/* harmony import */ var _componentes_clientes_cliente_cancelar_cliente_cancelar_component__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! ./componentes/clientes/cliente-cancelar/cliente-cancelar.component */ "./src/app/componentes/clientes/cliente-cancelar/cliente-cancelar.component.ts");
+/* harmony import */ var _componentes_remiseros_remisero_rechazar_remisero_rechazar_component__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! ./componentes/remiseros/remisero-rechazar/remisero-rechazar.component */ "./src/app/componentes/remiseros/remisero-rechazar/remisero-rechazar.component.ts");
+/* harmony import */ var primeng_captcha__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(/*! primeng/captcha */ "./node_modules/primeng/captcha.js");
+/* harmony import */ var primeng_captcha__WEBPACK_IMPORTED_MODULE_45___default = /*#__PURE__*/__webpack_require__.n(primeng_captcha__WEBPACK_IMPORTED_MODULE_45__);
+/* harmony import */ var _componentes_registro_registro_cliente_registro_cliente_component__WEBPACK_IMPORTED_MODULE_46__ = __webpack_require__(/*! ./componentes/registro/registro-cliente/registro-cliente.component */ "./src/app/componentes/registro/registro-cliente/registro-cliente.component.ts");
+/* harmony import */ var _componentes_configuracion_cuenta_configuracion_cuenta_component__WEBPACK_IMPORTED_MODULE_47__ = __webpack_require__(/*! ./componentes/configuracion-cuenta/configuracion-cuenta.component */ "./src/app/componentes/configuracion-cuenta/configuracion-cuenta.component.ts");
+/* harmony import */ var _componentes_remiseros_remiseros_finalizar_remiseros_finalizar_component__WEBPACK_IMPORTED_MODULE_48__ = __webpack_require__(/*! ./componentes/remiseros/remiseros-finalizar/remiseros-finalizar.component */ "./src/app/componentes/remiseros/remiseros-finalizar/remiseros-finalizar.component.ts");
+/* harmony import */ var _componentes_encargado_asignar_viaje_asignar_viaje_component__WEBPACK_IMPORTED_MODULE_49__ = __webpack_require__(/*! ./componentes/encargado/asignar-viaje/asignar-viaje.component */ "./src/app/componentes/encargado/asignar-viaje/asignar-viaje.component.ts");
+/* harmony import */ var _ocupado_directive__WEBPACK_IMPORTED_MODULE_50__ = __webpack_require__(/*! ./ocupado.directive */ "./src/app/ocupado.directive.ts");
+/* harmony import */ var _componentes_clientes_cliente_encuesta_cliente_encuesta_component__WEBPACK_IMPORTED_MODULE_51__ = __webpack_require__(/*! ./componentes/clientes/cliente-encuesta/cliente-encuesta.component */ "./src/app/componentes/clientes/cliente-encuesta/cliente-encuesta.component.ts");
+/* harmony import */ var primeng_rating__WEBPACK_IMPORTED_MODULE_52__ = __webpack_require__(/*! primeng/rating */ "./node_modules/primeng/rating.js");
+/* harmony import */ var primeng_rating__WEBPACK_IMPORTED_MODULE_52___default = /*#__PURE__*/__webpack_require__.n(primeng_rating__WEBPACK_IMPORTED_MODULE_52__);
+/* harmony import */ var primeng_multiselect__WEBPACK_IMPORTED_MODULE_53__ = __webpack_require__(/*! primeng/multiselect */ "./node_modules/primeng/multiselect.js");
+/* harmony import */ var primeng_multiselect__WEBPACK_IMPORTED_MODULE_53___default = /*#__PURE__*/__webpack_require__.n(primeng_multiselect__WEBPACK_IMPORTED_MODULE_53__);
+/* harmony import */ var primeng_slider__WEBPACK_IMPORTED_MODULE_54__ = __webpack_require__(/*! primeng/slider */ "./node_modules/primeng/slider.js");
+/* harmony import */ var primeng_slider__WEBPACK_IMPORTED_MODULE_54___default = /*#__PURE__*/__webpack_require__.n(primeng_slider__WEBPACK_IMPORTED_MODULE_54__);
+/* harmony import */ var primeng_chart__WEBPACK_IMPORTED_MODULE_55__ = __webpack_require__(/*! primeng/chart */ "./node_modules/primeng/chart.js");
+/* harmony import */ var primeng_chart__WEBPACK_IMPORTED_MODULE_55___default = /*#__PURE__*/__webpack_require__.n(primeng_chart__WEBPACK_IMPORTED_MODULE_55__);
+/* harmony import */ var _componentes_encargado_estadisticas_ganancias_ganancias_component__WEBPACK_IMPORTED_MODULE_56__ = __webpack_require__(/*! ./componentes/encargado/estadisticas/ganancias/ganancias.component */ "./src/app/componentes/encargado/estadisticas/ganancias/ganancias.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -175,6 +192,18 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 //reCaptcha
 
 // calendario
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -232,9 +261,16 @@ var AppModule = /** @class */ (function () {
                 _pipes_viaje_pipe__WEBPACK_IMPORTED_MODULE_32__["ViajePipe"],
                 _componentes_viajes_ver_viaje_ver_viaje_component__WEBPACK_IMPORTED_MODULE_33__["VerViajeComponent"],
                 _componentes_encargado_remiseros_nuevo_remiseros_nuevo_component__WEBPACK_IMPORTED_MODULE_34__["RemiserosNuevoComponent"],
-                _componentes_clientes_cliente_modificar_cliente_modificar_component__WEBPACK_IMPORTED_MODULE_41__["ClienteModificarComponent"],
-                _componentes_clientes_cliente_cancelar_cliente_cancelar_component__WEBPACK_IMPORTED_MODULE_42__["ClienteCancelarComponent"],
-                _componentes_remiseros_remisero_rechazar_remisero_rechazar_component__WEBPACK_IMPORTED_MODULE_43__["RemiseroRechazarComponent"]
+                _componentes_clientes_cliente_modificar_cliente_modificar_component__WEBPACK_IMPORTED_MODULE_42__["ClienteModificarComponent"],
+                _componentes_clientes_cliente_cancelar_cliente_cancelar_component__WEBPACK_IMPORTED_MODULE_43__["ClienteCancelarComponent"],
+                _componentes_remiseros_remisero_rechazar_remisero_rechazar_component__WEBPACK_IMPORTED_MODULE_44__["RemiseroRechazarComponent"],
+                _componentes_registro_registro_cliente_registro_cliente_component__WEBPACK_IMPORTED_MODULE_46__["RegistroClienteComponent"],
+                _componentes_configuracion_cuenta_configuracion_cuenta_component__WEBPACK_IMPORTED_MODULE_47__["ConfiguracionCuentaComponent"],
+                _componentes_remiseros_remiseros_finalizar_remiseros_finalizar_component__WEBPACK_IMPORTED_MODULE_48__["RemiserosFinalizarComponent"],
+                _componentes_encargado_asignar_viaje_asignar_viaje_component__WEBPACK_IMPORTED_MODULE_49__["AsignarViajeComponent"],
+                _ocupado_directive__WEBPACK_IMPORTED_MODULE_50__["OcupadoDirective"],
+                _componentes_clientes_cliente_encuesta_cliente_encuesta_component__WEBPACK_IMPORTED_MODULE_51__["ClienteEncuestaComponent"],
+                _componentes_encargado_estadisticas_ganancias_ganancias_component__WEBPACK_IMPORTED_MODULE_56__["GananciasComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
@@ -265,16 +301,89 @@ var AppModule = /** @class */ (function () {
                 primeng_message__WEBPACK_IMPORTED_MODULE_36__["MessageModule"],
                 primeng_messages__WEBPACK_IMPORTED_MODULE_35__["MessagesModule"],
                 primeng_dropdown__WEBPACK_IMPORTED_MODULE_37__["DropdownModule"],
-                primeng_inputtextarea__WEBPACK_IMPORTED_MODULE_38__["InputTextareaModule"],
-                primeng_tooltip__WEBPACK_IMPORTED_MODULE_39__["TooltipModule"],
-                primeng_button__WEBPACK_IMPORTED_MODULE_40__["ButtonModule"],
-                primeng_captcha__WEBPACK_IMPORTED_MODULE_44__["CaptchaModule"]
+                primeng_inputtextarea__WEBPACK_IMPORTED_MODULE_39__["InputTextareaModule"],
+                primeng_tooltip__WEBPACK_IMPORTED_MODULE_40__["TooltipModule"],
+                primeng_button__WEBPACK_IMPORTED_MODULE_41__["ButtonModule"],
+                primeng_captcha__WEBPACK_IMPORTED_MODULE_45__["CaptchaModule"],
+                primeng_fileupload__WEBPACK_IMPORTED_MODULE_38__["FileUploadModule"],
+                primeng_rating__WEBPACK_IMPORTED_MODULE_52__["RatingModule"],
+                primeng_multiselect__WEBPACK_IMPORTED_MODULE_53__["MultiSelectModule"],
+                primeng_slider__WEBPACK_IMPORTED_MODULE_54__["SliderModule"],
+                primeng_chart__WEBPACK_IMPORTED_MODULE_55__["ChartModule"],
             ],
             providers: [],
             bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_2__["AppComponent"]]
         })
     ], AppModule);
     return AppModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/clases/captcha.ts":
+/*!***********************************!*\
+  !*** ./src/app/clases/captcha.ts ***!
+  \***********************************/
+/*! exports provided: captcha */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "captcha", function() { return captcha; });
+var captcha = /** @class */ (function () {
+    function captcha() {
+        this.numero1 = Math.floor((Math.random() * 10) + 1);
+        this.numero2 = Math.floor((Math.random() * 10) + 1);
+    }
+    captcha.prototype.cambiarCaptcha = function () {
+        this.numero1 = Math.floor((Math.random() * 10) + 1);
+        this.numero2 = Math.floor((Math.random() * 10) + 1);
+    };
+    captcha.prototype.resultado = function () {
+        return this.numero1 + this.numero2;
+    };
+    captcha.prototype.capcha = function () {
+        return this.numero1 + " + " + this.numero2 + " ";
+    };
+    return captcha;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/clases/encuesta.ts":
+/*!************************************!*\
+  !*** ./src/app/clases/encuesta.ts ***!
+  \************************************/
+/*! exports provided: encuesta */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "encuesta", function() { return encuesta; });
+var encuesta = /** @class */ (function () {
+    function encuesta(idViaje, idRemisero, idVehiculo, remisero, estado_vehiculo, recomendacion, viaje, conductor, vehiculo, camino, reserva, cobranza, comentario, foto_1, foto_2, foto_3) {
+        this.idViaje = idViaje;
+        this.idRemisero = idRemisero;
+        this.idVehiculo = idVehiculo;
+        this.remisero = remisero;
+        this.estado_vehiculo = estado_vehiculo;
+        this.recomendacion = recomendacion;
+        this.viaje = viaje;
+        this.conductor = conductor;
+        this.vehiculo = vehiculo;
+        this.camino = camino;
+        this.reserva = reserva;
+        this.cobranza = cobranza;
+        this.comentario = comentario;
+        this.foto_1 = foto_1;
+        this.foto_2 = foto_2;
+        this.foto_3 = foto_3;
+    }
+    return encuesta;
 }());
 
 
@@ -311,6 +420,32 @@ var lugar = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/clases/remisero.ts":
+/*!************************************!*\
+  !*** ./src/app/clases/remisero.ts ***!
+  \************************************/
+/*! exports provided: remisero */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "remisero", function() { return remisero; });
+var remisero = /** @class */ (function () {
+    function remisero(nombre, apellido, usuario, vehiculo) {
+        if (vehiculo) {
+            this.vehiculo = vehiculo;
+        }
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.usuario = usuario;
+    }
+    return remisero;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/clases/usuario.ts":
 /*!***********************************!*\
   !*** ./src/app/clases/usuario.ts ***!
@@ -335,6 +470,56 @@ var usuario = /** @class */ (function () {
     }
     return usuario;
 }());
+
+
+
+/***/ }),
+
+/***/ "./src/app/clases/usuarioCompleto.ts":
+/*!*******************************************!*\
+  !*** ./src/app/clases/usuarioCompleto.ts ***!
+  \*******************************************/
+/*! exports provided: UsuarioCompleto */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UsuarioCompleto", function() { return UsuarioCompleto; });
+/* harmony import */ var _usuario__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./usuario */ "./src/app/clases/usuario.ts");
+var __extends = (undefined && undefined.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+
+var UsuarioCompleto = /** @class */ (function (_super) {
+    __extends(UsuarioCompleto, _super);
+    function UsuarioCompleto(id, nombre, apellido, usuario, password, foto, tipo) {
+        var _this = this;
+        if (tipo) {
+            _this = _super.call(this, usuario, password, tipo, id) || this;
+            _this.nombre = nombre;
+            _this.apellido = apellido;
+            _this.foto = foto;
+        }
+        else {
+            _this = _super.call(this, usuario, password, "NN", id) || this;
+            _this.foto = foto;
+        }
+        return _this;
+    }
+    UsuarioCompleto.prototype.obtenerFoto = function () {
+        //let ruta = "http://localhost/backendTp2/fotos/";
+        var ruta = "https://remiseriagustavopetruzzi.000webhostapp.com/fotos/";
+        return ruta + this.foto;
+    };
+    return UsuarioCompleto;
+}(_usuario__WEBPACK_IMPORTED_MODULE_0__["usuario"]));
 
 
 
@@ -498,7 +683,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<app-barralateral></app-barralateral>\n   <div class=\"container\">\n        <div class=\"jumbotron\">\n            <div class=\"row row-center\">\n                <div class=\"col-sm d-flex align-items-stretch\" *ngIf=\"viajeEncurso\">\n                    <div class=\"card\" style=\"width: 18rem;\" (click)=\"ir('curso')\" >\n                        <img class=\"card-img-top\" src=\"../assets/remiseros/encurso.jpeg\" alt=\"Card image cap\">\n                        <div class=\"card-body\">\n                            <h5 class=\"card-title\">Viaje en curso</h5>\n                            <p class=\"card-text\">¡Mira los detalles del viaje que estas realizando!</p>\n                        </div>\n                    </div>                    \n                </div>\n                <div class=\"col-sm d-flex align-items-stretch\">\n                    <div class=\"card \" style=\"width: 18rem;\" (click)=\"ir('nuevo')\" >\n                        <img class=\"card-img-top\" src=\"../assets/remiseros/encurso.jpeg\" alt=\"\">\n                        <div class=\"card-body\">\n                            <h5 class=\"card-title text-center\">Nuevo viaje</h5>\n                            <p class=\"card-text text-center\">Reserva un nuevo Viaje!</p>\n                        </div>\n                    </div>                    \n                </div>                \n                <div class=\"col-sm d-flex align-items-stretch \">\n                    <div class=\"card\" style=\"width: 18rem;\" (click)=\"ir('reservados')\">\n                        <img class=\"card-img-top\" src=\".../100px180/\" alt=\"Card image cap\">\n                        <div class=\"card-body\">\n                            <h5 class=\"card-title\">Viajes reservados</h5>\n                            <p class=\"card-text\"> Ve la lista de los proximos viajes</p>\n                        </div>\n                    </div>                    \n                </div>\n                <div class=\"col-sm d-flex align-items-stretch\">\n                    <div class=\"card\" style=\"width: 18rem;\" (click)=\"ir('terminados')\" >\n                        <img class=\"card-img-top\" src=\".../100px180/\" alt=\"Card image cap\">\n                        <div class=\"card-body\">\n                            <h5 class=\"card-title\">Viajes Terminados</h5>\n                            <p class=\"card-text\"> Ve la lista de los viajes que ya realizaste</p>\n                        </div>\n                    </div>                      \n                </div>\n                <div class=\"col-sm d-flex align-items-stretch col-center\">\n                    <div class=\"card\" style=\"width: 18rem; \" (click)=\"ir('asignados')\" >\n                        <img class=\"card-img-top\" src=\"../assets/configuracion.jpg\" alt=\"Card image cap\">\n                        <div class=\"card-body\">\n                            <h5 class=\"card-title\">Configuracion y datos de la cuenta</h5>\n                            <p class=\"card-text\">Consulta tus datos y configura tu cuenta</p>\n                        </div>\n                    </div>                      \n                </div>\n            </div>                        \n        </div>\n   </div>"
+module.exports = "<app-barralateral></app-barralateral>\n   <div class=\"container\">\n        <div class=\"jumbotron\">\n            <div class=\"row row-center\">\n                <div class=\"col-sm d-flex align-items-stretch\" *ngIf=\"viajeEncurso\">\n                    <div class=\"card\" style=\"width: 18rem;\" (click)=\"ir('curso')\" >\n                        <img class=\"card-img-top\" height=\"200\" width=\"300\" src=\"../assets/remiseros/encurso.jpeg\" alt=\"Card image cap\">\n                        <div class=\"card-body\">\n                            <h5 class=\"card-title\">Viaje en curso</h5>\n                            <p class=\"card-text\">¡Mira los detalles del viaje que estas realizando!</p>\n                        </div>\n                    </div>                    \n                </div>\n                <div class=\"col-sm d-flex align-items-stretch\">\n                    <div class=\"card \" style=\"width: 18rem;\" (click)=\"ir('nuevo')\" >\n                        <img class=\"card-img-top\" height=\"200\" width=\"300\" src=\"../assets/remiseros/encurso.jpeg\" alt=\"\">\n                        <div class=\"card-body\">\n                            <h5 class=\"card-title text-center\">Nuevo viaje</h5>\n                            <p class=\"card-text text-center\">Reserva un nuevo Viaje!</p>\n                        </div>\n                    </div>                    \n                </div>                \n                <div class=\"col-sm d-flex align-items-stretch \">\n                    <div class=\"card\" style=\"width: 18rem;\" (click)=\"ir('viajes')\">\n                        <img class=\"card-img-top\" height=\"200\" width=\"300\" src=\"../assets/remiseros/viaje.jpg\" alt=\"Card image cap\">\n                        <div class=\"card-body\">\n                            <h5 class=\"card-title\">Viajes</h5>\n                            <p class=\"card-text\"> ¡Ve la lista de los tus viajes!</p>\n                        </div>\n                    </div>                    \n                </div>\n                <div class=\"col-sm d-flex align-items-stretch col-center\">\n                    <div class=\"card\" style=\"width: 18rem; \" (click)=\"ir('configuracion')\" >\n                        <img class=\"card-img-top\" height=\"200\" width=\"300\" src=\"../assets/configuracion.jpg\" alt=\"Card image cap\">\n                        <div class=\"card-body\">\n                            <h5 class=\"card-title\">Configuracion y datos de la cuenta</h5>\n                            <p class=\"card-text\">Consulta tus datos y configura tu cuenta</p>\n                        </div>\n                    </div>                      \n                </div>\n            </div>                        \n        </div>\n   </div>"
 
 /***/ }),
 
@@ -533,11 +718,14 @@ var ClienteComponent = /** @class */ (function () {
     };
     ClienteComponent.prototype.ir = function (lugar) {
         switch (lugar) {
-            case 'reservados':
-                this.ruteador.navigate(['/cliente/reservados']);
+            case 'viajes':
+                this.ruteador.navigate(['/viajes']);
                 break;
             case 'nuevo':
                 this.ruteador.navigate(['/cliente/nuevo']);
+                break;
+            case 'configuracion':
+                this.ruteador.navigate(['/cuenta']);
                 break;
             default:
                 break;
@@ -602,19 +790,20 @@ var RutasRemisero = [
     { path: '/remisero', title: 'Menu principal', icon: 'pe-7s-graph', class: '' },
     { path: '/viajes', title: 'Viajes', icon: 'pe-7s-graph', class: '' },
     { path: '/vehiculos', title: 'Vehiculo', icon: 'pe-7s-user', class: '' },
-    { path: '/error', title: 'Configuracion', icon: 'pe-7s-science', class: '' },
+    { path: '/cuenta', title: 'Configuracion', icon: 'pe-7s-science', class: '' },
 ];
 var RutasCliente = [
     { path: '/cliente', title: 'Menu Principal', icon: 'pe-7s-graph', class: '' },
     { path: '/cliente/nuevo', title: 'Nuevo Viaje', icon: 'pe-7s-graph', class: '' },
     { path: '/viajes', title: 'Viajes', icon: 'pe-7s-user', class: '' },
-    { path: '/error', title: 'Configuracion', icon: 'pe-7s-rocket', class: 'active-pro' },
+    { path: '/cuenta', title: 'Configuracion', icon: 'pe-7s-rocket', class: 'active-pro' },
 ];
 var RutasEncargado = [
     { path: '/encargado', title: 'Menu Principal', icon: 'pe-7s-graph', class: '' },
     { path: '/encargado/remiseros', title: 'Remiseros', icon: 'pe-7s-user', class: '' },
     { path: '/encargado/vehiculos', title: 'Vehiculos', icon: 'pe-7s-science', class: '' },
     { path: '/viajes', title: 'Viajes', icon: 'pe-7s-science', class: '' },
+    { path: '/encargado/ganancias', title: 'Ganancias', icon: 'pe-7s-science', class: '' },
 ];
 var RutasPruebas = [];
 var BarralateralComponent = /** @class */ (function () {
@@ -691,7 +880,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<app-barralateral></app-barralateral>\n<div class=\"container\">\n  <div class=\"jumbotron\">\n    <div class=\"row\" *ngIf=\"cargoBien\">\n      <div class=\"col-sm\">\n        <h3 class=\" text-center first\"> Motivo: </h3>\n        <form [formGroup]=\"cancelarForm\" class=\"text-center\">\n          <div class=\"row justify-content-center\">\n            <p-dropdown [options]=\"motivos\" formControlName=\"motivo\"></p-dropdown>  \n          </div>\n          <div class=\"row justify-content-center\">\n            <textarea [rows]=\"12\" [cols]=\"50\" autoResize=\"autoResize\" pInputTextArea formControlName=\"mensaje\" pTooltip=\"minimo: 20 caracteres, maximo 159 caracteres\"></textarea>\n          </div>\n          <div class=\"row justify-content-center\">\n            <button (click)=\"cancelarViaje()\" [hidden]=\"cancelando || cancelado\" class=\"btn btn-primary\" [disabled]=\"!cancelarForm.valid\" > <i class=\"pi pi-check\"></i> Enviar</button>\n            <button (click)=\"volver()\" [hidden]=\"cancelando || cancelado\" class=\"btn btn-danger\" > <i class=\"pi pi-ban\"></i> Cancelar</button>\n            <i [hidden]=\"!cancelando\" class=\"pi pi-spin pi-spinner\" style=\"font-size: 3em\"></i>\n            <button [hidden]=\"!cancelado\" class=\"btn btn-primary btn-block\" (click)=\"volver()\">Menu principal</button>\n          </div>\n        </form>\n      </div>\n    </div>\n    <div class=\"row\">\n      <div class=\"col-sm\" *ngIf=\"!cargoBien\">\n        <h1 class=\"text-center\"> Hubo un error al procesar lo pedido </h1>\n      </div>\n    </div>\n  </div>\n</div>"
+module.exports = "<app-barralateral></app-barralateral>\n<div class=\"container\">\n  <div class=\"jumbotron\">\n    <div class=\"row\" *ngIf=\"cargoBien\">\n      <div class=\"col-sm\">\n        <h3 class=\" text-center first\"> Motivo: </h3>\n        <form [formGroup]=\"cancelarForm\" class=\"text-center\">\n          <div class=\"row justify-content-center\">\n            <p-dropdown [options]=\"motivos\" formControlName=\"motivo\"></p-dropdown>  \n          </div>\n          <div class=\"row justify-content-center\">\n            <textarea [rows]=\"12\" [cols]=\"50\" autoResize=\"autoResize\" pInputTextArea formControlName=\"mensaje\" pTooltip=\"minimo: 20 caracteres, maximo 159 caracteres\"></textarea>\n          </div>\n          <div class=\"row justify-content-center\">\n            <button (click)=\"cancelarViaje()\" [hidden]=\"cancelando || cancelado\" class=\"btn btn-primary btn-block\" [disabled]=\"!cancelarForm.valid\" > <i class=\"pi pi-check\"></i> Enviar</button>\n            <i [hidden]=\"!cancelando\" class=\"pi pi-spin pi-spinner\" style=\"font-size: 3em\"></i>\n            <button [hidden]=\"!cancelado\" class=\"btn btn-primary btn-block\" (click)=\"volver()\">Menu principal</button>\n          </div>\n        </form>\n      </div>\n    </div>\n    <div class=\"row\">\n      <div class=\"col-sm\" *ngIf=\"!cargoBien\">\n        <h1 class=\"text-center\"> Hubo un error al procesar lo pedido </h1>\n      </div>\n    </div>\n  </div>\n</div>"
 
 /***/ }),
 
@@ -791,6 +980,253 @@ var ClienteCancelarComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/componentes/clientes/cliente-encuesta/cliente-encuesta.component.css":
+/*!**************************************************************************************!*\
+  !*** ./src/app/componentes/clientes/cliente-encuesta/cliente-encuesta.component.css ***!
+  \**************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/componentes/clientes/cliente-encuesta/cliente-encuesta.component.html":
+/*!***************************************************************************************!*\
+  !*** ./src/app/componentes/clientes/cliente-encuesta/cliente-encuesta.component.html ***!
+  \***************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<app-barralateral></app-barralateral>\n<div class=\"container\">\n  <div class=\"jumbotron\">\n    <p-messages [(value)]=\"msgs\"></p-messages>\n    <div class=\"row\" *ngIf=\"!cargando && !yaHecha\">\n      <div class=\"col-sm-4 offset-sm-4\">\n        <h3 class=\"text-center\"> ¡Completa la encuesta!</h3>\n        <form [formGroup]=\"encuestaForm\" class=\"text-center\">\n          <div class=\"form-group\">\n            \n            <label class=\"center-block\">¿Como calificaria al remisero?\n              <p-rating formControlName=\"puntajeRemisero\" [cancel]=\"false\"></p-rating>\n              <div [hidden]=\"!this.encuestaForm.controls['puntajeRemisero'].invalid || this.encuestaForm.controls['puntajeRemisero'].pristine\" class=\" alert alert-danger\">\n                <div [hidden]=\"!this.encuestaForm.controls['puntajeRemisero'].hasError('required')\"> Esta calificacion es requerida</div>\n              </div>\n            </label>\n\n            <label class=\"center-block\">¿Como calificaria el estado del vehiculo?\n              <p-rating formControlName=\"puntajeVehiculo\" [cancel]=\"false\"></p-rating>\n              <div [hidden]=\"!this.encuestaForm.controls['puntajeVehiculo'].invalid || this.encuestaForm.controls['puntajeVehiculo'].pristine\" class=\" alert alert-danger\">\n                <div [hidden]=\"!this.encuestaForm.controls['puntajeVehiculo'].hasError('required')\"> Esta calificacion es requerida</div>\n              </div>\n            </label>\n            <br>\n\n            <label class=\"center-block\">¿Recomendaria la remiseria a un amigo, familiar o conocido?\n              <br>\n              <p-radioButton name=\"groupname\" value=\"1\" label=\"Si\" formControlName=\"recomendaria\"></p-radioButton>            \n              <br>\n              <p-radioButton name=\"groupname\" value=\"0\" label=\"No\" formControlName=\"recomendaria\"></p-radioButton>            \n            </label>\n\n            <label class=\"center-block\">¿Cual o cuales fueron los mejores aspectos del viaje? \n              <br>\n              <p-multiSelect [options]=\"mejores\" formControlName=\"seleccionados\"></p-multiSelect>\n              <div [hidden]=\"!this.encuestaForm.controls['seleccionados'].invalid || this.encuestaForm.controls['seleccionados'].pristine\" class=\"alert alert-danger\">\n                <div [hidden]=\"!this.encuestaForm.controls['seleccionados'].hasError('required')\"> Esta calificacion es requerida </div>\n              </div>\n            </label>\n\n            <label class=\"center-block\">¿Como calificaria el sistema de reserva de viaje?\n              <p-slider formControlName=\"puntajeReserva\"></p-slider>\n              <div [hidden]=\"!this.encuestaForm.controls['puntajeReserva'].invalid || this.encuestaForm.controls['puntajeReserva'].pristine\" class=\"alert alert-danger\">\n                <div [hidden]=\"!this.encuestaForm.controls['puntajeReserva'].hasError('required')\"> Esta calificacion es requerida </div>\n              </div>\n            </label>\n            <label class=\"center-block\">¿Como calificaria el sistema de cobranza de viaje?\n              <p-slider formControlName=\"puntajeCobranza\"></p-slider>\n              <div [hidden]=\"!this.encuestaForm.controls['puntajeCobranza'].invalid || this.encuestaForm.controls['puntajeCobranza'].pristine\" class=\"alert alert-danger\">\n                <div [hidden]=\"!this.encuestaForm.controls['puntajeCobranza'].hasError('required')\"> Esta calificacion es requerida </div>\n              </div>\n            </label>            \n            <br>\n            <label class=\"center-block\">Realiza algun comentario sobre nuestro servicio\n              <textarea [rows]=\"12\" [cols]=\"50\" autoResize=\"autoResize\" pInputTextArea formControlName=\"mensaje\" pTooltip=\"minimo: 20 caracteres, maximo 159 caracteres\"></textarea>\n              <div [hidden]=\"!this.encuestaForm.controls['mensaje'].invalid || this.encuestaForm.controls['mensaje'].pristine\" class=\"alert alert-danger\">\n                <div [hidden]=\"!this.encuestaForm.controls['mensaje'].hasError('required')\"> El mensaje es requerido</div>\n                <div [hidden]=\"!this.encuestaForm.controls['mensaje'].hasError('maxLenght')\"> La cantidad maxima de caracteres es 159</div>\n              </div>\n            </label>\n          </div>\n          <i [hidden]=\"!subiendo\" class=\"pi pi-spin pi-spinner\" style=\"font-size: 3em\"></i>\n          <button class=\"btn btn-primary btn-block\" [hidden]=\"subiendo || subido\" [disabled]=\"!this.encuestaForm.valid\" (click)=\"subir()\"> Enviar</button>\n        </form>\n      </div>\n    </div>\n    <div class=\"row\" *ngIf=\"!cargando && yaHecha\">\n      <h2 class=\"text-center\"> ¡Ya ha realizado la encuesta para este viaje! </h2>\n    </div>\n    <div class=\"row\" *ngIf=\"cargando\" >\n      <div class=\"col-sm-4 offset-sm-4\">\n        <div class=\"lds-css ng-scope\">\n          <div class=\"lds-blocks\" style=\"100%;height:100%\"><div style=\"left:38px;top:38px;animation-delay:0s\"></div>\n          <div style=\"left:80px;top:38px;animation-delay:0.125s\"></div>\n          <div style=\"left:122px;top:38px;animation-delay:0.25s\"></div>\n          <div style=\"left:38px;top:80px;animation-delay:0.875s\"></div>\n          <div style=\"left:122px;top:80px;animation-delay:0.375s\"></div>\n          <div style=\"left:38px;top:122px;animation-delay:0.75s\"></div>\n          <div style=\"left:80px;top:122px;animation-delay:0.625s\"></div>\n          <div style=\"left:122px;top:122px;animation-delay:0.5s\"></div>\n        </div>\n        <style type=\"text/css\">\n        \n        @keyframes lds-blocks {\n          0% {\n            background: #72cbfd;\n          }\n          12.5% {\n            background: #72cbfd;\n          }\n          12.625% {\n            background: #0b1d27;\n          }\n          100% {\n            background: #0b1d27;\n          }\n        }\n        @-webkit-keyframes lds-blocks {\n          0% {\n            background: #72cbfd;\n          }\n          12.5% {\n            background: #72cbfd;\n          }\n          12.625% {\n            background: #0b1d27;\n          }\n          100% {\n            background: #0b1d27;\n          }\n        }\n        .lds-blocks {\n          position: relative;\n        }\n        .lds-blocks div {\n          position: absolute;\n          width: 40px;\n          height: 40px;\n          background: #0b1d27;\n          -webkit-animation: lds-blocks 1s linear infinite;\n          animation: lds-blocks 1s linear infinite;\n        }\n        .lds-blocks {\n          width: 200px !important;\n          height: 200px !important;\n          -webkit-transform: translate(-100px, -100px) scale(1) translate(100px, 100px);\n          transform: translate(-100px, -100px) scale(1) translate(100px, 100px);\n        }\n        </style>\n      </div>\n    </div>   \n\n  </div>\n</div>\n"
+
+/***/ }),
+
+/***/ "./src/app/componentes/clientes/cliente-encuesta/cliente-encuesta.component.ts":
+/*!*************************************************************************************!*\
+  !*** ./src/app/componentes/clientes/cliente-encuesta/cliente-encuesta.component.ts ***!
+  \*************************************************************************************/
+/*! exports provided: ClienteEncuestaComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ClienteEncuestaComponent", function() { return ClienteEncuestaComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _clases_viajeMaps__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../clases/viajeMaps */ "./src/app/clases/viajeMaps.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _servicios_viajes_viajes_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../servicios/viajes/viajes.service */ "./src/app/servicios/viajes/viajes.service.ts");
+/* harmony import */ var _servicios_encuesta_encuesta_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../servicios/encuesta/encuesta.service */ "./src/app/servicios/encuesta/encuesta.service.ts");
+/* harmony import */ var _servicios_remiseros_remiseros_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../servicios/remiseros/remiseros.service */ "./src/app/servicios/remiseros/remiseros.service.ts");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
+/* harmony import */ var _clases_encuesta__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../clases/encuesta */ "./src/app/clases/encuesta.ts");
+/* harmony import */ var _clases_remisero__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../clases/remisero */ "./src/app/clases/remisero.ts");
+/* harmony import */ var _clases_lugar__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../../clases/lugar */ "./src/app/clases/lugar.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+
+
+
+
+var ClienteEncuestaComponent = /** @class */ (function () {
+    function ClienteEncuestaComponent(ruteador, ruta, servicioViaje, servicioEncuesta, servicioRemisero) {
+        this.ruteador = ruteador;
+        this.ruta = ruta;
+        this.servicioViaje = servicioViaje;
+        this.servicioEncuesta = servicioEncuesta;
+        this.servicioRemisero = servicioRemisero;
+        this.subido = false;
+        this.mejores = [
+            { label: 'Viaje', value: 'viaje' },
+            { label: 'Conductor', value: 'conductor' },
+            { label: 'Vehiculo', value: 'vehiculo' },
+            { label: 'Camino', value: 'camino' }
+        ];
+    }
+    ClienteEncuestaComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.captchaValido = false;
+        this.cargando = true;
+        this.ruta.params.subscribe(function (params) {
+            _this.idViajeEncuesta = +params['idViaje'];
+            _this.servicioEncuesta.buscar(_this.idViajeEncuesta).subscribe(function (data) {
+                console.log(data);
+                if (data.idViaje != _this.idViajeEncuesta) {
+                    _this.servicioViaje.buscarViaje(_this.idViajeEncuesta)
+                        .subscribe(function (data) {
+                        _this.viajeEncuesta = new _clases_viajeMaps__WEBPACK_IMPORTED_MODULE_1__["viajeMaps"](data.id, data.fecha, data.hora, data.estado, data.idCliente, data.monto, new _clases_lugar__WEBPACK_IMPORTED_MODULE_9__["lugar"](data.origen_lat, data.origen_long), new _clases_lugar__WEBPACK_IMPORTED_MODULE_9__["lugar"](data.destino_lat, data.destino_long), data.premium);
+                        _this.viajeEncuesta.idRemisero = data.idRemisero;
+                        _this.obtenerRemisero(_this.viajeEncuesta.idRemisero);
+                        _this.servicioRemisero.buscarRemiseroVehiculo(_this.viajeEncuesta.idRemisero)
+                            .subscribe(function (data) {
+                            _this.remiseroEncuesta = new _clases_remisero__WEBPACK_IMPORTED_MODULE_8__["remisero"](data.nombre, data.apellido, data.usuario, data.vehiculo);
+                            _this.remiseroEncuesta.id = data.id;
+                            console.log('remisero');
+                            console.log(data);
+                            setTimeout(function () {
+                                _this.cargando = false;
+                            }, 1500);
+                        });
+                        setTimeout(function () {
+                            _this.cargando = false;
+                        }, 1500);
+                    });
+                }
+                else {
+                    _this.cargando = false;
+                    _this.mostrarMensaje('error', '¡Error!', '¡La encuesta ya fue realizada!');
+                    setTimeout(function () {
+                        _this.ruteador.navigate(['/cliente']);
+                    }, 1500);
+                }
+            });
+        });
+        this.encuestaForm = new _angular_forms__WEBPACK_IMPORTED_MODULE_6__["FormGroup"]({
+            puntajeRemisero: new _angular_forms__WEBPACK_IMPORTED_MODULE_6__["FormControl"]('', [
+                _angular_forms__WEBPACK_IMPORTED_MODULE_6__["Validators"].required
+            ]),
+            puntajeVehiculo: new _angular_forms__WEBPACK_IMPORTED_MODULE_6__["FormControl"]('', [
+                _angular_forms__WEBPACK_IMPORTED_MODULE_6__["Validators"].required,
+            ]),
+            recomendaria: new _angular_forms__WEBPACK_IMPORTED_MODULE_6__["FormControl"]('', [
+                _angular_forms__WEBPACK_IMPORTED_MODULE_6__["Validators"].required
+            ]),
+            seleccionados: new _angular_forms__WEBPACK_IMPORTED_MODULE_6__["FormControl"]('', [
+                _angular_forms__WEBPACK_IMPORTED_MODULE_6__["Validators"].required
+            ]),
+            puntajeReserva: new _angular_forms__WEBPACK_IMPORTED_MODULE_6__["FormControl"]('', [
+                _angular_forms__WEBPACK_IMPORTED_MODULE_6__["Validators"].required
+            ]),
+            puntajeCobranza: new _angular_forms__WEBPACK_IMPORTED_MODULE_6__["FormControl"]('', [
+                _angular_forms__WEBPACK_IMPORTED_MODULE_6__["Validators"].required
+            ]),
+            mensaje: new _angular_forms__WEBPACK_IMPORTED_MODULE_6__["FormControl"]('', [
+                _angular_forms__WEBPACK_IMPORTED_MODULE_6__["Validators"].required,
+                _angular_forms__WEBPACK_IMPORTED_MODULE_6__["Validators"].minLength(50),
+                _angular_forms__WEBPACK_IMPORTED_MODULE_6__["Validators"].maxLength(159)
+            ])
+        });
+    };
+    ClienteEncuestaComponent.prototype.subir = function () {
+        var _this = this;
+        if (this.cargoTres) {
+            this.subiendo = true;
+            var arraySeleccionados = this.encuestaForm.controls['seleccionados'].value;
+            arraySeleccionados = this.formatearEsto(arraySeleccionados);
+            var encuestaNueva = new _clases_encuesta__WEBPACK_IMPORTED_MODULE_7__["encuesta"](this.viajeEncuesta.id, this.viajeEncuesta.idRemisero, this.remiseroEncuesta.vehiculo, this.encuestaForm.controls['puntajeRemisero'].value, this.encuestaForm.controls['puntajeVehiculo'].value, this.encuestaForm.controls['recomendaria'].value, arraySeleccionados[0], arraySeleccionados[1], arraySeleccionados[2], arraySeleccionados[3], this.encuestaForm.controls['puntajeReserva'].value, this.encuestaForm.controls['puntajeCobranza'].value, this.encuestaForm.controls['mensaje'].value, this.nombreFoto1, this.nombreFoto2, this.nombreFoto3);
+            this.servicioEncuesta.guardarEncuesta(encuestaNueva)
+                .subscribe(function (data) {
+                setTimeout(function () {
+                    _this.subiendo = false;
+                    _this.subido = true;
+                    _this.mostrarMensaje('success', '¡Exito!', "Se ha enviado su encuesta con exito");
+                }, 1500);
+            });
+        }
+        else {
+            this.mostrarMensaje('error', '¡Error!', 'Es necesario cargar 3 fotos');
+        }
+    };
+    ClienteEncuestaComponent.prototype.obtenerRemisero = function (idRemisero) {
+        var _this = this;
+        this.servicioRemisero.buscarRemiseroVehiculo(idRemisero)
+            .subscribe(function (data) {
+            _this.remiseroEncuesta = new _clases_remisero__WEBPACK_IMPORTED_MODULE_8__["remisero"](data.nombre, data.apellido, data.usuario, data.vehiculo);
+            _this.remiseroEncuesta.id = data.id;
+        });
+    };
+    ClienteEncuestaComponent.prototype.formatearEsto = function (seleccionados) {
+        var formateado = [];
+        if (seleccionados.includes('viaje')) {
+            formateado.push(1);
+        }
+        else {
+            formateado.push(0);
+        }
+        if (seleccionados.includes('conductor')) {
+            formateado.push(1);
+        }
+        else {
+            formateado.push(0);
+        }
+        if (seleccionados.includes('vehiculo')) {
+            formateado.push(1);
+        }
+        else {
+            formateado.push(0);
+        }
+        if (seleccionados.includes('camino')) {
+            formateado.push(1);
+        }
+        else {
+            formateado.push(0);
+        }
+        return formateado;
+    };
+    ClienteEncuestaComponent.prototype.mostrarMensaje = function (severidad, resumen, detalle) {
+        this.msgs = [];
+        this.msgs.push({ severity: severidad, summary: resumen, detail: detalle });
+    };
+    ClienteEncuestaComponent.prototype.subirFoto = function ($event) {
+        console.log("xhr");
+        console.log($event.xhr);
+        console.log($event.xhr.response);
+        if ($event.xhr.response == 'true') {
+            this.cargoTres = true;
+        }
+        else {
+            this.cargoTres = false;
+        }
+    };
+    ClienteEncuestaComponent.prototype.arreglar = function ($event) {
+        var fecha = new Date();
+        this.nombreFoto1 = this.viajeEncuesta.id + 'foto1-' + fecha.toDateString + '.jpeg';
+        this.nombreFoto2 = this.viajeEncuesta.id + 'foto2-' + fecha.toDateString + '.jpeg';
+        this.nombreFoto3 = this.viajeEncuesta.id + 'foto3-' + fecha.toDateString + '.jpeg';
+        $event.formData.append('foto_1', this.nombreFoto1);
+        $event.formData.append('foto_2', this.nombreFoto2);
+        $event.formData.append('foto_3', this.nombreFoto3);
+        $event.formData.append('idViaje', this.viajeEncuesta.id);
+    };
+    ClienteEncuestaComponent.prototype.showResponse = function ($event) {
+        if ($event.success == true) {
+            this.captchaValido = true;
+        }
+        console.log($event);
+        console.log($event.success);
+    };
+    ClienteEncuestaComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-cliente-encuesta',
+            template: __webpack_require__(/*! ./cliente-encuesta.component.html */ "./src/app/componentes/clientes/cliente-encuesta/cliente-encuesta.component.html"),
+            styles: [__webpack_require__(/*! ./cliente-encuesta.component.css */ "./src/app/componentes/clientes/cliente-encuesta/cliente-encuesta.component.css")]
+        }),
+        __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"],
+            _servicios_viajes_viajes_service__WEBPACK_IMPORTED_MODULE_3__["ViajesService"],
+            _servicios_encuesta_encuesta_service__WEBPACK_IMPORTED_MODULE_4__["EncuestaService"],
+            _servicios_remiseros_remiseros_service__WEBPACK_IMPORTED_MODULE_5__["RemiserosService"]])
+    ], ClienteEncuestaComponent);
+    return ClienteEncuestaComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/componentes/clientes/cliente-info-nuevo/cliente-info-nuevo.component.css":
 /*!******************************************************************************************!*\
   !*** ./src/app/componentes/clientes/cliente-info-nuevo/cliente-info-nuevo.component.css ***!
@@ -809,7 +1245,7 @@ module.exports = ".mapita{\n    height: 300px;\n}"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n<app-barralateral></app-barralateral>\n<div class=\"container\">\n  <div class=\"jumbotron\">\n    <div class=\"row\" [hidden]=\"!cargoBien\">\n      <div class=\"col-sm\" [hidden]=\"reservoViaje\">\n        <h1 class=\"text-center\"> Datos del viaje </h1>\n        <div class=\"mapita\" #mapa ></div>\n          <h2> Distancia: {{viaje.calcularDistancia()}} Km. </h2>\n          <h2> Monto: $ {{viaje.calcularMonto()}} </h2>\n          <button class=\"btn btn-danger\" >Cancelar</button>\n          <button [hidden]=\"modificado\" (click)=\"reservar()\" class=\"btn btn-primary\" >Reservar</button>\n          <button [hidden]=\"!modificado\" (click)=\"modificar()\" class=\"btn btn-primary\" >Modificar</button>\n      </div>\n      <div class=\"col-sm\" [hidden]=\"!reservoViaje\">\n        <h1 class=\"text-center\"> {{mensaje}}</h1>\n        <button class=\"btn btn-primary\"> Reservar un nuevo viaje </button>\n        <button class=\"btn btn-primary\"> Menu principal </button>\n      </div>\n      <div class=\"col-sm\" [hidden]=\"!errorReserva\">\n        <h1> Ha ocurrido un error reservando su viaje </h1> \n      </div>\n    </div>\n    <div class=\"row\" [hidden]=\"cargoBien\">\n      <div class=\"col-sm\" [hidden]=\"cargoBien\">\n        <h1 class=\"text-center\"> Hubo un error al procesar lo pedido</h1>\n      </div>\n    </div>\n  </div>\n</div>"
+module.exports = "\n<app-barralateral></app-barralateral>\n<div class=\"container\">\n  <div class=\"jumbotron\">\n    <div class=\"row\" [hidden]=\"!cargoBien\">\n      <div class=\"col-sm\" [hidden]=\"reservoViaje\">\n        <h1 class=\"text-center\"> Datos del viaje </h1>\n        <div class=\"mapita\" #mapa ></div>\n          <h2> Distancia: {{viaje.calcularDistancia()}} Km. </h2>\n          <h2> Monto: $ {{viaje.calcularMonto()}} </h2>\n          <button class=\"btn btn-danger\" (click)=\"cancelar()\" >Cancelar</button>\n          <button [hidden]=\"modificado\" (click)=\"reservar()\" class=\"btn btn-primary\" >Reservar</button>\n          <button [hidden]=\"!modificado\" (click)=\"modificar()\" class=\"btn btn-primary\" >Modificar</button>\n      </div>\n      <div class=\"col-sm\" [hidden]=\"!reservoViaje\">\n        <h1 class=\"text-center\"> {{mensaje}}</h1>\n        <button class=\"btn btn-primary btn-block\" (click)=\"reservarNuevo()\" > Reservar un nuevo viaje </button>\n        <br>\n        <button class=\"btn btn-primary btn-block\" (click)=\"cancelar()\" > Menu principal </button>\n      </div>\n      <div class=\"col-sm\" [hidden]=\"!errorReserva\">\n        <h1> Ha ocurrido un error reservando su viaje </h1> \n      </div>\n    </div>\n    <div class=\"row\" [hidden]=\"cargoBien\">\n      <div class=\"col-sm\" [hidden]=\"cargoBien\">\n        <h1 class=\"text-center\"> Hubo un error al procesar lo pedido</h1>\n      </div>\n    </div>\n  </div>\n</div>"
 
 /***/ }),
 
@@ -828,6 +1264,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _clases_viajeMaps__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../clases/viajeMaps */ "./src/app/clases/viajeMaps.ts");
 /* harmony import */ var _servicios_auth_auth_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../servicios/auth/auth.service */ "./src/app/servicios/auth/auth.service.ts");
 /* harmony import */ var _servicios_cliente_cliente_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../servicios/cliente/cliente.service */ "./src/app/servicios/cliente/cliente.service.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -843,11 +1280,13 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 
 
+
 var ClienteInfoNuevoComponent = /** @class */ (function () {
-    function ClienteInfoNuevoComponent(data, auth, clienteService) {
+    function ClienteInfoNuevoComponent(data, auth, clienteService, ruteador) {
         this.data = data;
         this.auth = auth;
         this.clienteService = clienteService;
+        this.ruteador = ruteador;
         this.errorReserva = false;
     }
     ClienteInfoNuevoComponent.prototype.ngOnInit = function () {
@@ -929,6 +1368,9 @@ var ClienteInfoNuevoComponent = /** @class */ (function () {
             _this.errorReserva = true;
         });
     };
+    ClienteInfoNuevoComponent.prototype.reservarNuevo = function () {
+        this.ruteador.navigate(['/cliente/nuevo']);
+    };
     __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"])('mapa'),
         __metadata("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"])
@@ -939,7 +1381,10 @@ var ClienteInfoNuevoComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./cliente-info-nuevo.component.html */ "./src/app/componentes/clientes/cliente-info-nuevo/cliente-info-nuevo.component.html"),
             styles: [__webpack_require__(/*! ./cliente-info-nuevo.component.css */ "./src/app/componentes/clientes/cliente-info-nuevo/cliente-info-nuevo.component.css")]
         }),
-        __metadata("design:paramtypes", [_servicios_data_data_service__WEBPACK_IMPORTED_MODULE_1__["DataService"], _servicios_auth_auth_service__WEBPACK_IMPORTED_MODULE_3__["AuthService"], _servicios_cliente_cliente_service__WEBPACK_IMPORTED_MODULE_4__["ClienteService"]])
+        __metadata("design:paramtypes", [_servicios_data_data_service__WEBPACK_IMPORTED_MODULE_1__["DataService"],
+            _servicios_auth_auth_service__WEBPACK_IMPORTED_MODULE_3__["AuthService"],
+            _servicios_cliente_cliente_service__WEBPACK_IMPORTED_MODULE_4__["ClienteService"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_5__["Router"]])
     ], ClienteInfoNuevoComponent);
     return ClienteInfoNuevoComponent;
 }());
@@ -1157,7 +1602,7 @@ module.exports = ".mapa {\n  height: 300px;\n}"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<app-barralateral></app-barralateral>\n<!--<script src=\"https://www.google.com/recaptcha/api.js?render=explicit&onload=initRecaptcha\" async defer></script>-->\n<div class=\"container\">\n  <div class=\"jumbotron\">\n    <div class=\"row\">\n      <div class=\"col-sm\">\n        <h1 class=\"text-center\"> {{titulo}} </h1>\n\n\n\n        <form [formGroup]=\"viajeForm\" (submit)=\"llenarFormulario()\">\n          <div class=\"form-group\">\n            <label for=\"fecha\">Fecha</label>\n            <p-calendar [inline]=\"true\"  formControlName=\"fecha\" dateFormat=\"yy/mm/dd\" ></p-calendar>\n          </div>\n          <div class=\"form-group\">\n            <input placeholder=\"Origen\" autocorrect=\"off\" autocapitalize=\"off\" spellcheck=\"off\" type=\"text\" class=\"form-control\" #origen [formControl]=\"origenControl\">\n          </div>\n          <div class=\"form-group\">\n            <input placeholder=\"Destino\" autocorrect=\"off\" autocapitalize=\"off\" spellcheck=\"off\" type=\"text\" class=\"form-control\" #destino [formControl]=\"destinoControl\">\n          </div>\n          <div class=\"form-group\">\n            <label class=\"center-block\">Hora\n              <p-calendar [timeOnly]=\"true\" [inline]=\"true\" formControlName=\"hora\" hourFormat=\"24\"></p-calendar>\n            </label>\n            <div *ngIf=\"viajeForm.controls.hora.invalid\"\n                  class=\"alert alert-danger\">\n\n              <div *ngIf=\"!viajeForm.controls.hora.required\">\n                La hora es requerida\n              </div>\n              <div *ngIf=\"!viajeForm.controls.hora.minlength\">\n                la hora tiene que tener como minimo 4 caracteres\n              </div>\n            </div>\n\n          </div>\n          <div class=\"form-group\">\n            <h2 class=\"text-center\">Tipo de vehiculo </h2>\n            <div class=\"form-check\">\n              <input class=\"form-check-input\" type=\"radio\" formControlName=\"tipo\" value=\"comun\" checked>\n              <label class=\"form-check-label\" for=\"exampleRadios1\">\n                Comun\n              </label>\n            </div>\n            <div class=\"form-check\">\n              <input class=\"form-check-input\" type=\"radio\" formControlName=\"tipo\" value=\"premium\">\n              <label class=\"form-check-label\">\n                Premium\n              </label>\n            </div>\n          </div>\n          <button type=\"submit\" class=\"btn btn-primary\"  >Reservar viaje</button>                    \n         <!--<button type=\"submit\" class=\"btn btn-primary\" [disabled]=\"!viajeForm.valid\" >Reservar viaje</button>                    -->\n        </form>        \n      </div>\n    </div>\n  </div>\n</div>"
+module.exports = "<app-barralateral></app-barralateral>\n<!--<script src=\"https://www.google.com/recaptcha/api.js?render=explicit&onload=initRecaptcha\" async defer></script>-->\n<div class=\"container\">\n  <div class=\"jumbotron\">\n    <div class=\"row\">\n      <div class=\"col-sm\">\n        <h1 class=\"text-center\"> {{titulo}} </h1>\n\n\n\n        <form [formGroup]=\"viajeForm\" (submit)=\"llenarFormulario()\">\n          <div class=\"form-group\">\n            <label for=\"fecha\">Fecha</label>\n            <p-calendar [inline]=\"true\"  formControlName=\"fecha\" dateFormat=\"yy/mm/dd\" ></p-calendar>\n          </div>\n          <div class=\"form-group\">\n            <input placeholder=\"Origen\" autocorrect=\"off\" autocapitalize=\"off\" spellcheck=\"off\" type=\"text\" class=\"form-control\" #origen [formControl]=\"origenControl\">\n          </div>\n          <div class=\"form-group\">\n            <input placeholder=\"Destino\" autocorrect=\"off\" autocapitalize=\"off\" spellcheck=\"off\" type=\"text\" class=\"form-control\" #destino [formControl]=\"destinoControl\">\n          </div>\n          <div class=\"form-group\">\n            <label class=\"center-block\">Hora\n              <p-calendar [timeOnly]=\"true\" [inline]=\"true\" formControlName=\"hora\" hourFormat=\"24\"></p-calendar>\n            </label>\n            <div *ngIf=\"viajeForm.controls.hora.invalid\"\n                  class=\"alert alert-danger\">\n\n              <div *ngIf=\"!viajeForm.controls.hora.required\">\n                La hora es requerida\n              </div>\n              <div *ngIf=\"!viajeForm.controls.hora.minlength\">\n                la hora tiene que tener como minimo 4 caracteres\n              </div>\n            </div>\n\n          </div>\n          <div class=\"form-group\">\n            <h2 class=\"text-center\">Tipo de vehiculo </h2>\n            <div class=\"form-check\">\n              <input class=\"form-check-input\" type=\"radio\" formControlName=\"tipo\" value=\"comun\" checked>\n              <label class=\"form-check-label\" for=\"exampleRadios1\">\n                Comun\n              </label>\n            </div>\n            <div class=\"form-check\">\n              <input class=\"form-check-input\" type=\"radio\" formControlName=\"tipo\" value=\"premium\">\n              <label class=\"form-check-label\">\n                Premium\n              </label>\n            </div>\n          </div>\n          <div class=\"form-group\">\n            <p-captcha siteKey=\"6Lf4rF4UAAAAAPiiMTDNqSA-8mQUd9XK1T_pdKdG\" (onResponse)=\"showResponse($event)\"></p-captcha>\n          </div>\n          <!--<button type=\"submit\" class=\"btn btn-primary\"  >Reservar viaje</button> -->              \n         <button type=\"submit\" class=\"btn btn-primary\" [disabled]=\"!viajeForm.valid\" >Reservar viaje</button>\n        </form>        \n      </div>\n    </div>\n  </div>\n</div>"
 
 /***/ }),
 
@@ -1322,6 +1767,491 @@ var ClienteNuevoComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/componentes/configuracion-cuenta/configuracion-cuenta.component.css":
+/*!*************************************************************************************!*\
+  !*** ./src/app/componentes/configuracion-cuenta/configuracion-cuenta.component.css ***!
+  \*************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/componentes/configuracion-cuenta/configuracion-cuenta.component.html":
+/*!**************************************************************************************!*\
+  !*** ./src/app/componentes/configuracion-cuenta/configuracion-cuenta.component.html ***!
+  \**************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<app-barralateral></app-barralateral>\n<div class=\"container\">\n  <div class=\"jumbotron\">\n    <p-messages [(value)]=\"msgs\"></p-messages>\n\n    <div class=\"row\" *ngIf=\"!cargando\">\n      <div class=\"col-sm-4\">\n        <h2 class=\"text-center\"> ¡Cambia tu imagen de perfil!</h2>\n        <img  class=\"img-thumbnail\" width=\"304\" height=\"200\" [src]=\"foto\">\n        <!--<p-fileUpload mode=\"basic\" name=\"foto\" url=\"http://localhost/backendTp2/index.php/ingreso/subirFoto\" (onBeforeSend)=\"arreglar($event)\" (onUpload)=\"subirFoto($event)\"></p-fileUpload>-->\n        <p-fileUpload mode=\"basic\" name=\"foto\" url=\"https://remiseriagustavopetruzzi.000webhostapp.com/index.php/ingreso/subirFoto\" (onBeforeSend)=\"arreglar($event)\" (onUpload)=\"subirFoto($event)\"></p-fileUpload>\n      </div>\n\n      <div class=\"col-sm\">\n        <h2 class=\"text-center\"> Modifica tu cuenta </h2>\n        <form [formGroup]=\"modificaDatosForm\" class=\"text-center\">\n          <div class=\"row\">\n            <div class=\"col\">\n              <div class=\"form-group\">\n                <label class=\"center-block\">Nombre\n                  <input class=\"form-control\" formControlName=\"nombre\">\n                  <div [hidden]=\"!this.modificaDatosForm.controls['nombre'].invalid || this.modificaDatosForm.controls['nombre'].pristine\" class=\"alert alert-danger\">\n                    <div [hidden]=\"!this.modificaDatosForm.controls['nombre'].hasError('required')\"> El nombre es requerido </div>\n                  </div>\n                </label>\n              </div>\n\n              <div class=\"form-group\">\n                <label class=\"center-block\">Apellido\n                  <input class=\"form-control\" formControlName=\"apellido\">\n                  <div [hidden]=\"!this.modificaDatosForm.controls['apellido'].invalid || this.modificaDatosForm.controls['apellido'].pristine\" class=\"alert alert-danger\">\n                    <div [hidden]=\"!this.modificaDatosForm.controls['apellido'].hasError('required')\">El apellido es requerido</div>\n                  </div>\n                </label>\n              </div>\n            </div>\n            \n            <div class=\"col\">\n              <div class=\"form-group\">\n                <label class=\"center-block\"> Usuario\n                  <input class=\"form-control\" formControlName=\"usuario\">\n                  <div [hidden]=\"!this.modificaDatosForm.controls['usuario'].invalid || this.modificaDatosForm.controls['usuario'].pristine\" class=\"alert alert-danger\">\n                    <div [hidden]=\"!this.modificaDatosForm.controls['usuario'].hasError('required')\"> El usuario es requerido</div>\n                  </div>\n                </label>\n              </div>\n              \n              <div class=\"form-group\">\n                <label class=\"center-block\"> Nuevo Password\n                  <input class=\"form-control\" formControlName=\"nuevoPassword\" type=\"password\">\n                  <div [hidden]=\"!this.modificaDatosForm.controls['nuevoPassword'].invalid || this.modificaDatosForm.controls['nuevoPassword'].pristine\" class=\"alert alert-danger\">\n                    <div [hidden]=\"!this.modificaDatosForm.controls['nuevoPassword'].hasError('required')\"> el Password es requerido </div>\n                  </div>\n                </label>\n              </div>\n            </div>\n          </div>\n          <div class=\"form-group\">\n            <label class=\"center-block\"> Password Actual\n              <input class=\"form-control\" formControlName=\"password\" type=\"password\">\n              <div [hidden]=\"!this.modificaDatosForm.controls['password'].invalid || this.modificaDatosForm.controls['password'].pristine\" class=\"alert alert-danger\">\n                <div [hidden]=\"!this.modificaDatosForm.controls['password'].hasError('required')\"> El nuevo password es requerido </div>\n              </div>\n            </label>\n          </div>\n\n          <i [hidden]=\"!modificando\" class=\"pi pi-spin pi-spinner\" style=\"font-size: 3em\"></i>\n          <button class=\"btn btn-primary btn-block\" [hidden]=\"modificando\" [disabled]=\"!this.modificaDatosForm.valid\" (click)=\"modificar()\"> Modificar </button>\n        </form>\n      </div>\n    </div>\n\n    <div class=\"row\" *ngIf=\"cargando\" >\n      <div class=\"col-sm-4 offset-sm-4\">\n        <div class=\"lds-css ng-scope\">\n          <div class=\"lds-blocks\" style=\"100%;height:100%\"><div style=\"left:38px;top:38px;animation-delay:0s\"></div>\n          <div style=\"left:80px;top:38px;animation-delay:0.125s\"></div>\n          <div style=\"left:122px;top:38px;animation-delay:0.25s\"></div>\n          <div style=\"left:38px;top:80px;animation-delay:0.875s\"></div>\n          <div style=\"left:122px;top:80px;animation-delay:0.375s\"></div>\n          <div style=\"left:38px;top:122px;animation-delay:0.75s\"></div>\n          <div style=\"left:80px;top:122px;animation-delay:0.625s\"></div>\n          <div style=\"left:122px;top:122px;animation-delay:0.5s\"></div>\n        </div>\n        <style type=\"text/css\">\n        \n        @keyframes lds-blocks {\n          0% {\n            background: #72cbfd;\n          }\n          12.5% {\n            background: #72cbfd;\n          }\n          12.625% {\n            background: #0b1d27;\n          }\n          100% {\n            background: #0b1d27;\n          }\n        }\n        @-webkit-keyframes lds-blocks {\n          0% {\n            background: #72cbfd;\n          }\n          12.5% {\n            background: #72cbfd;\n          }\n          12.625% {\n            background: #0b1d27;\n          }\n          100% {\n            background: #0b1d27;\n          }\n        }\n        .lds-blocks {\n          position: relative;\n        }\n        .lds-blocks div {\n          position: absolute;\n          width: 40px;\n          height: 40px;\n          background: #0b1d27;\n          -webkit-animation: lds-blocks 1s linear infinite;\n          animation: lds-blocks 1s linear infinite;\n        }\n        .lds-blocks {\n          width: 200px !important;\n          height: 200px !important;\n          -webkit-transform: translate(-100px, -100px) scale(1) translate(100px, 100px);\n          transform: translate(-100px, -100px) scale(1) translate(100px, 100px);\n        }\n        </style>\n      </div>\n    </div>\n  </div>\n</div>"
+
+/***/ }),
+
+/***/ "./src/app/componentes/configuracion-cuenta/configuracion-cuenta.component.ts":
+/*!************************************************************************************!*\
+  !*** ./src/app/componentes/configuracion-cuenta/configuracion-cuenta.component.ts ***!
+  \************************************************************************************/
+/*! exports provided: ConfiguracionCuentaComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ConfiguracionCuentaComponent", function() { return ConfiguracionCuentaComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
+/* harmony import */ var _servicios_auth_auth_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../servicios/auth/auth.service */ "./src/app/servicios/auth/auth.service.ts");
+/* harmony import */ var _servicios_cliente_cliente_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../servicios/cliente/cliente.service */ "./src/app/servicios/cliente/cliente.service.ts");
+/* harmony import */ var _servicios_fotos_fotos_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../servicios/fotos/fotos.service */ "./src/app/servicios/fotos/fotos.service.ts");
+/* harmony import */ var _servicios_remiseros_remiseros_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../servicios/remiseros/remiseros.service */ "./src/app/servicios/remiseros/remiseros.service.ts");
+/* harmony import */ var _clases_usuarioCompleto__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../clases/usuarioCompleto */ "./src/app/clases/usuarioCompleto.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+
+var ConfiguracionCuentaComponent = /** @class */ (function () {
+    function ConfiguracionCuentaComponent(auth, servicioCliente, servicioRemisero, manejador) {
+        this.auth = auth;
+        this.servicioCliente = servicioCliente;
+        this.servicioRemisero = servicioRemisero;
+        this.manejador = manejador;
+    }
+    ConfiguracionCuentaComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.cargando = true;
+        this.id = this.auth.obtenerToken().data.id;
+        this.tipo = this.auth.obtenerToken().data.tipo;
+        if (this.tipo == 'remisero') {
+            this.servicioRemisero.buscarRemisero(this.id)
+                .subscribe(function (data) {
+                _this.user = new _clases_usuarioCompleto__WEBPACK_IMPORTED_MODULE_6__["UsuarioCompleto"](data.id, data.nombre, data.apellido, data.usuario, data.password, data.foto, 'remisero');
+                _this.foto = _this.user.obtenerFoto();
+                console.log(_this.foto);
+                console.log(_this.user);
+                _this.cargando = false;
+                _this.modificaDatosForm = new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormGroup"]({
+                    nombre: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](_this.user.nombre, [
+                        _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required
+                    ]),
+                    apellido: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](_this.user.apellido, [
+                        _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required,
+                    ]),
+                    usuario: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](_this.user.usuario, [
+                        _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required
+                    ]),
+                    password: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]('', [
+                        _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required
+                    ]),
+                    nuevoPassword: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]('')
+                });
+            });
+        }
+        else if (this.tipo == 'cliente') {
+            this.servicioCliente.buscarCliente(this.id)
+                .subscribe(function (data) {
+                _this.user = new _clases_usuarioCompleto__WEBPACK_IMPORTED_MODULE_6__["UsuarioCompleto"](data.id, data.nombre, data.apellido, data.usuario, data.password, data.foto, 'cliente');
+                console.log(_this.user);
+                _this.foto = _this.user.obtenerFoto();
+                console.log(_this.user.obtenerFoto());
+                console.log(data);
+                _this.cargando = false;
+                _this.modificaDatosForm = new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormGroup"]({
+                    nombre: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](_this.user.nombre, [
+                        _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required
+                    ]),
+                    apellido: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](_this.user.apellido, [
+                        _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required,
+                    ]),
+                    usuario: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](_this.user.usuario, [
+                        _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required
+                    ]),
+                    password: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]('', [
+                        _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required
+                    ]),
+                    nuevoPassword: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]('')
+                });
+            });
+        }
+        else {
+        }
+    };
+    ConfiguracionCuentaComponent.prototype.modificar = function () {
+        var _this = this;
+        this.modificando = true;
+        if (this.user.password == this.modificaDatosForm.controls['password'].value) {
+            if (this.tipo == 'remisero') {
+                var passwordViejo = this.user.password;
+                this.user.password = this.modificaDatosForm.controls['nuevoPassword'].value;
+                this.servicioRemisero.modificarAdmin(this.user.id, this.user.nombre, this.user.apellido, this.user.usuario, this.user.password)
+                    .subscribe(function (data) {
+                    setTimeout(function () {
+                        _this.modificando = false;
+                        _this.mostrarMensaje('success', '¡Exito!', 'Se han modificado sus datos con exito');
+                    }, 2500);
+                });
+            }
+            else if (this.tipo == 'cliente') {
+                this.user.password = this.modificaDatosForm.controls['nuevoPassword'].value;
+                this.servicioCliente.modificarCliente(this.user)
+                    .subscribe(function (data) {
+                    setTimeout(function () {
+                        _this.modificando = false;
+                        _this.mostrarMensaje('success', '¡Exito!', 'Se han modificado sus datos con exito');
+                    }, 2500);
+                });
+            }
+        }
+        else {
+            this.mostrarMensaje('error', 'error', 'La contraseña no coincide');
+        }
+    };
+    ConfiguracionCuentaComponent.prototype.mostrarMensaje = function (severidad, resumen, detalle) {
+        this.msgs = [];
+        this.msgs.push({ severity: severidad, summary: resumen, detail: detalle });
+    };
+    ConfiguracionCuentaComponent.prototype.arreglar = function ($event) {
+        $event.formData.append('id', this.id.toString());
+        $event.formData.append('usuario', this.user.usuario);
+        $event.formData.append('tipo', this.user.tipo);
+    };
+    ConfiguracionCuentaComponent.prototype.subirFoto = function ($event) {
+        var _this = this;
+        this.foto = './assets/Blocks-1s-200px.gif';
+        if (this.tipo == 'cliente') {
+            console.log($event);
+            this.servicioCliente.buscarCliente(this.user.id)
+                .subscribe(function (data) {
+                _this.user = new _clases_usuarioCompleto__WEBPACK_IMPORTED_MODULE_6__["UsuarioCompleto"](data.id, data.nombre, data.apellido, data.usuario, data.password, data.foto, 'cliente');
+                _this.mostrarMensaje('success', '¡Exito!', 'Su foto se ha actualizado correctamente');
+                _this.foto = _this.user.obtenerFoto();
+            });
+        }
+        else if (this.tipo == 'remisero') {
+            console.log($event);
+            this.servicioRemisero.buscarRemisero(this.user.id)
+                .subscribe(function (data) {
+                _this.user = new _clases_usuarioCompleto__WEBPACK_IMPORTED_MODULE_6__["UsuarioCompleto"](data.id, data.nombre, data.apellido, data.usuario, data.password, data.foto, 'remisero');
+                _this.mostrarMensaje('success', '¡Exito!', 'Su foto se ha actualizado correctamente');
+                _this.foto = _this.user.obtenerFoto();
+            });
+        }
+    };
+    ConfiguracionCuentaComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-configuracion-cuenta',
+            template: __webpack_require__(/*! ./configuracion-cuenta.component.html */ "./src/app/componentes/configuracion-cuenta/configuracion-cuenta.component.html"),
+            styles: [__webpack_require__(/*! ./configuracion-cuenta.component.css */ "./src/app/componentes/configuracion-cuenta/configuracion-cuenta.component.css")]
+        }),
+        __metadata("design:paramtypes", [_servicios_auth_auth_service__WEBPACK_IMPORTED_MODULE_2__["AuthService"], _servicios_cliente_cliente_service__WEBPACK_IMPORTED_MODULE_3__["ClienteService"], _servicios_remiseros_remiseros_service__WEBPACK_IMPORTED_MODULE_5__["RemiserosService"], _servicios_fotos_fotos_service__WEBPACK_IMPORTED_MODULE_4__["FotosService"]])
+    ], ConfiguracionCuentaComponent);
+    return ConfiguracionCuentaComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/componentes/encargado/asignar-viaje/asignar-viaje.component.css":
+/*!*********************************************************************************!*\
+  !*** ./src/app/componentes/encargado/asignar-viaje/asignar-viaje.component.css ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/componentes/encargado/asignar-viaje/asignar-viaje.component.html":
+/*!**********************************************************************************!*\
+  !*** ./src/app/componentes/encargado/asignar-viaje/asignar-viaje.component.html ***!
+  \**********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<app-barralateral></app-barralateral>\n<div class=\"container\">\n  <div class=\"jumbotron\">\n    <div class=\"row\" *ngIf=\"!cargando && !asignado\">\n      <table class=\"table\">\n        <thead class=\"thead-dark\">\n          <th scope=\"col\">Nombre  </th>\n          <th scope=\"col\">Apellido </th>\n          <th scope=\"col\">Usuario </th>\n          <th scope=\"col\">Asignar </th>\n\n        </thead>\n        <tbody>\n          <tr [appOcupado]=\"estaOcupado(remisero.id)\" *ngFor=\"let remisero of remiseros\">\n            <td> {{remisero.nombre}} </td>\n            <td> {{remisero.apellido}} </td>\n            <td> {{remisero.usuario}} </td>\n            <td>\n                <button class=\"btn btn-info\" (click)=\"asignar(remisero.id)\"> Asignar</button> \n            </td>\n          </tr>\n        </tbody>\n      </table>\n    </div>\n    <div class=\"row\" *ngIf=\"!cargando && asignado\">\n      <h3 class=\"text-center\"> ¡Viaje Asignado! </h3>\n    </div>\n    <div class=\"row\" *ngIf=\"cargando\" >\n      <div class=\"col-sm-4 offset-sm-4\">\n        <div class=\"lds-css ng-scope\">\n          <div class=\"lds-blocks\" style=\"100%;height:100%\"><div style=\"left:38px;top:38px;animation-delay:0s\"></div>\n          <div style=\"left:80px;top:38px;animation-delay:0.125s\"></div>\n          <div style=\"left:122px;top:38px;animation-delay:0.25s\"></div>\n          <div style=\"left:38px;top:80px;animation-delay:0.875s\"></div>\n          <div style=\"left:122px;top:80px;animation-delay:0.375s\"></div>\n          <div style=\"left:38px;top:122px;animation-delay:0.75s\"></div>\n          <div style=\"left:80px;top:122px;animation-delay:0.625s\"></div>\n          <div style=\"left:122px;top:122px;animation-delay:0.5s\"></div>\n        </div>\n        <style type=\"text/css\">\n        \n        @keyframes lds-blocks {\n          0% {\n            background: #72cbfd;\n          }\n          12.5% {\n            background: #72cbfd;\n          }\n          12.625% {\n            background: #0b1d27;\n          }\n          100% {\n            background: #0b1d27;\n          }\n        }\n        @-webkit-keyframes lds-blocks {\n          0% {\n            background: #72cbfd;\n          }\n          12.5% {\n            background: #72cbfd;\n          }\n          12.625% {\n            background: #0b1d27;\n          }\n          100% {\n            background: #0b1d27;\n          }\n        }\n        .lds-blocks {\n          position: relative;\n        }\n        .lds-blocks div {\n          position: absolute;\n          width: 40px;\n          height: 40px;\n          background: #0b1d27;\n          -webkit-animation: lds-blocks 1s linear infinite;\n          animation: lds-blocks 1s linear infinite;\n        }\n        .lds-blocks {\n          width: 200px !important;\n          height: 200px !important;\n          -webkit-transform: translate(-100px, -100px) scale(1) translate(100px, 100px);\n          transform: translate(-100px, -100px) scale(1) translate(100px, 100px);\n        }\n        </style>\n      </div>\n    </div>\n\n  </div>\n</div>"
+
+/***/ }),
+
+/***/ "./src/app/componentes/encargado/asignar-viaje/asignar-viaje.component.ts":
+/*!********************************************************************************!*\
+  !*** ./src/app/componentes/encargado/asignar-viaje/asignar-viaje.component.ts ***!
+  \********************************************************************************/
+/*! exports provided: AsignarViajeComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AsignarViajeComponent", function() { return AsignarViajeComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _clases_viajeMaps__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../clases/viajeMaps */ "./src/app/clases/viajeMaps.ts");
+/* harmony import */ var _clases_lugar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../clases/lugar */ "./src/app/clases/lugar.ts");
+/* harmony import */ var _clases_remisero__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../clases/remisero */ "./src/app/clases/remisero.ts");
+/* harmony import */ var _clases_vehiculo__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../clases/vehiculo */ "./src/app/clases/vehiculo.ts");
+/* harmony import */ var _servicios_viajes_viajes_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../servicios/viajes/viajes.service */ "./src/app/servicios/viajes/viajes.service.ts");
+/* harmony import */ var _servicios_remiseros_remiseros_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../servicios/remiseros/remiseros.service */ "./src/app/servicios/remiseros/remiseros.service.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+
+
+var AsignarViajeComponent = /** @class */ (function () {
+    function AsignarViajeComponent(ruteador, ruta, servicioViaje, servicioRemiseros) {
+        this.ruteador = ruteador;
+        this.ruta = ruta;
+        this.servicioViaje = servicioViaje;
+        this.servicioRemiseros = servicioRemiseros;
+        this.viajesFecha = [];
+        this.remiseros = [];
+        //remiserosLibres:remisero[] = [];
+        this.remiserosOcupados = [];
+    }
+    AsignarViajeComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.cargando = true;
+        this.asignado = false;
+        //this.buscarRemiseros();
+        this.ruta.params.subscribe(function (params) {
+            _this.idViajeAsignado = +params['idViaje'];
+            _this.servicioViaje.buscarViaje(_this.idViajeAsignado)
+                .subscribe(function (data) {
+                _this.viajeAsignado = new _clases_viajeMaps__WEBPACK_IMPORTED_MODULE_1__["viajeMaps"](data.id, data.fecha, data.hora, data.estado, data.idCliente, data.monto, new _clases_lugar__WEBPACK_IMPORTED_MODULE_2__["lugar"](data.origen_lat, data.origen_long), new _clases_lugar__WEBPACK_IMPORTED_MODULE_2__["lugar"](data.destino_lat, data.destino_long), data.premium);
+                _this.servicioViaje.obtenerViajeFecha(_this.viajeAsignado.fecha)
+                    .subscribe(function (data) {
+                    data.forEach(function (element) {
+                        var viajeElement = new _clases_viajeMaps__WEBPACK_IMPORTED_MODULE_1__["viajeMaps"](element.id, element.fecha, element.hora, element.estado, element.idCliente, element.monto, new _clases_lugar__WEBPACK_IMPORTED_MODULE_2__["lugar"](element.origen_lat, element.origen_long), new _clases_lugar__WEBPACK_IMPORTED_MODULE_2__["lugar"](element.destino_lat, element.destino_long), element.premium);
+                        viajeElement.idRemisero = element.idRemisero;
+                        _this.viajesFecha.push(viajeElement);
+                    });
+                    _this.servicioRemiseros.listaRemiserosVehiculos()
+                        .subscribe(function (data) {
+                        var auxiliarRemisero = [];
+                        data.forEach(function (element) {
+                            var remiseroElement = new _clases_remisero__WEBPACK_IMPORTED_MODULE_3__["remisero"](element.nombre, element.apellido, element.usuario, new _clases_vehiculo__WEBPACK_IMPORTED_MODULE_4__["vehiculo"](element.marca, element.modelo, element.anio, element.premium));
+                            remiseroElement.id = element.id;
+                            remiseroElement.vehiculo.id = element.idVehiculo;
+                            auxiliarRemisero.push(remiseroElement);
+                        });
+                        //FILTRO REMISEROS SEGUN EL AUTO NECESARIO
+                        _this.remiseros = auxiliarRemisero.filter(function (remisero) { return parseInt(remisero.vehiculo.premium) === _this.viajeAsignado.premium; });
+                        var _loop_1 = function (index) {
+                            var remisero_1 = _this.remiseros[index];
+                            _this.viajesFecha.forEach(function (element) {
+                                if (element.idRemisero == remisero_1.id) {
+                                    _this.remiserosOcupados.push(remisero_1);
+                                }
+                            });
+                        };
+                        for (var index = 0; index < _this.remiseros.length; index++) {
+                            _loop_1(index);
+                        }
+                        _this.cargando = false;
+                    });
+                });
+            });
+        });
+    };
+    AsignarViajeComponent.prototype.buscarRemiseros = function () {
+        var _this = this;
+        this.servicioRemiseros.listaRemiserosVehiculos()
+            .subscribe(function (data) {
+            data.forEach(function (element) {
+                var remiseroElement = new _clases_remisero__WEBPACK_IMPORTED_MODULE_3__["remisero"](element.nombre, element.apellido, element.usuario, new _clases_vehiculo__WEBPACK_IMPORTED_MODULE_4__["vehiculo"](element.marca, element.modelo, element.anio, element.premium));
+                remiseroElement.id = element.id;
+                remiseroElement.vehiculo.id = element.idVehiculo;
+                _this.remiseros.push(remiseroElement);
+            });
+        });
+    };
+    AsignarViajeComponent.prototype.estaOcupado = function (idRemisero) {
+        var ocupado = false;
+        this.remiserosOcupados.forEach(function (element) {
+            if (idRemisero == element.id) {
+                ocupado = true;
+            }
+        });
+        return ocupado;
+    };
+    AsignarViajeComponent.prototype.asignar = function (idRemisero) {
+        var _this = this;
+        this.servicioRemiseros.asignarViaje(this.viajeAsignado.id, idRemisero)
+            .subscribe(function (data) {
+            _this.asignado = true;
+        });
+    };
+    AsignarViajeComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-asignar-viaje',
+            template: __webpack_require__(/*! ./asignar-viaje.component.html */ "./src/app/componentes/encargado/asignar-viaje/asignar-viaje.component.html"),
+            styles: [__webpack_require__(/*! ./asignar-viaje.component.css */ "./src/app/componentes/encargado/asignar-viaje/asignar-viaje.component.css")]
+        }),
+        __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_7__["Router"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_7__["ActivatedRoute"],
+            _servicios_viajes_viajes_service__WEBPACK_IMPORTED_MODULE_5__["ViajesService"],
+            _servicios_remiseros_remiseros_service__WEBPACK_IMPORTED_MODULE_6__["RemiserosService"]])
+    ], AsignarViajeComponent);
+    return AsignarViajeComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/componentes/encargado/estadisticas/ganancias/ganancias.component.css":
+/*!**************************************************************************************!*\
+  !*** ./src/app/componentes/encargado/estadisticas/ganancias/ganancias.component.css ***!
+  \**************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/componentes/encargado/estadisticas/ganancias/ganancias.component.html":
+/*!***************************************************************************************!*\
+  !*** ./src/app/componentes/encargado/estadisticas/ganancias/ganancias.component.html ***!
+  \***************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<app-barralateral></app-barralateral>\n<div class=\"container\">\n  <div class=\"jumbotron\">\n    <div class=\"row\" *ngIf=\"!cargando\">\n      <button class=\"btn btn-success btn-info\" (click)=\"generarPdf()\" >Generar pdf </button>      \n    </div>\n    <div class =\"row\" *ngIf=\"!cargando\">\n      <div class=\"col-sm-12\" #alPdf>\n        <h3 class=\"text-center\"> Comparacion de ganancias en efectivo y deuda de cuentas corrientes </h3>\n        <br>\n        <h5 class=\"text-center\"> Efectivo: $ {{efectivoTotal.toFixed(2)}} </h5>\n        <h5 class=\"text-center\"> Cuenta Corriente: $ {{cuentaCorriente.toFixed(2)}} </h5>\n        <p-chart type=\"pie\" [data]=\"data\"></p-chart>\n        <br>\n      </div>\n    </div>\n\n    <div class=\"row\" *ngIf=\"cargando\" >\n      <div class=\"col-sm-4 offset-sm-4\">\n        <div class=\"lds-css ng-scope\">\n          <div class=\"lds-blocks\" style=\"100%;height:100%\"><div style=\"left:38px;top:38px;animation-delay:0s\"></div>\n          <div style=\"left:80px;top:38px;animation-delay:0.125s\"></div>\n          <div style=\"left:122px;top:38px;animation-delay:0.25s\"></div>\n          <div style=\"left:38px;top:80px;animation-delay:0.875s\"></div>\n          <div style=\"left:122px;top:80px;animation-delay:0.375s\"></div>\n          <div style=\"left:38px;top:122px;animation-delay:0.75s\"></div>\n          <div style=\"left:80px;top:122px;animation-delay:0.625s\"></div>\n          <div style=\"left:122px;top:122px;animation-delay:0.5s\"></div>\n        </div>\n        <style type=\"text/css\">\n        \n        @keyframes lds-blocks {\n          0% {\n            background: #72cbfd;\n          }\n          12.5% {\n            background: #72cbfd;\n          }\n          12.625% {\n            background: #0b1d27;\n          }\n          100% {\n            background: #0b1d27;\n          }\n        }\n        @-webkit-keyframes lds-blocks {\n          0% {\n            background: #72cbfd;\n          }\n          12.5% {\n            background: #72cbfd;\n          }\n          12.625% {\n            background: #0b1d27;\n          }\n          100% {\n            background: #0b1d27;\n          }\n        }\n        .lds-blocks {\n          position: relative;\n        }\n        .lds-blocks div {\n          position: absolute;\n          width: 40px;\n          height: 40px;\n          background: #0b1d27;\n          -webkit-animation: lds-blocks 1s linear infinite;\n          animation: lds-blocks 1s linear infinite;\n        }\n        .lds-blocks {\n          width: 200px !important;\n          height: 200px !important;\n          -webkit-transform: translate(-100px, -100px) scale(1) translate(100px, 100px);\n          transform: translate(-100px, -100px) scale(1) translate(100px, 100px);\n        }\n        </style>\n      </div>\n    </div>    \n  </div>\n</div>"
+
+/***/ }),
+
+/***/ "./src/app/componentes/encargado/estadisticas/ganancias/ganancias.component.ts":
+/*!*************************************************************************************!*\
+  !*** ./src/app/componentes/encargado/estadisticas/ganancias/ganancias.component.ts ***!
+  \*************************************************************************************/
+/*! exports provided: GananciasComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GananciasComponent", function() { return GananciasComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _servicios_viajes_viajes_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../servicios/viajes/viajes.service */ "./src/app/servicios/viajes/viajes.service.ts");
+/* harmony import */ var jspdf__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! jspdf */ "./node_modules/jspdf/dist/jspdf.min.js");
+/* harmony import */ var jspdf__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(jspdf__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var html2canvas__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! html2canvas */ "./node_modules/html2canvas/dist/npm/index.js");
+/* harmony import */ var html2canvas__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(html2canvas__WEBPACK_IMPORTED_MODULE_3__);
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var GananciasComponent = /** @class */ (function () {
+    function GananciasComponent(servicioViaje) {
+        this.servicioViaje = servicioViaje;
+        this.efectivoTotal = 0;
+        this.cuentaCorriente = 0;
+    }
+    GananciasComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.cargando = true;
+        this.servicioViaje.montos()
+            .subscribe(function (data) {
+            data.forEach(function (element) {
+                if (element.efectivo) {
+                    _this.efectivoTotal += element.monto;
+                }
+                else if (!element.efectivo) {
+                    _this.cuentaCorriente += element.monto;
+                }
+            });
+            _this.data = {
+                labels: ['Efectivo', 'Deuda en Cta Cte'],
+                datasets: [
+                    {
+                        data: [_this.efectivoTotal, _this.cuentaCorriente],
+                        backgroundColor: [
+                            "#FF6384",
+                            "#36A2EB",
+                            "#FFCE56"
+                        ],
+                        hoverBackgroundColor: [
+                            "#FF6384",
+                            "#36A2EB",
+                            "#FFCE56"
+                        ]
+                    }
+                ]
+            };
+            _this.cargando = false;
+        });
+    };
+    GananciasComponent.prototype.generarPdf = function () {
+        html2canvas__WEBPACK_IMPORTED_MODULE_3__(this.alPdf.nativeElement)
+            .then(function (canvas) {
+            var doc = new jspdf__WEBPACK_IMPORTED_MODULE_2__('l');
+            var img = canvas.toDataURL('image/png');
+            doc.addImage(img, 'JPEG', 5, 20);
+            doc.save('algo2.pdf');
+        });
+        /*
+        html2canvas(this.alPdf.nativeElement, {
+            onrendered: (canvas) =>{
+            let doc = new jsPdf();
+                  doc.addImage(canvas.toDataUrl());
+                  doc.save('algo2.pdf');
+                })
+            }
+        })
+          */
+    };
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"])('alPdf'),
+        __metadata("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"])
+    ], GananciasComponent.prototype, "alPdf", void 0);
+    GananciasComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-ganancias',
+            template: __webpack_require__(/*! ./ganancias.component.html */ "./src/app/componentes/encargado/estadisticas/ganancias/ganancias.component.html"),
+            styles: [__webpack_require__(/*! ./ganancias.component.css */ "./src/app/componentes/encargado/estadisticas/ganancias/ganancias.component.css")]
+        }),
+        __metadata("design:paramtypes", [_servicios_viajes_viajes_service__WEBPACK_IMPORTED_MODULE_1__["ViajesService"]])
+    ], GananciasComponent);
+    return GananciasComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/componentes/encargado/principal/principal.component.css":
 /*!*************************************************************************!*\
   !*** ./src/app/componentes/encargado/principal/principal.component.css ***!
@@ -1340,7 +2270,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<app-barralateral></app-barralateral>    \n<div class=\"container\">\n  <div class=\"jumbotron\">\n      <div class=\"row\">\n          <div class=\"col-sm d-flex align-items-stretch\">\n              <div class=\"card\" style=\"width: 18rem;\" (click)=\"ir('remiseros')\" >\n                  <img class=\"card-img-top\" src=\"../assets/remiseros/remisero.jpeg\" alt=\"Card image cap\">\n                  <div class=\"card-body\">\n                      <h5 class=\"card-title\">Remiseros</h5>\n                      <p class=\"card-text\">¡Consulta el listado de remiseros!</p>\n                  </div>\n              </div>                    \n          </div>                \n          <div class=\"col-sm d-flex align-items-stretch \">\n              <div class=\"card\" style=\"width: 18rem;\" (click)=\"ir('vehiculos')\">\n                  <img class=\"card-img-top\" src=\"../assets/remiseros/autos.jpeg\" alt=\"Card image cap\">\n                  <div class=\"card-body\">\n                      <h5 class=\"card-title\">Vehiculos</h5>\n                      <p class=\"card-text\"> ¡Consulta el listado de vehiculos!</p>\n                  </div>\n              </div>                    \n          </div>\n          <div class=\"col-sm d-flex align-items-stretch\">\n              <div class=\"card\" style=\"width: 18rem;\" (click)=\"ir('viajes')\" >\n                  <img class=\"card-img-top\" src=\"../assets/remiseros/viaje.jpg\" alt=\"Card image cap\">\n                  <div class=\"card-body\">\n                      <h5 class=\"card-title\">Viajes </h5>\n                      <p class=\"card-text\"> ¡Consulta los viajes ! </p>\n                  </div>\n              </div>                      \n          </div>\n      </div>                        \n  </div>\n</div>"
+module.exports = "<app-barralateral></app-barralateral>    \n<div class=\"container\">\n  <div class=\"jumbotron\">\n      <div class=\"row\">\n          <div class=\"col-sm d-flex align-items-stretch\">\n              <div class=\"card\" style=\"width: 18rem;\" (click)=\"ir('remiseros')\" >\n                  <img class=\"card-img-top\" src=\"../assets/remiseros/remisero.jpeg\" alt=\"Card image cap\">\n                  <div class=\"card-body\">\n                      <h5 class=\"card-title\">Remiseros</h5>\n                      <p class=\"card-text\">¡Consulta el listado de remiseros!</p>\n                  </div>\n              </div>                    \n          </div>                \n          <div class=\"col-sm d-flex align-items-stretch \">\n              <div class=\"card\" style=\"width: 18rem;\" (click)=\"ir('vehiculos')\">\n                  <img class=\"card-img-top\" src=\"../assets/remiseros/autos.jpeg\" alt=\"Card image cap\">\n                  <div class=\"card-body\">\n                      <h5 class=\"card-title\">Vehiculos</h5>\n                      <p class=\"card-text\"> ¡Consulta el listado de vehiculos!</p>\n                  </div>\n              </div>                    \n          </div>\n          <div class=\"col-sm d-flex align-items-stretch\">\n              <div class=\"card\" style=\"width: 18rem;\" (click)=\"ir('viajes')\" >\n                  <img class=\"card-img-top\" src=\"../assets/remiseros/viaje.jpg\" alt=\"Card image cap\">\n                  <div class=\"card-body\">\n                      <h5 class=\"card-title\">Viajes </h5>\n                      <p class=\"card-text\"> ¡Consulta los viajes ! </p>\n                  </div>\n              </div>                      \n          </div>\n          <div class=\"col-sm d-flex align-items-stretch\">\n              <div class=\"card\" style=\"width: 18rem;\" (click)=\"ir('ganancias')\" >\n                  <img class=\"card-img-top\" src=\"../assets/remiseros/estadisticas.jpg\" alt=\"Card image cap\">\n                  <div class=\"card-body\">\n                      <h5 class=\"card-title\">Ganancias </h5>\n                      <p class=\"card-text\"> ¡Consulta las ganancias  ! </p>\n                  </div>\n              </div>                      \n          </div>            \n      </div>                        \n  </div>\n</div>"
 
 /***/ }),
 
@@ -1387,6 +2317,8 @@ var PrincipalComponent = /** @class */ (function () {
             case 'terminados':
                 this.ruteador.navigate(['/encargado/terminados']);
                 break;
+            case 'ganancias':
+                this.ruteador.navigate(['/encargado/ganancias']);
             default:
                 break;
         }
@@ -1427,7 +2359,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<app-barralateral></app-barralateral>\n<div class=\"container\">\n  <div class=\"jumbotron\">\n    <h1 class=\"text-center\"> Remiseros </h1>\n    <button class=\"btn btn-primary btn-block\" (click)=\"ir()\"> Agregar Remisero</button>\n    <div class=\"row\">\n      <div class=\"col-sm\">  \n        <table class=\"table\" *ngIf=\"remiseros\">\n          <thead>\n            <tr>\n              <th> Nombre </th>\n              <th> Apellido </th>\n              <th> Vehiculo </th>\n              <th> Opciones </th>\n            </tr>\n          </thead>\n          <tbody>\n            <tr *ngFor=\"let remisero of remiseros\" (click)=\"ver(remisero)\" >\n              <td> {{ remisero.nombre }} </td>\n              <td> {{ remisero.apellido }} </td>\n              <td *ngIf=\"remisero.vehiculo\"> Asignado </td>\n              <td *ngIf=\"!remisero.vehiculo\"> Sin asignar </td>\n              <td> <button class=\"btn btn-success\" (click)=\"modificar(remisero)\"> Modificar </button> </td>\n            </tr>\n          </tbody>\n        </table>\n      </div>\n      <div class=\"col-sm\">\n        <div class=\"card\" style=\"width: 18rem;\">\n          <div class=\"card-body\" *ngIf=\"asignado\">\n            <h4> Chofer </h4>\n            <h5 class=\"card-title\">Nombre: {{ asignado.nombre }}</h5>\n            <h5 class=\"card-title\">Apellido: {{ asignado.apellido }}</h5>\n            <h5 class=\"card-title\">Usuario: {{ asignado.usuario }}</h5>\n            <button class=\"btn btn-primary\" (click)=\"mostrarListado()\" [hidden]=\"vehiculoAsignado\"> Asignar Vehiculo </button>\n          </div>\n        </div>\n      </div>\n      <div class=\"col-sm\" >\n        <div class=\"card\" style=\"width: 18rem;\">\n          <div class=\"card-body\" *ngIf=\"vehiculoAsignado\">\n            <h4> Vehiculo </h4>\n            <h5 class=\"card-title\"> Modelo: {{vehiculoAsignado.modelo }}</h5>\n            <h5 class=\"card-title\"> Marca: {{ vehiculoAsignado.marca}}</h5>            \n            <h5 class=\"card-title\"> Tipo: {{ vehiculoAsignado.premium | premium }}</h5>\n            <button class=\"btn btn-primary\" (click)=\"mostrarListado()\" > Reasignar vehiculo </button>     \n            <button class=\"btn btn-danger\" (click)=\"removerVehiculo( vehiculoAsignado.id )\" > Remover vehiculo </button>     \n        </div>       \n      </div>\n    </div>\n    <div class=\"row\" *ngIf=\"mostrarVehiculos\">\n      <div class=\"col-sm\">\n        <h4 class=\"text-center\"> Asignar a: {{asignado.nombre}} {{asignado.apellido}}</h4>\n        <table class=\"table\">\n          <thead>\n            <tr>\n              <th> Modelo </th>\n              <th> Marca </th>\n              <th> Año </th>\n              <th> Tipo </th>\n            </tr>\n          </thead>\n          <tbody>\n            <tr *ngFor=\"let noAsignado of noAsignados\">\n              <td> {{ noAsignado.modelo }} </td>\n              <td> {{ noAsignado.marca }} </td>\n              <td> {{ noAsignado.anio }} </td>\n              <td> {{ noAsignado.premium | premium }} </td>\n              <td> <button class=\"btn btn-primary\" (click)=\"asignar(noAsignado)\"> asignar </button>\n            </tr>\n          </tbody>\n        </table>    \n      </div>      \n    </div>\n  </div>\n</div>"
+module.exports = "<app-barralateral></app-barralateral>\n<div class=\"container\">\n  <div class=\"jumbotron\">\n    <h1 class=\"text-center\"> Remiseros </h1>\n    <div class=\"row\">\n      <button class=\"btn btn-primary btn-block\" (click)=\"ir()\"> Agregar Remisero</button>\n     \n      <div class=\"col-sm\" >  \n        <table class=\"table\" *ngIf=\"remiseros\">\n          <thead>\n            <tr>\n              <th> Nombre </th>\n              <th> Apellido </th>\n              <th> Vehiculo </th>\n              <th> Opciones </th>\n            </tr>\n          </thead>\n          <tbody>\n            <tr *ngFor=\"let remisero of remiseros\" (click)=\"ver(remisero)\" >\n              <td> {{ remisero.nombre }} </td>\n              <td> {{ remisero.apellido }} </td>\n              <td *ngIf=\"remisero.vehiculo\"> Asignado </td>\n              <td *ngIf=\"!remisero.vehiculo\"> Sin asignar </td>\n              <td> <button class=\"btn btn-success\" (click)=\"modificar(remisero)\"> Modificar </button> </td>\n            </tr>\n          </tbody>\n        </table>\n      </div>\n      <div class=\"col-sm\" >\n        <div class=\"card\" style=\"width: 18rem;\">\n          <div class=\"card-body\" *ngIf=\"asignado\">\n            <h4> Chofer </h4>\n            <h5 class=\"card-title\">Nombre: {{ asignado.nombre }}</h5>\n            <h5 class=\"card-title\">Apellido: {{ asignado.apellido }}</h5>\n            <h5 class=\"card-title\">Usuario: {{ asignado.usuario }}</h5>\n            <button class=\"btn btn-primary\" (click)=\"mostrarListado()\" [hidden]=\"vehiculoAsignado\"> Asignar Vehiculo </button>\n          </div>\n        </div>\n      </div>\n      <div class=\"col-sm\"  >\n        <div class=\"card\" style=\"width: 18rem;\">\n          <div class=\"card-body\" *ngIf=\"vehiculoAsignado\">\n            <h4> Vehiculo </h4>\n            <h5 class=\"card-title\"> Modelo: {{vehiculoAsignado.modelo }}</h5>\n            <h5 class=\"card-title\"> Marca: {{ vehiculoAsignado.marca}}</h5>            \n            <h5 class=\"card-title\"> Tipo: {{ vehiculoAsignado.premium | premium }}</h5>\n            <button class=\"btn btn-primary\" (click)=\"mostrarListado()\" > Reasignar vehiculo </button>     \n            <button class=\"btn btn-danger\" (click)=\"removerVehiculo( vehiculoAsignado.id )\" > Remover vehiculo </button>     \n        </div>       \n      </div>\n    </div>\n    <div class=\"row\" *ngIf=\"mostrarVehiculos\">\n      <div class=\"col-sm\">\n        <h4 class=\"text-center\"> Asignar a: {{asignado.nombre}} {{asignado.apellido}}</h4>\n        <table class=\"table\">\n          <thead>\n            <tr>\n              <th> Modelo </th>\n              <th> Marca </th>\n              <th> Año </th>\n              <th> Tipo </th>\n            </tr>\n          </thead>\n          <tbody>\n            <tr *ngFor=\"let noAsignado of noAsignados\">\n              <td> {{ noAsignado.modelo }} </td>\n              <td> {{ noAsignado.marca }} </td>\n              <td> {{ noAsignado.anio }} </td>\n              <td> {{ noAsignado.premium | premium }} </td>\n              <td> <button class=\"btn btn-primary\" (click)=\"asignar(noAsignado)\"> asignar </button>\n            </tr>\n          </tbody>\n        </table>    \n      </div>      \n    </div>    \n  </div>\n</div>"
 
 /***/ }),
 
@@ -1468,16 +2400,49 @@ var RemiserosEncargadoComponent = /** @class */ (function () {
         this.dataServicio = dataServicio;
     }
     RemiserosEncargadoComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.cargando = true;
+        /*
         this.obtenerRemiseros();
         this.obtenerVehiculos();
         this.obtenerVehiculosSinAsignar();
         this.mostrarVehiculos = false;
-    };
-    RemiserosEncargadoComponent.prototype.obtenerRemiseros = function () {
-        var _this = this;
+        */
         this.remiseroService.listaRemiseros()
             .subscribe(function (data) {
             _this.remiseros = data;
+            _this.vehiculoService.vehiculos()
+                .subscribe(function (data) {
+                _this.vehiculos = data;
+                _this.vehiculoService.noAsignados()
+                    .subscribe(function (data) {
+                    _this.noAsignados = data;
+                    _this.mostrarVehiculos = false;
+                    _this.cargando = false;
+                });
+            });
+            /*
+            setTimeout(() => {
+              this.cargando = false;
+            }, 1500);
+            */
+        });
+    };
+    RemiserosEncargadoComponent.prototype.obtenerRemiseros = function () {
+        var _this = this;
+        this.cargando = true;
+        this.remiseroService.listaRemiseros()
+            .subscribe(function (data) {
+            _this.remiseros = data;
+            _this.vehiculoService.vehiculos()
+                .subscribe(function (data) {
+                _this.vehiculos = data;
+            });
+            /*
+            setTimeout(() => {
+              this.cargando = false;
+            }, 1500);
+            */
         });
     };
     RemiserosEncargadoComponent.prototype.ver = function (remisero) {
@@ -1718,6 +2683,158 @@ var RemiserosNuevoComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/componentes/registro/registro-cliente/registro-cliente.component.css":
+/*!**************************************************************************************!*\
+  !*** ./src/app/componentes/registro/registro-cliente/registro-cliente.component.css ***!
+  \**************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/componentes/registro/registro-cliente/registro-cliente.component.html":
+/*!***************************************************************************************!*\
+  !*** ./src/app/componentes/registro/registro-cliente/registro-cliente.component.html ***!
+  \***************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<app-barralateral></app-barralateral>\n<div class=\"container\">\n  <div class=\"jumbotron\">\n    <p-messages [(value)]=\"msgs\"></p-messages>\n    <div class=\"row\">\n      <div class=\"col-sm\">\n        <h2 class=\"text-center\"> ¡Registrate!</h2>\n        <form [formGroup]=\"nuevoClienteForm\" class=\"text-center\">\n          <div class=\"form-row\">\n            <div class=\"form-group col\">\n\n                <label class=\"center-block\">Nombre\n                  <input class=\"form-control\" formControlName=\"nombre\">\n                  <div [hidden]=\"!this.nuevoClienteForm.controls['nombre'].invalid || this.nuevoClienteForm.controls['nombre'].pristine\" class=\"alert alert-danger\">\n                    <div [hidden]=\"!this.nuevoClienteForm.controls['nombre'].hasError('required')\"> El nombre es requerido </div>\n                  </div>\n                </label>\n              \n\n                <label class=\"center-block\">Apellido\n                  <input class=\"form-control\" formControlName=\"apellido\">\n                  <div [hidden]=\"!this.nuevoClienteForm.controls['apellido'].invalid || this.nuevoClienteForm.controls['apellido'].pristine\" class=\"alert alert-danger\">\n                    <div [hidden]=\"!this.nuevoClienteForm.controls['apellido'].hasError('required')\">El apellido es requerido </div>\n                  </div>\n                </label>\n\n            </div>\n          </div>\n          <div class=\"form-row\">\n            <div class=\"form-group col\">\n\n                <label class=\"center-block\">Usuario\n                  <input class=\"form-control\" formControlName=\"usuario\">\n                  <div [hidden]=\"!this.nuevoClienteForm.controls['usuario'].invalid || this.nuevoClienteForm.controls['usuario'].pristine\" class=\"alert alert-danger\">\n                    <div [hidden]=\"!this.nuevoClienteForm.controls['usuario'].hasError('required')\">El usuario es requerido </div>\n                  </div>\n                </label>\n\n\n                <label class=\"center-block\">password\n                  <input class=\"form-control\" formControlName=\"password\" type=\"password\">\n                  <div [hidden]=\"!this.nuevoClienteForm.controls['password'].invalid || this.nuevoClienteForm.controls['password'].pristine\" class=\"alert alert-danger\">\n                    <div [hidden]=\"!this.nuevoClienteForm.controls['password'].hasError('required')\"> El password es requerido </div>\n                  </div>\n                </label>\n\n            </div>\n          </div>\n          <h5 class=\"text-center\"> Resuelve el captcha </h5>\n          <div class=\"form-group\">\n            <canvas #myCanvas width=\"200\" height=\"100\">\n            </canvas>\n          </div>\n          <div class=\"form-group\">\n            <label class=\"center-block\"> \n              <input class=\"form-control\" formControlName=\"captcha\">\n              <div [hidden]=\"!this.nuevoClienteForm.controls['captcha'].invalid || this.nuevoClienteForm.controls['captcha'].pristine\" class=\"alert alert-danger\">\n                <div [hidden]=\"!this.nuevoClienteForm.controls['captcha'].hasError('pattern')\"> Solamente numeros</div>\n                <div [hidden]=\"!this.nuevoClienteForm.controls['captcha'].hasError('required')\"> El captcha es requerido </div>\n              </div>\n            </label>\n          </div>\n          <div class=\"loader\" *ngIf=\"esperando\"></div>\n          <button class=\"btn btn-primary btn-block\" [hidden]=\"esperando\" [disabled]=\"!this.nuevoClienteForm.valid\" (click)=\"registrarse()\" >Registrarse</button>          \n        </form>\n        <br>\n        <button class=\"btn btn-success btn-block\" routerLink=\"/login\"> Inicio</button>\n      </div>\n    </div>\n  </div>\n</div>"
+
+/***/ }),
+
+/***/ "./src/app/componentes/registro/registro-cliente/registro-cliente.component.ts":
+/*!*************************************************************************************!*\
+  !*** ./src/app/componentes/registro/registro-cliente/registro-cliente.component.ts ***!
+  \*************************************************************************************/
+/*! exports provided: RegistroClienteComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RegistroClienteComponent", function() { return RegistroClienteComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _servicios_usuarios_usuarios_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../servicios/usuarios/usuarios.service */ "./src/app/servicios/usuarios/usuarios.service.ts");
+/* harmony import */ var _servicios_cliente_cliente_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../servicios/cliente/cliente.service */ "./src/app/servicios/cliente/cliente.service.ts");
+/* harmony import */ var _clases_captcha__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../clases/captcha */ "./src/app/clases/captcha.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+var RegistroClienteComponent = /** @class */ (function () {
+    function RegistroClienteComponent(usuarioServicio, clienteServicio, ruteador) {
+        this.usuarioServicio = usuarioServicio;
+        this.clienteServicio = clienteServicio;
+        this.ruteador = ruteador;
+        this.usuarios = [];
+        this.msgs = [];
+    }
+    RegistroClienteComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.esperando = false;
+        this.miCaptcha = new _clases_captcha__WEBPACK_IMPORTED_MODULE_5__["captcha"]();
+        //this.miCaptcha.cambiarCaptcha();           
+        var canvasE1 = this.canvas.nativeElement;
+        this.cx = canvasE1.getContext('2d');
+        this.cx.font = "30px Arial";
+        var texto = this.miCaptcha.capcha();
+        console.log(texto);
+        this.cx.fillText(texto, 50, 50);
+        this.usuarioRepetido = false;
+        this.nuevoRemisero = true;
+        this.usuarioServicio.obtenerUsuarios()
+            .subscribe(function (data) {
+            _this.usuarios = data;
+        });
+        this.nuevoClienteForm = new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormGroup"]({
+            nombre: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]('', [
+                _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required
+            ]),
+            apellido: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]('', [
+                _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required
+            ]),
+            usuario: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]('', [
+                _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required
+            ]),
+            password: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]('', [
+                _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required
+            ]),
+            captcha: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]('', [
+                _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required,
+                _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].pattern("^[0-9]*$"),
+            ])
+        });
+    };
+    RegistroClienteComponent.prototype.registrarse = function () {
+        var _this = this;
+        this.esperando = true;
+        this.usuarioRepetido = false;
+        console.log(this.nuevoClienteForm.controls['captcha'].value);
+        var resultado = this.miCaptcha.resultado();
+        console.log(resultado);
+        if (this.nuevoClienteForm.controls['captcha'].value == this.miCaptcha.resultado()) {
+            this.usuarios.forEach(function (element) {
+                if (_this.nuevoClienteForm.controls['usuario'].value == element.usuario) {
+                    _this.esperando = false;
+                    _this.usuarioRepetido = true;
+                    _this.mostrarMensaje('error', 'error usuario', 'Ya existe un cliente con ese usuario ');
+                }
+            });
+            if (!this.usuarioRepetido) {
+                this.clienteServicio.registrar(this.nuevoClienteForm.controls['nombre'].value, this.nuevoClienteForm.controls['apellido'].value, this.nuevoClienteForm.controls['usuario'].value, this.nuevoClienteForm.controls['password'].value).subscribe(function (data) {
+                    _this.esperando = false;
+                    _this.mostrarMensaje('success', '¡Exito!', "¡Se ha registrado en la remiseria!");
+                    setTimeout(function () {
+                        _this.ruteador.navigate(['/login']);
+                    }, 2500);
+                }, function (error) {
+                    _this.esperando = false;
+                    _this.mostrarMensaje('error', 'error', 'Ha ocurrido un error');
+                });
+            }
+        }
+        else {
+            this.mostrarMensaje('error', 'error captcha', '¡Vaya! Parece que eres un robot');
+        }
+    };
+    RegistroClienteComponent.prototype.mostrarMensaje = function (severidad, resumen, detalle) {
+        this.msgs = [];
+        this.msgs.push({ severity: severidad, summary: resumen, detail: detalle });
+    };
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"])('myCanvas'),
+        __metadata("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"])
+    ], RegistroClienteComponent.prototype, "canvas", void 0);
+    RegistroClienteComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-registro-cliente',
+            template: __webpack_require__(/*! ./registro-cliente.component.html */ "./src/app/componentes/registro/registro-cliente/registro-cliente.component.html"),
+            styles: [__webpack_require__(/*! ./registro-cliente.component.css */ "./src/app/componentes/registro/registro-cliente/registro-cliente.component.css")]
+        }),
+        __metadata("design:paramtypes", [_servicios_usuarios_usuarios_service__WEBPACK_IMPORTED_MODULE_3__["UsuariosService"], _servicios_cliente_cliente_service__WEBPACK_IMPORTED_MODULE_4__["ClienteService"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]])
+    ], RegistroClienteComponent);
+    return RegistroClienteComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/componentes/remiseros/remisero-asignados/remisero-asignados.component.css":
 /*!*******************************************************************************************!*\
   !*** ./src/app/componentes/remiseros/remisero-asignados/remisero-asignados.component.css ***!
@@ -1799,7 +2916,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<app-barralateral></app-barralateral>\n<div class=\"container\">\n  <div class=\"jumbotron\">\n    <div class=\"row\" *ngIf=\"cargoBien\">\n      <div class=\"col-sm\">\n        <h3 class=\" text-center first\"> Motivo: </h3>\n        <form [formGroup]=\"rechazarForm\" class=\"text-center\">\n          <div class=\"row justify-content-center\">\n            <p-dropdown [options]=\"motivos\" formControlName=\"motivo\"></p-dropdown>  \n          </div>\n          <div class=\"row justify-content-center\">\n            <textarea [rows]=\"12\" [cols]=\"50\" autoResize=\"autoResize\" pInputTextArea formControlName=\"mensaje\" pTooltip=\"minimo: 20 caracteres, maximo 159 caracteres\"></textarea>\n          </div>\n          <div class=\"row justify-content-center\">\n            <button (click)=\"rechazarViaje()\" [hidden]=\"rechazando || rechazado\" class=\"btn btn-primary\" [disabled]=\"!rechazarForm.valid\" > <i class=\"pi pi-check\"></i> Enviar</button>\n            <button (click)=\"volver()\" [hidden]=\"rechazando || rechazado\" class=\"btn btn-danger\" > <i class=\"pi pi-ban\"></i> Cancelar</button>\n            <i [hidden]=\"!rechazando\" class=\"pi pi-spin pi-spinner\" style=\"font-size: 3em\"></i>\n            <button [hidden]=\"!rechazado\" class=\"btn btn-primary btn-block\" (click)=\"volver()\">Menu principal</button>\n          </div>\n        </form>\n      </div>\n    </div>\n    <div class=\"row\">\n      <div class=\"col-sm\" *ngIf=\"!cargoBien\">\n        <h1 class=\"text-center\"> Hubo un error al procesar lo pedido </h1>\n      </div>\n    </div>\n  </div>\n</div>"
+module.exports = "<app-barralateral></app-barralateral>\n<div class=\"container\">\n  <div class=\"jumbotron\">\n    <div class=\"row\" *ngIf=\"cargoBien\">\n      <div class=\"col-sm\">\n        <h3 class=\" text-center first\"> Motivo: </h3>\n        <form [formGroup]=\"rechazarForm\" class=\"text-center\">\n          <div class=\"row justify-content-center\">\n            <p-dropdown [options]=\"motivos\" formControlName=\"motivo\"></p-dropdown>  \n          </div>\n          <div class=\"row justify-content-center\">\n            <textarea [rows]=\"12\" [cols]=\"50\" autoResize=\"autoResize\" pInputTextArea formControlName=\"mensaje\" pTooltip=\"minimo: 20 caracteres, maximo 159 caracteres\"></textarea>\n          </div>\n          <div class=\"row justify-content-center\">\n            <button (click)=\"rechazarViaje()\" [hidden]=\"rechazando || rechazado\" class=\"btn btn-primary\" [disabled]=\"!rechazarForm.valid\" > <i class=\"pi pi-check\"></i> Enviar</button>\n            <i [hidden]=\"!rechazando\" class=\"pi pi-spin pi-spinner\" style=\"font-size: 3em\"></i>\n            <button [hidden]=\"!rechazado\" class=\"btn btn-primary btn-block\" (click)=\"volver()\">Menu principal</button>\n          </div>\n        </form>\n      </div>\n    </div>\n    <div class=\"row\">\n      <div class=\"col-sm\" *ngIf=\"!cargoBien\">\n        <h1 class=\"text-center\"> Hubo un error al procesar lo pedido </h1>\n      </div>\n    </div>\n  </div>\n</div>"
 
 /***/ }),
 
@@ -1914,7 +3031,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<app-barralateral></app-barralateral>\n<div *ngIf=\"viajesRemisero\">\n    <div class=\"container\">\n        <div class=\"jumbotron\">\n            <div class=\"row\">              \n                <div class=\"col-sm d-flex align-items-stretch \">\n                    <div class=\"card\" style=\"width: 18rem;\" (click)=\"ir('viajes')\">\n                        <img class=\"card-img-top\" src=\"../assets/remiseros/encurso.jpeg/\" alt=\"Card image cap\">\n                        <div class=\"card-body\">\n                            <h5 class=\"card-title\">Viajes </h5>\n                            <p class=\"card-text\"> Ve la lista de tus viajes</p>\n                        </div>\n                    </div>                    \n                </div>\n                <div class=\"col-sm d-flex align-items-stretch\">\n                    <div class=\"card\" style=\"width: 18rem;\" (click)=\"ir('vehiculo')\" >\n                        <img class=\"card-img-top\" src=\"../assets/remiseros/autos.jpeg/\" alt=\"Card image cap\">\n                        <div class=\"card-body\">\n                            <h5 class=\"card-title\">Vehiculo</h5>\n                            <p class=\"card-text\"> Ve el vehiculo que tienes asignado</p>\n                        </div>\n                    </div>                      \n                </div>\n                <div class=\"col-sm d-flex align-items-stretch\">\n                    <div class=\"card\" style=\"width: 18rem; \" (click)=\"ir('asignados')\" >\n                        <img class=\"card-img-top\" src=\".../100px180/\" alt=\"Card image cap\">\n                        <div class=\"card-body\">\n                            <h5 class=\"card-title\">Configuracion y datos de la cuenta</h5>\n                            <p class=\"card-text\">Consulta tus datos y configura tu cuenta</p>\n                        </div>\n                    </div>                      \n                </div>\n            </div>                        \n        </div>\n<div *ngIf=\"!viajesRemisero\">\n    <p> no se cargaron los viajes </p>\n</div>"
+module.exports = "<app-barralateral></app-barralateral>\n<div *ngIf=\"viajesRemisero\">\n    <div class=\"container\">\n        <div class=\"jumbotron\">\n            <div class=\"row\">              \n                <div class=\"col-sm d-flex align-items-stretch \">\n                    <div class=\"card\" style=\"width: 18rem;\" (click)=\"ir('viajes')\">\n                        <img class=\"card-img-top\" height=\"200\" width=\"300\" src=\"../assets/remiseros/encurso.jpeg/\" alt=\"Card image cap\">\n                        <div class=\"card-body\">\n                            <h5 class=\"card-title\">Viajes </h5>\n                            <p class=\"card-text\"> Ve la lista de tus viajes</p>\n                        </div>\n                    </div>                    \n                </div>\n                <div class=\"col-sm d-flex align-items-stretch\">\n                    <div class=\"card\" style=\"width: 18rem;\" (click)=\"ir('vehiculo')\" >\n                        <img class=\"card-img-top\" height=\"200\" width=\"300\" src=\"../assets/remiseros/autos.jpeg/\" alt=\"Card image cap\">\n                        <div class=\"card-body\">\n                            <h5 class=\"card-title\">Vehiculo</h5>\n                            <p class=\"card-text\"> Ve el vehiculo que tienes asignado</p>\n                        </div>\n                    </div>                      \n                </div>\n                <div class=\"col-sm d-flex align-items-stretch\">\n                    <div class=\"card\" style=\"width: 18rem; \" (click)=\"ir('configuracion')\" >\n                        <img class=\"card-img-top\" height=\"200\" width=\"300\" src=\"../assets/configuracion.jpg/\" alt=\"Card image cap\">\n                        <div class=\"card-body\">\n                            <h5 class=\"card-title\">Configuracion y datos de la cuenta</h5>\n                            <p class=\"card-text\">Consulta tus datos y configura tu cuenta</p>\n                        </div>\n                    </div>                      \n                </div>\n            </div>                        \n        </div>\n<div *ngIf=\"!viajesRemisero\">\n    <p> no se cargaron los viajes </p>\n</div>"
 
 /***/ }),
 
@@ -1978,6 +3095,9 @@ var RemiseroComponent = /** @class */ (function () {
             case 'terminados':
                 this.ruteador.navigate(['/remisero/terminados']);
                 break;
+            case 'configuracion':
+                this.ruteador.navigate(['/cuenta']);
+                break;
             default:
                 break;
         }
@@ -1991,6 +3111,131 @@ var RemiseroComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"], _servicios_auth_auth_service__WEBPACK_IMPORTED_MODULE_2__["AuthService"], _servicios_remisero_service__WEBPACK_IMPORTED_MODULE_1__["RemiseroService"]])
     ], RemiseroComponent);
     return RemiseroComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/componentes/remiseros/remiseros-finalizar/remiseros-finalizar.component.css":
+/*!*********************************************************************************************!*\
+  !*** ./src/app/componentes/remiseros/remiseros-finalizar/remiseros-finalizar.component.css ***!
+  \*********************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/componentes/remiseros/remiseros-finalizar/remiseros-finalizar.component.html":
+/*!**********************************************************************************************!*\
+  !*** ./src/app/componentes/remiseros/remiseros-finalizar/remiseros-finalizar.component.html ***!
+  \**********************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<app-barralateral></app-barralateral>\n<div class=\"container\">\n  <div class=\"jumbotron\">\n    <div class=\"row\" *ngIf=\"!cargando\">\n      <div class=\"col-sm-4 offset-md-4\">\n        <p-messages [(value)]=\"msgs\"></p-messages>\n        <h2 class=\"text-center\"> Finaliza un viaje </h2>\n        <br>\n        <form [formGroup]=\"finalizaViajeForm\" class=\"text-center\">\n          <div class=\"form-group\">\n            <label class=\"center-block\"> Monto\n              <input class=\"form-control\" formControlName=\"monto\">\n              <div [hidden]=\"!this.finalizaViajeForm.controls['monto'].invalid || this.finalizaViajeForm.controls['monto'].pristine\" class=\"alert alert-danger\">\n                <div [hidden]=\"!this.finalizaViajeForm.controls['monto'].hasError('required')\"> El Monto es requerido</div>\n              </div>\n            </label>\n          </div>\n          <button [hidden]=\"esconderBoton\" class=\"btn btn-success btn-block\" [disabled]=\"!this.finalizaViajeForm.valid\" (click)=\"efectivo()\"> Efectivo </button>\n          <button [hidden]=\"esconderBoton\" class=\"btn btn-success btn-block\" [disabled]=\"!this.finalizaViajeForm.valid\" (click)=\"cuentaCorriente()\"> Cuenta Corriente </button>\n        </form>\n      </div>\n    </div>\n    <div class=\"row\" *ngIf=\"cargando\" >\n      <div class=\"col-sm-4 offset-sm-4\">\n        <div class=\"lds-css ng-scope\">\n          <div class=\"lds-blocks\" style=\"100%;height:100%\"><div style=\"left:38px;top:38px;animation-delay:0s\"></div>\n          <div style=\"left:80px;top:38px;animation-delay:0.125s\"></div>\n          <div style=\"left:122px;top:38px;animation-delay:0.25s\"></div>\n          <div style=\"left:38px;top:80px;animation-delay:0.875s\"></div>\n          <div style=\"left:122px;top:80px;animation-delay:0.375s\"></div>\n          <div style=\"left:38px;top:122px;animation-delay:0.75s\"></div>\n          <div style=\"left:80px;top:122px;animation-delay:0.625s\"></div>\n          <div style=\"left:122px;top:122px;animation-delay:0.5s\"></div>\n        </div>\n        <style type=\"text/css\">\n        \n        @keyframes lds-blocks {\n          0% {\n            background: #72cbfd;\n          }\n          12.5% {\n            background: #72cbfd;\n          }\n          12.625% {\n            background: #0b1d27;\n          }\n          100% {\n            background: #0b1d27;\n          }\n        }\n        @-webkit-keyframes lds-blocks {\n          0% {\n            background: #72cbfd;\n          }\n          12.5% {\n            background: #72cbfd;\n          }\n          12.625% {\n            background: #0b1d27;\n          }\n          100% {\n            background: #0b1d27;\n          }\n        }\n        .lds-blocks {\n          position: relative;\n        }\n        .lds-blocks div {\n          position: absolute;\n          width: 40px;\n          height: 40px;\n          background: #0b1d27;\n          -webkit-animation: lds-blocks 1s linear infinite;\n          animation: lds-blocks 1s linear infinite;\n        }\n        .lds-blocks {\n          width: 200px !important;\n          height: 200px !important;\n          -webkit-transform: translate(-100px, -100px) scale(1) translate(100px, 100px);\n          transform: translate(-100px, -100px) scale(1) translate(100px, 100px);\n        }\n        </style>\n      </div>\n    </div>\n  </div>\n</div>"
+
+/***/ }),
+
+/***/ "./src/app/componentes/remiseros/remiseros-finalizar/remiseros-finalizar.component.ts":
+/*!********************************************************************************************!*\
+  !*** ./src/app/componentes/remiseros/remiseros-finalizar/remiseros-finalizar.component.ts ***!
+  \********************************************************************************************/
+/*! exports provided: RemiserosFinalizarComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RemiserosFinalizarComponent", function() { return RemiserosFinalizarComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _servicios_viajes_viajes_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../servicios/viajes/viajes.service */ "./src/app/servicios/viajes/viajes.service.ts");
+/* harmony import */ var _servicios_remiseros_remiseros_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../servicios/remiseros/remiseros.service */ "./src/app/servicios/remiseros/remiseros.service.ts");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+var RemiserosFinalizarComponent = /** @class */ (function () {
+    function RemiserosFinalizarComponent(ruteador, ruta, servicioViaje, servicioRemisero) {
+        this.ruteador = ruteador;
+        this.ruta = ruta;
+        this.servicioViaje = servicioViaje;
+        this.servicioRemisero = servicioRemisero;
+    }
+    RemiserosFinalizarComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.cargando = true;
+        this.esconderBoton = false;
+        this.ruta.params.subscribe(function (params) {
+            _this.idViaje = +params['idViaje'];
+            _this.monto = +params['monto'];
+            _this.servicioViaje.buscarViaje(_this.idViaje)
+                .subscribe(function (data) {
+                console.log(data);
+                _this.cargando = false;
+                _this.finalizaViajeForm = new _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormGroup"]({
+                    monto: new _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormControl"](_this.monto, [
+                        _angular_forms__WEBPACK_IMPORTED_MODULE_4__["Validators"].required
+                    ])
+                });
+            });
+        });
+    };
+    RemiserosFinalizarComponent.prototype.efectivo = function () {
+        var _this = this;
+        this.cargando = true;
+        this.servicioRemisero.finalizarViajeEfectivo(this.idViaje, this.monto)
+            .subscribe(function (data) {
+            _this.cargando = false;
+            _this.esconderBoton = true;
+            _this.mostrarMensaje('success', '¡Exito!', 'El viaje ha finalizado correctamente');
+            setTimeout(function () {
+                _this.ruteador.navigate(['/remisero']);
+            }, 2000);
+        });
+    };
+    RemiserosFinalizarComponent.prototype.cuentaCorriente = function () {
+        var _this = this;
+        this.cargando = true;
+        this.servicioRemisero.finalizarViajeCuentaCorriente(this.idViaje, this.monto)
+            .subscribe(function (data) {
+            _this.cargando = false;
+            _this.esconderBoton = true;
+            _this.mostrarMensaje('success', '¡Exito!', 'El viaje ha finalizado correctamente');
+            setTimeout(function () {
+                _this.ruteador.navigate(['/remisero']);
+            }, 2000);
+        });
+    };
+    RemiserosFinalizarComponent.prototype.mostrarMensaje = function (severidad, resumen, detalle) {
+        this.msgs = [];
+        this.msgs.push({ severity: severidad, summary: resumen, detail: detalle });
+    };
+    RemiserosFinalizarComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-remiseros-finalizar',
+            template: __webpack_require__(/*! ./remiseros-finalizar.component.html */ "./src/app/componentes/remiseros/remiseros-finalizar/remiseros-finalizar.component.html"),
+            styles: [__webpack_require__(/*! ./remiseros-finalizar.component.css */ "./src/app/componentes/remiseros/remiseros-finalizar/remiseros-finalizar.component.css")]
+        }),
+        __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_1__["ActivatedRoute"],
+            _servicios_viajes_viajes_service__WEBPACK_IMPORTED_MODULE_2__["ViajesService"],
+            _servicios_remiseros_remiseros_service__WEBPACK_IMPORTED_MODULE_3__["RemiserosService"]])
+    ], RemiserosFinalizarComponent);
+    return RemiserosFinalizarComponent;
 }());
 
 
@@ -2318,7 +3563,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<app-barralateral></app-barralateral>\n<div class=\"container\">\n    <div class=\"jumbotron\">\n        <h2 class=\"text-center\"> Vehiculos </h2>\n        <div class=\"row\">\n            <button class=\"btn btn-primary btn-block\" (click)=\"mostrarNuevo()\"> Nuevo Auto </button>\n        </div>\n        <div class=\"row\">\n            <div class=\"col-sm\">\n                <app-lista-vehiculos (enviarVehiculo)=\"mostrar($event)\" [vehiculos]=\"autos\" ></app-lista-vehiculos>\n            </div>\n            <div class=\"col-sm\">\n                <app-modificar-vehiculos [dato]=\"auto\" (enviarModificado)=\"modificado($event)\"></app-modificar-vehiculos>\n            </div>\n            <div class=\"col-sm\">\n                <app-nuevo-vehiculo [nuevo]=\"nuevoForm\" (enviarNuevo)=\"agregado($event)\"></app-nuevo-vehiculo>\n            </div>\n        </div>\n    </div>\n</div>"
+module.exports = "<app-barralateral></app-barralateral>\n<div class=\"container\">\n    <div class=\"jumbotron\">\n        <h2 class=\"text-center\"> Vehiculos </h2>\n        <div class=\"row\" *ngIf=\"!cargando\">\n            <button class=\"btn btn-primary btn-block\" (click)=\"mostrarNuevo()\"> Nuevo Auto </button>\n        </div>\n        <div class=\"row\" *ngIf=\"!cargando\">\n            <div class=\"col-sm\">\n                <app-lista-vehiculos (enviarVehiculo)=\"mostrar($event)\" [vehiculos]=\"autos\" ></app-lista-vehiculos>\n            </div>\n            <div class=\"col-sm\">\n                <app-modificar-vehiculos [dato]=\"auto\" (enviarModificado)=\"modificado($event)\"></app-modificar-vehiculos>\n            </div>\n            <div class=\"col-sm\">\n                <app-nuevo-vehiculo [nuevo]=\"nuevoForm\" (enviarNuevo)=\"agregado($event)\"></app-nuevo-vehiculo>\n            </div>\n        </div>\n        <div class=\"row\" *ngIf=\"cargando\" >\n            <div class=\"col-sm-4 offset-sm-4\">\n                <div class=\"lds-css ng-scope\">\n                <div class=\"lds-blocks\" style=\"100%;height:100%\"><div style=\"left:38px;top:38px;animation-delay:0s\"></div>\n                <div style=\"left:80px;top:38px;animation-delay:0.125s\"></div>\n                <div style=\"left:122px;top:38px;animation-delay:0.25s\"></div>\n                <div style=\"left:38px;top:80px;animation-delay:0.875s\"></div>\n                <div style=\"left:122px;top:80px;animation-delay:0.375s\"></div>\n                <div style=\"left:38px;top:122px;animation-delay:0.75s\"></div>\n                <div style=\"left:80px;top:122px;animation-delay:0.625s\"></div>\n                <div style=\"left:122px;top:122px;animation-delay:0.5s\"></div>\n                </div>\n                <style type=\"text/css\">\n                \n                @keyframes lds-blocks {\n                0% {\n                    background: #72cbfd;\n                }\n                12.5% {\n                    background: #72cbfd;\n                }\n                12.625% {\n                    background: #0b1d27;\n                }\n                100% {\n                    background: #0b1d27;\n                }\n                }\n                @-webkit-keyframes lds-blocks {\n                0% {\n                    background: #72cbfd;\n                }\n                12.5% {\n                    background: #72cbfd;\n                }\n                12.625% {\n                    background: #0b1d27;\n                }\n                100% {\n                    background: #0b1d27;\n                }\n                }\n                .lds-blocks {\n                position: relative;\n                }\n                .lds-blocks div {\n                position: absolute;\n                width: 40px;\n                height: 40px;\n                background: #0b1d27;\n                -webkit-animation: lds-blocks 1s linear infinite;\n                animation: lds-blocks 1s linear infinite;\n                }\n                .lds-blocks {\n                width: 200px !important;\n                height: 200px !important;\n                -webkit-transform: translate(-100px, -100px) scale(1) translate(100px, 100px);\n                transform: translate(-100px, -100px) scale(1) translate(100px, 100px);\n                }\n                </style>\n            </div>\n        </div>\n    </div>\n</div>"
 
 /***/ }),
 
@@ -2368,10 +3613,13 @@ var VistaVehiculosComponent = /** @class */ (function () {
     };
     VistaVehiculosComponent.prototype.obtenerVehiculos = function () {
         var _this = this;
+        this.cargando = true;
         this.serviciosVehiculos.vehiculos()
             .subscribe(function (data) {
             _this.autos = data;
-            console.log(data);
+            setTimeout(function () {
+                _this.cargando = false;
+            }, 1500);
         });
     };
     VistaVehiculosComponent = __decorate([
@@ -2509,7 +3757,7 @@ module.exports = ".mapita{\n    height: 300px;\n}"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<app-barralateral></app-barralateral>\n<div class=\"container\">\n    <div class=\"jumbotron\">\n        <h2 class=\"text-center\"> Viaje </h2>\n        <div class=\"row\" [hidden]=\"!cargoBien\">\n            <div class=\"col-sm\">\n                <div class=\"mapita\" #mapa ></div>\n                <h2 class=\"text-center\" > Fecha: {{verViaje.fecha}}</h2>\n                <h2 class=\"text-center\" > Hora : {{verViaje.hora}} </h2>\n                <h2 class=\"text-center\" > Estado : {{verViaje.estado}} </h2>\n                <div *ngIf=\"verViaje.estado != 'finalizado'\">\n                    <h2 class=\"text-center\" > Monto Aproximado :  $ {{verViaje.calcularMonto()}}</h2>\n                    <div class=\"text-center\" *ngIf=\"tipo == 'cliente'\">\n                        <button class=\"btn btn-primary\" (click)=\"modificar()\"> Modificar </button>\n                        <button class=\"btn btn-danger\" (click)=\"cancelar()\"> Cancelar </button>\n                    </div>\n                </div>\n                <div class=\"text-center\" *ngIf=\"verViaje.estado == 'solicitado'\">\n                    <div *ngIf=\"tipo == 'encargado'\">\n                        <button class=\"btn btn-primary\" (click)=\"asignar()\"> Asignar </button>\n                    </div>\n                </div>\n                <div class=\"text-center\" *ngIf=\"verViaje.estado == 'asignado'\">\n                    <div *ngIf=\"tipo == 'remisero'\">\n                        <button class=\"btn btn-danger\" (click)=\"rechazar()\"> Rechazar </button>\n                    </div>\n                </div>\n                <div *ngIf=\"verViaje.estado == 'finalizado'\">\n                    <h2 class=\"text-center\"> Monto : $ {{verViaje.calcularMonto()}} </h2>\n                </div>\n            </div>\n        </div>\n        <div class=\"row\" [hidden]=\"cargoBien\">\n            <h1 class=\"text-center\"> Hubo un error al procesar lo pedido </h1>\n        </div>\n    </div>\n</div>\n"
+module.exports = "<app-barralateral></app-barralateral>\n<div class=\"container\">\n    <div class=\"jumbotron\">\n        <h2 class=\"text-center\"> Viaje </h2>\n        <p-messages [(value)]=\"msgs\"></p-messages>\n        <div class=\"row\" [hidden]=\"!cargoBien\">\n            <div class=\"col-sm\">\n                <div class=\"mapita\" #mapa ></div>\n                <h2 class=\"text-center\" > Fecha: {{verViaje.fecha}}</h2>\n                <h2 class=\"text-center\" > Hora : {{verViaje.hora}} </h2>\n                <h2 class=\"text-center\" > Estado : {{verViaje.estado}} </h2>\n                <div *ngIf=\"verViaje.estado != 'finalizado'\">\n                    <h2 class=\"text-center\" > Monto Aproximado :  $ {{verViaje.calcularMonto()}}</h2>\n                    <div class=\"text-center\" *ngIf=\"tipo == 'cliente'\">\n                        <button class=\"btn btn-primary\" (click)=\"modificar()\"> Modificar </button>\n                        <button class=\"btn btn-danger\" (click)=\"cancelar()\"> Cancelar </button>\n                    </div>\n                </div>\n                <div class=\"text-center\" *ngIf=\"verViaje.estado == 'solicitado'\">\n                    <div *ngIf=\"tipo == 'encargado'\">\n                        <button class=\"btn btn-primary\" (click)=\"asignar()\"> Asignar </button>\n                    </div>\n                </div>\n                <div class=\"text-center\" *ngIf=\"verViaje.estado == 'asignado'\">\n                    <div *ngIf=\"tipo == 'remisero' && fechaComenzar\">\n                        <button class=\"btn btn-success btn-block\" (click)=\"comenzar()\"> Comenzar </button>\n                    </div>\n                    <br>                    \n                    <div *ngIf=\"tipo == 'remisero'\">\n                        <button class=\"btn btn-danger btn-block\" (click)=\"rechazar()\"> Rechazar </button>\n                    </div>\n                </div>\n                <div class=\"text-center\" *ngIf=\"verViaje.estado == 'transcurso'\">\n                    <button class=\"btn btn-success btn-block\" (click)=\"finalizar()\"> Finalizar </button>\n                </div>\n                <div *ngIf=\"verViaje.estado == 'finalizado'\">\n                    <h2 class=\"text-center\"> Monto : $ {{verViaje.calcularMonto()}} </h2>\n                    <div *ngIf=\"tipo == 'cliente'\">\n                        <button class=\"btn btn-info btn-block\" (click)=\"encuesta()\"> Realizar encuesta </button>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <div class=\"row\" [hidden]=\"cargoBien\">\n            <h1 class=\"text-center\"> Hubo un error al procesar lo pedido </h1>\n        </div>\n    </div>\n</div>\n"
 
 /***/ }),
 
@@ -2526,7 +3774,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _servicios_data_data_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../servicios/data/data.service */ "./src/app/servicios/data/data.service.ts");
 /* harmony import */ var _servicios_auth_auth_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../servicios/auth/auth.service */ "./src/app/servicios/auth/auth.service.ts");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _servicios_remiseros_remiseros_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../servicios/remiseros/remiseros.service */ "./src/app/servicios/remiseros/remiseros.service.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2541,14 +3790,17 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 
 
+
 var VerViajeComponent = /** @class */ (function () {
-    function VerViajeComponent(ruteador, data, auth) {
+    function VerViajeComponent(ruteador, data, auth, servicioRemisero) {
         this.ruteador = ruteador;
         this.data = data;
         this.auth = auth;
+        this.servicioRemisero = servicioRemisero;
     }
     VerViajeComponent.prototype.ngOnInit = function () {
         var _this = this;
+        this.fechaComenzar = false;
         this.tipo = this.auth.obtenerToken().data.tipo;
         this.data.currentMessage.subscribe(function (viaje) {
             if (typeof (viaje) === 'string') {
@@ -2557,6 +3809,11 @@ var VerViajeComponent = /** @class */ (function () {
             else {
                 _this.cargoBien = true;
                 _this.verViaje = viaje;
+                var fechaViaje = new Date(_this.verViaje.fecha + 'T' + _this.verViaje.hora + 'Z');
+                var fechaActual = new Date();
+                if (fechaActual.getTime() > fechaViaje.getTime()) {
+                    _this.fechaComenzar = true;
+                }
                 //this.direccionService = new google.maps.DirectionsService;
                 //this.direccionRenderer = new google.maps.DirectionsRenderer();
                 console.log(_this.verViaje);
@@ -2611,6 +3868,29 @@ var VerViajeComponent = /** @class */ (function () {
         this.data.changeMessage(this.verViaje);
         this.ruteador.navigate(['/remisero/rechazar']);
     };
+    VerViajeComponent.prototype.comenzar = function () {
+        var _this = this;
+        this.servicioRemisero.comenzarViaje(this.verViaje.id)
+            .subscribe(function (data) {
+            _this.mostrarMensaje('success', '¡Exito!', '¡Ha comenzado el viaje!');
+            setTimeout(function () {
+                _this.ruteador.navigate(['/viajes']);
+            }, 2000);
+        });
+    };
+    VerViajeComponent.prototype.finalizar = function () {
+        this.ruteador.navigate(['remisero/finalizar', this.verViaje.id.toString(), this.verViaje.monto.toString()]);
+    };
+    VerViajeComponent.prototype.mostrarMensaje = function (severidad, resumen, detalle) {
+        this.msgs = [];
+        this.msgs.push({ severity: severidad, summary: resumen, detail: detalle });
+    };
+    VerViajeComponent.prototype.asignar = function () {
+        this.ruteador.navigate(['encargado/remiseros/asignar', this.verViaje.id.toString()]);
+    };
+    VerViajeComponent.prototype.encuesta = function () {
+        this.ruteador.navigate(['cliente/encuesta', this.verViaje.id.toString()]);
+    };
     __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"])('mapa'),
         __metadata("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"])
@@ -2621,7 +3901,7 @@ var VerViajeComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./ver-viaje.component.html */ "./src/app/componentes/viajes/ver-viaje/ver-viaje.component.html"),
             styles: [__webpack_require__(/*! ./ver-viaje.component.css */ "./src/app/componentes/viajes/ver-viaje/ver-viaje.component.css")]
         }),
-        __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"], _servicios_data_data_service__WEBPACK_IMPORTED_MODULE_1__["DataService"], _servicios_auth_auth_service__WEBPACK_IMPORTED_MODULE_2__["AuthService"]])
+        __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"], _servicios_data_data_service__WEBPACK_IMPORTED_MODULE_1__["DataService"], _servicios_auth_auth_service__WEBPACK_IMPORTED_MODULE_2__["AuthService"], _servicios_remiseros_remiseros_service__WEBPACK_IMPORTED_MODULE_3__["RemiserosService"]])
     ], VerViajeComponent);
     return VerViajeComponent;
 }());
@@ -2648,7 +3928,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<app-barralateral></app-barralateral>\n<div class=\"container\">\n  <div class=\"jumbotron\">\n    <h2 class=\"text-center\"> Viajes </h2>\n    <div class=\"row\">\n      <div class=\"col-sm\">\n        <app-detalle-viajes (enviarViaje)=\"ver($event)\" [detalle]=\"viajes\"></app-detalle-viajes>\n      </div>\n    </div>\n  </div>\n</div>"
+module.exports = "<app-barralateral></app-barralateral>\n<div class=\"container\">\n  <div class=\"jumbotron\">\n    <h2 class=\"text-center\"> Viajes </h2>\n    <div class=\"row\" *ngIf=\"!cargando\">\n      <div class=\"col-sm\">\n        <app-detalle-viajes (enviarViaje)=\"ver($event)\" [detalle]=\"viajes\"></app-detalle-viajes>\n      </div>\n    </div>\n    <div class=\"row\" *ngIf=\"cargando\" >\n      <div class=\"col-sm-4 offset-sm-4\">\n        <div class=\"lds-css ng-scope\">\n          <div class=\"lds-blocks\" style=\"100%;height:100%\"><div style=\"left:38px;top:38px;animation-delay:0s\"></div>\n          <div style=\"left:80px;top:38px;animation-delay:0.125s\"></div>\n          <div style=\"left:122px;top:38px;animation-delay:0.25s\"></div>\n          <div style=\"left:38px;top:80px;animation-delay:0.875s\"></div>\n          <div style=\"left:122px;top:80px;animation-delay:0.375s\"></div>\n          <div style=\"left:38px;top:122px;animation-delay:0.75s\"></div>\n          <div style=\"left:80px;top:122px;animation-delay:0.625s\"></div>\n          <div style=\"left:122px;top:122px;animation-delay:0.5s\"></div>\n        </div>\n        <style type=\"text/css\">\n        \n        @keyframes lds-blocks {\n          0% {\n            background: #72cbfd;\n          }\n          12.5% {\n            background: #72cbfd;\n          }\n          12.625% {\n            background: #0b1d27;\n          }\n          100% {\n            background: #0b1d27;\n          }\n        }\n        @-webkit-keyframes lds-blocks {\n          0% {\n            background: #72cbfd;\n          }\n          12.5% {\n            background: #72cbfd;\n          }\n          12.625% {\n            background: #0b1d27;\n          }\n          100% {\n            background: #0b1d27;\n          }\n        }\n        .lds-blocks {\n          position: relative;\n        }\n        .lds-blocks div {\n          position: absolute;\n          width: 40px;\n          height: 40px;\n          background: #0b1d27;\n          -webkit-animation: lds-blocks 1s linear infinite;\n          animation: lds-blocks 1s linear infinite;\n        }\n        .lds-blocks {\n          width: 200px !important;\n          height: 200px !important;\n          -webkit-transform: translate(-100px, -100px) scale(1) translate(100px, 100px);\n          transform: translate(-100px, -100px) scale(1) translate(100px, 100px);\n        }\n        </style>\n      </div>\n    </div>\n\n  </div>\n</div>"
 
 /***/ }),
 
@@ -2700,6 +3980,7 @@ var VistaViajesComponent = /** @class */ (function () {
     };
     VistaViajesComponent.prototype.todosViajes = function () {
         var _this = this;
+        this.cargando = true;
         this.servicioViajes.obternerViajes()
             .subscribe(function (data) {
             console.log(data);
@@ -2708,10 +3989,14 @@ var VistaViajesComponent = /** @class */ (function () {
                 var destino = new _clases_lugar__WEBPACK_IMPORTED_MODULE_3__["lugar"](element.destino_lat, element.destino_long);
                 _this.viajes.push(new _clases_viajeMaps__WEBPACK_IMPORTED_MODULE_4__["viajeMaps"](element.id, element.fecha, element.hora, element.estado, element.idCliente, element.monto, origen, destino, element.premium));
             });
+            setTimeout(function () {
+                _this.cargando = false;
+            }, 2500);
         });
     };
     VistaViajesComponent.prototype.viajesCliente = function () {
         var _this = this;
+        this.cargando = true;
         this.servicioViajes.obtenerViajesClientes(this.auth.obtenerToken().data.id)
             .subscribe(function (data) {
             console.log(data);
@@ -2720,10 +4005,14 @@ var VistaViajesComponent = /** @class */ (function () {
                 var destino = new _clases_lugar__WEBPACK_IMPORTED_MODULE_3__["lugar"](element.destino_lat, element.destino_long);
                 _this.viajes.push(new _clases_viajeMaps__WEBPACK_IMPORTED_MODULE_4__["viajeMaps"](element.id, element.fecha, element.hora, element.estado, element.idCliente, element.monto, origen, destino, element.premium));
             });
+            setTimeout(function () {
+                _this.cargando = false;
+            }, 2500);
         });
     };
     VistaViajesComponent.prototype.viajesRemiseros = function () {
         var _this = this;
+        this.cargando = true;
         this.servicioViajes.obtenerViajesRemiseros(this.auth.obtenerToken().data.id)
             .subscribe(function (data) {
             data.forEach(function (element) {
@@ -2731,6 +4020,9 @@ var VistaViajesComponent = /** @class */ (function () {
                 var destino = new _clases_lugar__WEBPACK_IMPORTED_MODULE_3__["lugar"](element.destino_lat, element.destino_long);
                 _this.viajes.push(new _clases_viajeMaps__WEBPACK_IMPORTED_MODULE_4__["viajeMaps"](element.id, element.fecha, element.hora, element.estado, element.idCliente, element.monto, origen, destino, element.premium));
             });
+            setTimeout(function () {
+                _this.cargando = false;
+            }, 2500);
         });
     };
     VistaViajesComponent.prototype.ver = function (viajecito) {
@@ -2832,7 +4124,7 @@ module.exports = ".loader {\n  border: 16px solid #f3f3f3;\n  border-radius: 50%
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<app-barralateral></app-barralateral>\n<div class=\"container mt-5\">\n  <div class=\"jumbotron\">\n    <p-messages [(value)]=\"msgs\"></p-messages>\n    <form (ngSubmit)=\"login()\" #loginForm=\"ngForm\">\n      <div class=\"form-group\">\n        <label for=\"exampleInputEmail1\"  >Usuario </label>\n        <input type=\"email\" id=\"usuario\"\n            class=\"form-control\" [(ngModel)]=\"usuarioText\" name=\"usuario\" required pattern=\"[a-zA-Z][a-zA-Z ]+\"\n            #usuario=\"ngModel\" placeholder=\"Ingrese el usuario\">  \n        <div [hidden]=\"usuario.valid  || usuario.pristine\" class=\"alert alert-danger\">\n          <div [hidden]=\"!usuario.hasError('required')\">El usuario es requerido </div>\n          <div [hidden]=\"!usuario.hasError('pattern')\">Se requiere mas de un caracter </div>\n        </div>\n      </div>\n      <div class=\"form-group\">\n        <label for=\"exampleInputPassword1\"  >Contraseña</label>\n        <input type=\"password\" class=\"form-control\" [(ngModel)]=\"passwordText\" id=\"exampleInputPassword1\" \n                required minlength=\"4\" #password=\"ngModel\" name=\"password\" placeholder=\"Contraseña\">\n        <div [hidden]=\"password.valid || password.pristine\"\n            class=\"alert alert-danger\">\n            <div [hidden]=\"!password.hasError('minlength')\">La clave es minimo de 8 caracteres</div>\n            <div [hidden]=\"!password.hasError('required')\">La clave es requerida</div>\n        </div>\n      </div>\n      <div class=\"form-group\">\n      </div>\n      <div class=\"loader\" *ngIf=\"esperando\"></div>\n      <button type=\"submit\" class=\"btn btn-primary\" [hidden]=\"esperando\" [disabled]=\"!loginForm.form.valid || captchaOk\" >Ingresar</button>\n    </form>\n    <div class=\"row\">\n      <button type=\"text\" class=\"btn btn-success btn-block\" [hidden]=\"esperando\" (click)=\"ingresar('admin')\" >Ingresar admin</button>\n    </div>\n    <div class=\"row\">\n      <button type=\"text\" class=\"btn btn-info btn-block\" [hidden]=\"esperando\" (click)=\"ingresar('remisero')\" >Ingresar remisero</button>\n    </div>\n    <div class=\"row\">\n      <button type=\"text\" class=\"btn btn-danger btn-block\" [hidden]=\"esperando\" (click)=\"ingresar('cliente')\" >Ingresar cliente</button>\n    </div>\n\n\n  </div>\n</div>\n"
+module.exports = "<app-barralateral></app-barralateral>\n<div class=\"container mt-5\">\n  <div class=\"jumbotron\">\n    <p-messages [(value)]=\"msgs\"></p-messages>\n    <form (ngSubmit)=\"login()\" #loginForm=\"ngForm\">\n      <div class=\"form-group\">\n        <label for=\"exampleInputEmail1\"  >Usuario </label>\n        <input type=\"email\" id=\"usuario\"\n            class=\"form-control\" [(ngModel)]=\"usuarioText\" name=\"usuario\" required pattern=\"[a-zA-Z][a-zA-Z ]+\"\n            #usuario=\"ngModel\" placeholder=\"Ingrese el usuario\">  \n        <div [hidden]=\"usuario.valid  || usuario.pristine\" class=\"alert alert-danger\">\n          <div [hidden]=\"!usuario.hasError('required')\">El usuario es requerido </div>\n          <div [hidden]=\"!usuario.hasError('pattern')\">Se requiere mas de un caracter </div>\n        </div>\n      </div>\n      <div class=\"form-group\">\n        <label for=\"exampleInputPassword1\"  >Contraseña</label>\n        <input type=\"password\" class=\"form-control\" [(ngModel)]=\"passwordText\" id=\"exampleInputPassword1\" \n                required minlength=\"4\" #password=\"ngModel\" name=\"password\" placeholder=\"Contraseña\">\n        <div [hidden]=\"password.valid || password.pristine\"\n            class=\"alert alert-danger\">\n            <div [hidden]=\"!password.hasError('minlength')\">La clave es minimo de 8 caracteres</div>\n            <div [hidden]=\"!password.hasError('required')\">La clave es requerida</div>\n        </div>\n      </div>\n      <div class=\"loader\" *ngIf=\"esperando\"></div>\n      <button type=\"submit\" class=\"btn btn-primary\" [hidden]=\"esperando\" [disabled]=\"!loginForm.form.valid || captchaOk\" >Ingresar</button>\n    </form>\n    <div class=\"row\">\n      <button type=\"text\" class=\"btn btn-success btn-block\" [hidden]=\"esperando\" (click)=\"ingresar('admin')\" >Ingresar admin</button>\n    </div>\n    <div class=\"row\">\n      <button type=\"text\" class=\"btn btn-info btn-block\" [hidden]=\"esperando\" (click)=\"ingresar('remisero')\" >Ingresar remisero</button>\n    </div>\n    <div class=\"row\">\n      <button type=\"text\" class=\"btn btn-danger btn-block\" [hidden]=\"esperando\" (click)=\"ingresar('cliente')\" >Ingresar cliente</button>\n    </div>\n\n    <a class=\"text-center\" routerLink=\"/registro/cliente\"> ¿Todavia no tienes cuenta? ¡Registrate!</a>\n    <br>\n    <a class=\"text-center\" routerLink=\"/registro/remisero\">¿Queres formar parte de nuestro staff?</a>\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -2909,37 +4201,18 @@ var LoginComponent = /** @class */ (function () {
         this.captchaOk = true;
     };
     LoginComponent.prototype.ingresar = function (usuario) {
-        var _this = this;
         switch (usuario) {
             case 'admin':
-                this.esperando = true;
-                this.loginService.loguear('admin', 'admin')
-                    .subscribe(function (data) {
-                    _this.esperando = false;
-                    localStorage.setItem('token', data.token);
-                    localStorage.setItem('logueado', 'true');
-                    _this.ruteador.navigate(['/encargado']);
-                });
+                this.usuarioText = 'admin';
+                this.passwordText = 'admin';
                 break;
             case 'remisero':
-                this.esperando = true;
-                this.loginService.loguear('juancito', '1111')
-                    .subscribe(function (data) {
-                    _this.esperando = false;
-                    localStorage.setItem('token', data.token);
-                    localStorage.setItem('logueado', 'true');
-                    _this.ruteador.navigate(['/remisero']);
-                });
+                this.usuarioText = 'juancito';
+                this.passwordText = '1111';
                 break;
             case 'cliente':
-                this.esperando = true;
-                this.loginService.loguear('carlos', '2222')
-                    .subscribe(function (data) {
-                    _this.esperando = false;
-                    localStorage.setItem('token', data.token);
-                    localStorage.setItem('logueado', 'true');
-                    _this.ruteador.navigate(['/cliente']);
-                });
+                this.usuarioText = 'carlos';
+                this.passwordText = '2222';
                 break;
             default:
                 break;
@@ -2954,6 +4227,77 @@ var LoginComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [_servicios_auth_auth_service__WEBPACK_IMPORTED_MODULE_3__["AuthService"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"], _servicios_loginservice_service__WEBPACK_IMPORTED_MODULE_1__["LoginserviceService"]])
     ], LoginComponent);
     return LoginComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/ocupado.directive.ts":
+/*!**************************************!*\
+  !*** ./src/app/ocupado.directive.ts ***!
+  \**************************************/
+/*! exports provided: OcupadoDirective */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "OcupadoDirective", function() { return OcupadoDirective; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var OcupadoDirective = /** @class */ (function () {
+    function OcupadoDirective(el) {
+        this.el = el;
+    }
+    OcupadoDirective.prototype.onMouseEnter = function () {
+        this.pintar(this.ocupadoColor);
+    };
+    OcupadoDirective.prototype.onMouseLeave = function () {
+        this.despintar();
+    };
+    OcupadoDirective.prototype.pintar = function (color) {
+        if (color) {
+            this.el.nativeElement.style.backgroundColor = 'red';
+        }
+        else {
+            this.el.nativeElement.style.backgroundColor = 'green';
+        }
+    };
+    OcupadoDirective.prototype.despintar = function () {
+        this.el.nativeElement.style.backgroundColor = null;
+    };
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"])('appOcupado'),
+        __metadata("design:type", Object)
+    ], OcupadoDirective.prototype, "ocupadoColor", void 0);
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["HostListener"])('mouseenter'),
+        __metadata("design:type", Function),
+        __metadata("design:paramtypes", []),
+        __metadata("design:returntype", void 0)
+    ], OcupadoDirective.prototype, "onMouseEnter", null);
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["HostListener"])('mouseleave'),
+        __metadata("design:type", Function),
+        __metadata("design:paramtypes", []),
+        __metadata("design:returntype", void 0)
+    ], OcupadoDirective.prototype, "onMouseLeave", null);
+    OcupadoDirective = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Directive"])({
+            selector: '[appOcupado]'
+        }),
+        __metadata("design:paramtypes", [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"]])
+    ], OcupadoDirective);
+    return OcupadoDirective;
 }());
 
 
@@ -3059,23 +4403,29 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _componentes_remiseros_remisero_remisero_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../componentes/remiseros/remisero/remisero.component */ "./src/app/componentes/remiseros/remisero/remisero.component.ts");
 /* harmony import */ var _componentes_remiseros_remisero_asignados_remisero_asignados_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../componentes/remiseros/remisero-asignados/remisero-asignados.component */ "./src/app/componentes/remiseros/remisero-asignados/remisero-asignados.component.ts");
 /* harmony import */ var _componentes_remiseros_remisero_rechazar_remisero_rechazar_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../componentes/remiseros/remisero-rechazar/remisero-rechazar.component */ "./src/app/componentes/remiseros/remisero-rechazar/remisero-rechazar.component.ts");
-/* harmony import */ var _componentes_clientes_cliente_nuevo_cliente_nuevo_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../componentes/clientes/cliente-nuevo/cliente-nuevo.component */ "./src/app/componentes/clientes/cliente-nuevo/cliente-nuevo.component.ts");
-/* harmony import */ var _componentes_clientes_cliente_modificar_cliente_modificar_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../componentes/clientes/cliente-modificar/cliente-modificar.component */ "./src/app/componentes/clientes/cliente-modificar/cliente-modificar.component.ts");
-/* harmony import */ var _componentes_clientes_cliente_info_nuevo_cliente_info_nuevo_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../componentes/clientes/cliente-info-nuevo/cliente-info-nuevo.component */ "./src/app/componentes/clientes/cliente-info-nuevo/cliente-info-nuevo.component.ts");
-/* harmony import */ var _componentes_clientes_cliente_cancelar_cliente_cancelar_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../componentes/clientes/cliente-cancelar/cliente-cancelar.component */ "./src/app/componentes/clientes/cliente-cancelar/cliente-cancelar.component.ts");
-/* harmony import */ var _cliente_cliente_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../cliente/cliente.component */ "./src/app/cliente/cliente.component.ts");
-/* harmony import */ var _login_login_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../login/login.component */ "./src/app/login/login.component.ts");
-/* harmony import */ var _error_error_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../error/error.component */ "./src/app/error/error.component.ts");
-/* harmony import */ var _servicios_verificar_jwt_service__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../servicios/verificar-jwt.service */ "./src/app/servicios/verificar-jwt.service.ts");
-/* harmony import */ var _servicios_verificarTipo_verificar_tipo_service__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../servicios/verificarTipo/verificar-tipo.service */ "./src/app/servicios/verificarTipo/verificar-tipo.service.ts");
-/* harmony import */ var _servicios_verificarTipo_verificar_tipo_cliente_service__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../servicios/verificarTipo/verificar-tipo-cliente.service */ "./src/app/servicios/verificarTipo/verificar-tipo-cliente.service.ts");
-/* harmony import */ var _servicios_verificarTipo_verificar_encargado_service__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../servicios/verificarTipo/verificar-encargado.service */ "./src/app/servicios/verificarTipo/verificar-encargado.service.ts");
-/* harmony import */ var _componentes_encargado_principal_principal_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../componentes/encargado/principal/principal.component */ "./src/app/componentes/encargado/principal/principal.component.ts");
-/* harmony import */ var _componentes_encargado_remiseros_encargado_remiseros_encargado_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../componentes/encargado/remiseros-encargado/remiseros-encargado.component */ "./src/app/componentes/encargado/remiseros-encargado/remiseros-encargado.component.ts");
-/* harmony import */ var _componentes_encargado_remiseros_nuevo_remiseros_nuevo_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../componentes/encargado/remiseros-nuevo/remiseros-nuevo.component */ "./src/app/componentes/encargado/remiseros-nuevo/remiseros-nuevo.component.ts");
-/* harmony import */ var _componentes_vehiculos_vista_vehiculos_vista_vehiculos_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ../componentes/vehiculos/vista-vehiculos/vista-vehiculos.component */ "./src/app/componentes/vehiculos/vista-vehiculos/vista-vehiculos.component.ts");
-/* harmony import */ var _componentes_viajes_vista_viajes_vista_viajes_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ../componentes/viajes/vista-viajes/vista-viajes.component */ "./src/app/componentes/viajes/vista-viajes/vista-viajes.component.ts");
-/* harmony import */ var _componentes_viajes_ver_viaje_ver_viaje_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ../componentes/viajes/ver-viaje/ver-viaje.component */ "./src/app/componentes/viajes/ver-viaje/ver-viaje.component.ts");
+/* harmony import */ var _componentes_remiseros_remiseros_finalizar_remiseros_finalizar_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../componentes/remiseros/remiseros-finalizar/remiseros-finalizar.component */ "./src/app/componentes/remiseros/remiseros-finalizar/remiseros-finalizar.component.ts");
+/* harmony import */ var _componentes_clientes_cliente_nuevo_cliente_nuevo_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../componentes/clientes/cliente-nuevo/cliente-nuevo.component */ "./src/app/componentes/clientes/cliente-nuevo/cliente-nuevo.component.ts");
+/* harmony import */ var _componentes_clientes_cliente_modificar_cliente_modificar_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../componentes/clientes/cliente-modificar/cliente-modificar.component */ "./src/app/componentes/clientes/cliente-modificar/cliente-modificar.component.ts");
+/* harmony import */ var _componentes_clientes_cliente_info_nuevo_cliente_info_nuevo_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../componentes/clientes/cliente-info-nuevo/cliente-info-nuevo.component */ "./src/app/componentes/clientes/cliente-info-nuevo/cliente-info-nuevo.component.ts");
+/* harmony import */ var _componentes_clientes_cliente_cancelar_cliente_cancelar_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../componentes/clientes/cliente-cancelar/cliente-cancelar.component */ "./src/app/componentes/clientes/cliente-cancelar/cliente-cancelar.component.ts");
+/* harmony import */ var _componentes_clientes_cliente_encuesta_cliente_encuesta_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../componentes/clientes/cliente-encuesta/cliente-encuesta.component */ "./src/app/componentes/clientes/cliente-encuesta/cliente-encuesta.component.ts");
+/* harmony import */ var _cliente_cliente_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../cliente/cliente.component */ "./src/app/cliente/cliente.component.ts");
+/* harmony import */ var _login_login_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../login/login.component */ "./src/app/login/login.component.ts");
+/* harmony import */ var _error_error_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../error/error.component */ "./src/app/error/error.component.ts");
+/* harmony import */ var _servicios_verificar_jwt_service__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../servicios/verificar-jwt.service */ "./src/app/servicios/verificar-jwt.service.ts");
+/* harmony import */ var _servicios_verificarTipo_verificar_tipo_service__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../servicios/verificarTipo/verificar-tipo.service */ "./src/app/servicios/verificarTipo/verificar-tipo.service.ts");
+/* harmony import */ var _servicios_verificarTipo_verificar_tipo_cliente_service__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../servicios/verificarTipo/verificar-tipo-cliente.service */ "./src/app/servicios/verificarTipo/verificar-tipo-cliente.service.ts");
+/* harmony import */ var _servicios_verificarTipo_verificar_encargado_service__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../servicios/verificarTipo/verificar-encargado.service */ "./src/app/servicios/verificarTipo/verificar-encargado.service.ts");
+/* harmony import */ var _componentes_encargado_principal_principal_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../componentes/encargado/principal/principal.component */ "./src/app/componentes/encargado/principal/principal.component.ts");
+/* harmony import */ var _componentes_encargado_remiseros_encargado_remiseros_encargado_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ../componentes/encargado/remiseros-encargado/remiseros-encargado.component */ "./src/app/componentes/encargado/remiseros-encargado/remiseros-encargado.component.ts");
+/* harmony import */ var _componentes_encargado_asignar_viaje_asignar_viaje_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ../componentes/encargado/asignar-viaje/asignar-viaje.component */ "./src/app/componentes/encargado/asignar-viaje/asignar-viaje.component.ts");
+/* harmony import */ var _componentes_encargado_remiseros_nuevo_remiseros_nuevo_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ../componentes/encargado/remiseros-nuevo/remiseros-nuevo.component */ "./src/app/componentes/encargado/remiseros-nuevo/remiseros-nuevo.component.ts");
+/* harmony import */ var _componentes_encargado_estadisticas_ganancias_ganancias_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ../componentes/encargado/estadisticas/ganancias/ganancias.component */ "./src/app/componentes/encargado/estadisticas/ganancias/ganancias.component.ts");
+/* harmony import */ var _componentes_registro_registro_cliente_registro_cliente_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ../componentes/registro/registro-cliente/registro-cliente.component */ "./src/app/componentes/registro/registro-cliente/registro-cliente.component.ts");
+/* harmony import */ var _componentes_vehiculos_vista_vehiculos_vista_vehiculos_component__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ../componentes/vehiculos/vista-vehiculos/vista-vehiculos.component */ "./src/app/componentes/vehiculos/vista-vehiculos/vista-vehiculos.component.ts");
+/* harmony import */ var _componentes_viajes_vista_viajes_vista_viajes_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ../componentes/viajes/vista-viajes/vista-viajes.component */ "./src/app/componentes/viajes/vista-viajes/vista-viajes.component.ts");
+/* harmony import */ var _componentes_viajes_ver_viaje_ver_viaje_component__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ../componentes/viajes/ver-viaje/ver-viaje.component */ "./src/app/componentes/viajes/ver-viaje/ver-viaje.component.ts");
+/* harmony import */ var _componentes_configuracion_cuenta_configuracion_cuenta_component__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ../componentes/configuracion-cuenta/configuracion-cuenta.component */ "./src/app/componentes/configuracion-cuenta/configuracion-cuenta.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3105,40 +4455,59 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
+
+
+
+
+
+
 var miRuteo = [
-    { path: 'login', component: _login_login_component__WEBPACK_IMPORTED_MODULE_11__["LoginComponent"] },
-    { path: 'remisero', canActivate: [_servicios_verificar_jwt_service__WEBPACK_IMPORTED_MODULE_13__["VerificarJWTService"], _servicios_verificarTipo_verificar_tipo_service__WEBPACK_IMPORTED_MODULE_14__["VerificarTipoService"]],
+    { path: 'login', component: _login_login_component__WEBPACK_IMPORTED_MODULE_13__["LoginComponent"] },
+    { path: 'cuenta', component: _componentes_configuracion_cuenta_configuracion_cuenta_component__WEBPACK_IMPORTED_MODULE_28__["ConfiguracionCuentaComponent"] },
+    { path: 'remisero', canActivate: [_servicios_verificar_jwt_service__WEBPACK_IMPORTED_MODULE_15__["VerificarJWTService"], _servicios_verificarTipo_verificar_tipo_service__WEBPACK_IMPORTED_MODULE_16__["VerificarTipoService"]],
         children: [
             { path: '', component: _componentes_remiseros_remisero_remisero_component__WEBPACK_IMPORTED_MODULE_3__["RemiseroComponent"] },
             { path: 'asignados', component: _componentes_remiseros_remisero_asignados_remisero_asignados_component__WEBPACK_IMPORTED_MODULE_4__["RemiseroAsignadosComponent"] },
-            { path: 'rechazar', component: _componentes_remiseros_remisero_rechazar_remisero_rechazar_component__WEBPACK_IMPORTED_MODULE_5__["RemiseroRechazarComponent"] }
+            { path: 'rechazar', component: _componentes_remiseros_remisero_rechazar_remisero_rechazar_component__WEBPACK_IMPORTED_MODULE_5__["RemiseroRechazarComponent"] },
+            { path: 'finalizar/:idViaje/:monto', component: _componentes_remiseros_remiseros_finalizar_remiseros_finalizar_component__WEBPACK_IMPORTED_MODULE_6__["RemiserosFinalizarComponent"] }
         ] },
-    { path: 'cliente', canActivate: [_servicios_verificar_jwt_service__WEBPACK_IMPORTED_MODULE_13__["VerificarJWTService"], _servicios_verificarTipo_verificar_tipo_cliente_service__WEBPACK_IMPORTED_MODULE_15__["VerificarTipoClienteService"]],
+    { path: 'cliente', canActivate: [_servicios_verificar_jwt_service__WEBPACK_IMPORTED_MODULE_15__["VerificarJWTService"], _servicios_verificarTipo_verificar_tipo_cliente_service__WEBPACK_IMPORTED_MODULE_17__["VerificarTipoClienteService"]],
         children: [
-            { path: '', component: _cliente_cliente_component__WEBPACK_IMPORTED_MODULE_10__["ClienteComponent"] },
-            { path: 'nuevo', component: _componentes_clientes_cliente_nuevo_cliente_nuevo_component__WEBPACK_IMPORTED_MODULE_6__["ClienteNuevoComponent"] },
-            { path: 'modificar', component: _componentes_clientes_cliente_modificar_cliente_modificar_component__WEBPACK_IMPORTED_MODULE_7__["ClienteModificarComponent"] },
-            { path: 'infoNuevo', component: _componentes_clientes_cliente_info_nuevo_cliente_info_nuevo_component__WEBPACK_IMPORTED_MODULE_8__["ClienteInfoNuevoComponent"] },
-            { path: 'cancelar', component: _componentes_clientes_cliente_cancelar_cliente_cancelar_component__WEBPACK_IMPORTED_MODULE_9__["ClienteCancelarComponent"] }
+            { path: '', component: _cliente_cliente_component__WEBPACK_IMPORTED_MODULE_12__["ClienteComponent"] },
+            { path: 'nuevo', component: _componentes_clientes_cliente_nuevo_cliente_nuevo_component__WEBPACK_IMPORTED_MODULE_7__["ClienteNuevoComponent"] },
+            { path: 'modificar', component: _componentes_clientes_cliente_modificar_cliente_modificar_component__WEBPACK_IMPORTED_MODULE_8__["ClienteModificarComponent"] },
+            { path: 'infoNuevo', component: _componentes_clientes_cliente_info_nuevo_cliente_info_nuevo_component__WEBPACK_IMPORTED_MODULE_9__["ClienteInfoNuevoComponent"] },
+            { path: 'cancelar', component: _componentes_clientes_cliente_cancelar_cliente_cancelar_component__WEBPACK_IMPORTED_MODULE_10__["ClienteCancelarComponent"] },
+            { path: 'encuesta/:idViaje', component: _componentes_clientes_cliente_encuesta_cliente_encuesta_component__WEBPACK_IMPORTED_MODULE_11__["ClienteEncuestaComponent"] }
         ] },
-    { path: 'encargado', canActivate: [_servicios_verificar_jwt_service__WEBPACK_IMPORTED_MODULE_13__["VerificarJWTService"], _servicios_verificarTipo_verificar_encargado_service__WEBPACK_IMPORTED_MODULE_16__["VerificarEncargadoService"]],
+    { path: 'encargado', canActivate: [_servicios_verificar_jwt_service__WEBPACK_IMPORTED_MODULE_15__["VerificarJWTService"], _servicios_verificarTipo_verificar_encargado_service__WEBPACK_IMPORTED_MODULE_18__["VerificarEncargadoService"]],
         children: [
-            { path: '', component: _componentes_encargado_principal_principal_component__WEBPACK_IMPORTED_MODULE_17__["PrincipalComponent"] },
+            { path: '', component: _componentes_encargado_principal_principal_component__WEBPACK_IMPORTED_MODULE_19__["PrincipalComponent"] },
             { path: 'remiseros',
                 children: [
-                    { path: '', component: _componentes_encargado_remiseros_encargado_remiseros_encargado_component__WEBPACK_IMPORTED_MODULE_18__["RemiserosEncargadoComponent"] },
-                    { path: 'nuevo', component: _componentes_encargado_remiseros_nuevo_remiseros_nuevo_component__WEBPACK_IMPORTED_MODULE_19__["RemiserosNuevoComponent"] },
+                    { path: '', component: _componentes_encargado_remiseros_encargado_remiseros_encargado_component__WEBPACK_IMPORTED_MODULE_20__["RemiserosEncargadoComponent"] },
+                    { path: 'nuevo', component: _componentes_encargado_remiseros_nuevo_remiseros_nuevo_component__WEBPACK_IMPORTED_MODULE_22__["RemiserosNuevoComponent"] },
+                    { path: 'asignar/:idViaje', component: _componentes_encargado_asignar_viaje_asignar_viaje_component__WEBPACK_IMPORTED_MODULE_21__["AsignarViajeComponent"] },
                 ] },
-            { path: 'infoNuevo', component: _componentes_clientes_cliente_info_nuevo_cliente_info_nuevo_component__WEBPACK_IMPORTED_MODULE_8__["ClienteInfoNuevoComponent"] },
-            { path: 'vehiculos', component: _componentes_vehiculos_vista_vehiculos_vista_vehiculos_component__WEBPACK_IMPORTED_MODULE_20__["VistaVehiculosComponent"] },
+            { path: 'ganancias', canActivate: [_servicios_verificar_jwt_service__WEBPACK_IMPORTED_MODULE_15__["VerificarJWTService"], _servicios_verificarTipo_verificar_encargado_service__WEBPACK_IMPORTED_MODULE_18__["VerificarEncargadoService"]],
+                children: [
+                    { path: '', component: _componentes_encargado_estadisticas_ganancias_ganancias_component__WEBPACK_IMPORTED_MODULE_23__["GananciasComponent"] }
+                ] },
+            { path: 'infoNuevo', component: _componentes_clientes_cliente_info_nuevo_cliente_info_nuevo_component__WEBPACK_IMPORTED_MODULE_9__["ClienteInfoNuevoComponent"] },
+            { path: 'vehiculos', component: _componentes_vehiculos_vista_vehiculos_vista_vehiculos_component__WEBPACK_IMPORTED_MODULE_25__["VistaVehiculosComponent"] },
         ] },
     { path: 'viajes',
         children: [
-            { path: '', component: _componentes_viajes_vista_viajes_vista_viajes_component__WEBPACK_IMPORTED_MODULE_21__["VistaViajesComponent"] },
-            { path: 'info', component: _componentes_viajes_ver_viaje_ver_viaje_component__WEBPACK_IMPORTED_MODULE_22__["VerViajeComponent"] }
+            { path: '', component: _componentes_viajes_vista_viajes_vista_viajes_component__WEBPACK_IMPORTED_MODULE_26__["VistaViajesComponent"] },
+            { path: 'info', component: _componentes_viajes_ver_viaje_ver_viaje_component__WEBPACK_IMPORTED_MODULE_27__["VerViajeComponent"] }
         ] },
-    { path: 'error', component: _error_error_component__WEBPACK_IMPORTED_MODULE_12__["ErrorComponent"] },
-    { path: '**', component: _login_login_component__WEBPACK_IMPORTED_MODULE_11__["LoginComponent"] },
+    { path: 'registro',
+        children: [
+            { path: '', component: _error_error_component__WEBPACK_IMPORTED_MODULE_14__["ErrorComponent"] },
+            { path: 'cliente', component: _componentes_registro_registro_cliente_registro_cliente_component__WEBPACK_IMPORTED_MODULE_24__["RegistroClienteComponent"] }
+        ] },
+    { path: 'error', component: _error_error_component__WEBPACK_IMPORTED_MODULE_14__["ErrorComponent"] },
+    { path: '**', component: _login_login_component__WEBPACK_IMPORTED_MODULE_13__["LoginComponent"] },
 ];
 var RuteandoModule = /** @class */ (function () {
     function RuteandoModule() {
@@ -3273,6 +4642,22 @@ var ClienteService = /** @class */ (function () {
         var datos = "idViaje=" + idViaje + "&motivo=" + motivo + "&mensaje=" + mensaje + "&token=" + token;
         return this.nuevoHttp.httpPostData('viajes/cancelar', datos);
     };
+    ClienteService.prototype.registrar = function (nombre, apellido, usuario, password) {
+        var tipo = 'cliente';
+        var datos = "nombre=" + nombre + "&apellido=" + apellido + "&usuario=" + usuario + "&password=" + password + "&tipo=" + tipo;
+        console.log(datos);
+        return this.nuevoHttp.httpPostData('ingreso/registro', datos);
+    };
+    ClienteService.prototype.buscarCliente = function (id) {
+        var token = localStorage.getItem('token');
+        var datos = "id=" + id + "&token=" + token;
+        return this.nuevoHttp.httpPostData('cliente/buscar', datos);
+    };
+    ClienteService.prototype.modificarCliente = function (usuario) {
+        var token = localStorage.getItem('token');
+        var datos = "id=" + usuario.id + "&nombre=" + usuario.nombre + "&apellido=" + usuario.apellido + "&usuario=" + usuario.usuario + "&password=" + usuario.password + "&token=" + token;
+        return this.nuevoHttp.httpPostData('cliente/modificar', datos);
+    };
     ClienteService = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
             providedIn: 'root'
@@ -3324,6 +4709,120 @@ var DataService = /** @class */ (function () {
         __metadata("design:paramtypes", [])
     ], DataService);
     return DataService;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/servicios/encuesta/encuesta.service.ts":
+/*!********************************************************!*\
+  !*** ./src/app/servicios/encuesta/encuesta.service.ts ***!
+  \********************************************************/
+/*! exports provided: EncuestaService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EncuestaService", function() { return EncuestaService; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _nuevohttp_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../nuevohttp.service */ "./src/app/servicios/nuevohttp.service.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var EncuestaService = /** @class */ (function () {
+    function EncuestaService(nuevohttp) {
+        this.nuevohttp = nuevohttp;
+    }
+    EncuestaService.prototype.guardarEncuesta = function (guardada) {
+        var token = localStorage.getItem('token');
+        var datos = "idViaje=" + guardada.idViaje + "&idRemisero=" + guardada.idRemisero + "&idVehiculo=" + guardada.idVehiculo + "&remisero=" + guardada.remisero + "&estado_vehiculo=" + guardada.estado_vehiculo + "&recomendacion=" + guardada.recomendacion + "&viaje=" + guardada.viaje + "&conductor=" + guardada.conductor + "&vehiculo=" + guardada.vehiculo + "&camino=" + guardada.camino + "&reserva=" + guardada.reserva + "&cobranza=" + guardada.cobranza + "&comentario=" + guardada.comentario + "&foto_1=" + guardada.foto_1 + "&foto_2=" + guardada.foto_2 + "&foto_3=" + guardada.foto_3;
+        return this.nuevohttp.httpPostData('encuesta/nuevo', datos);
+    };
+    EncuestaService.prototype.buscar = function (idViaje) {
+        var token = localStorage.getItem('idViaje');
+        var datos = "idViaje=" + idViaje;
+        return this.nuevohttp.httpPostData('encuesta/buscar', datos);
+    };
+    EncuestaService = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
+            providedIn: 'root'
+        }),
+        __metadata("design:paramtypes", [_nuevohttp_service__WEBPACK_IMPORTED_MODULE_1__["NuevohttpService"]])
+    ], EncuestaService);
+    return EncuestaService;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/servicios/fotos/fotos.service.ts":
+/*!**************************************************!*\
+  !*** ./src/app/servicios/fotos/fotos.service.ts ***!
+  \**************************************************/
+/*! exports provided: FotosService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FotosService", function() { return FotosService; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var FotosService = /** @class */ (function () {
+    function FotosService(nuevoHttp) {
+        this.nuevoHttp = nuevoHttp;
+        this.api = "http://localhost/backendTp2/index.php/";
+        //api = "https://remiseriagustavopetruzzi.000webhostapp.com/index.php/";
+        //cabecera = new HttpHeaders().set('Content-Type', 'multipart/form-data');
+        this.cabecera = new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpHeaders"]().set('Content-Type', 'application/x-www-form-urlencoded');
+    }
+    FotosService.prototype.subirFotoUsuario = function (foto) {
+        var token = localStorage.getItem('token');
+        var fd = new FormData();
+        var url = 'ingreso/subirFoto';
+        var datos = "foto1=\"" + foto;
+        /*
+        let params = new HttpParams;
+        fd.append('nombre', 'juan');
+        fd.append('foto1', foto.value);
+        const options = {
+          params: params,
+          reportProgress: true
+        }
+        let ruta = this.api + url;
+        const req = new HttpRequest('POST', ruta, fd, options );
+    
+        return this.nuevoHttp.request(req);
+        */
+        return this.nuevoHttp.post(this.api + url, datos, foto);
+    };
+    FotosService = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
+            providedIn: 'root'
+        }),
+        __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]])
+    ], FotosService);
+    return FotosService;
 }());
 
 
@@ -3527,6 +5026,39 @@ var RemiserosService = /** @class */ (function () {
         var token = localStorage.getItem('token');
         var datos = "idViaje=" + idViaje + "&motivo=" + motivo + "&mensaje=" + mensaje + "&token=" + token;
         return this.nuevoHttp.httpPostData('viajes/rechazar', datos);
+    };
+    RemiserosService.prototype.asignarViaje = function (idViaje, idRemisero) {
+        var token = localStorage.getItem('token');
+        var datos = "idViaje=" + idViaje + "&idRemisero=" + idRemisero + "&token=" + token;
+        return this.nuevoHttp.httpPostData('viajes/asignar', datos);
+    };
+    RemiserosService.prototype.buscarRemisero = function (id) {
+        var token = localStorage.getItem('token');
+        var datos = "id=" + id + "&token=" + token;
+        return this.nuevoHttp.httpPostData('remisero/buscar', datos);
+    };
+    RemiserosService.prototype.buscarRemiseroVehiculo = function (id) {
+        var token = localStorage.getItem('token');
+        var datos = "id=" + id + "&token=" + token;
+        return this.nuevoHttp.httpPostData('remisero/buscar', datos);
+    };
+    RemiserosService.prototype.comenzarViaje = function (idViaje) {
+        var token = localStorage.getItem('token');
+        var datos = "idViaje=" + idViaje + "&token=" + token;
+        return this.nuevoHttp.httpPostData('remisero/comenzar', datos);
+    };
+    RemiserosService.prototype.finalizarViajeEfectivo = function (idViaje, monto) {
+        var token = localStorage.getItem('token');
+        var datos = "idViaje=" + idViaje + "&monto=" + monto + "&token=" + token;
+        return this.nuevoHttp.httpPostData('remisero/finalizarefectivo', datos);
+    };
+    RemiserosService.prototype.finalizarViajeCuentaCorriente = function (idViaje, monto) {
+        var token = localStorage.getItem('token');
+        var datos = "idViaje=" + idViaje + "&monto=" + monto + "&token=" + token;
+        return this.nuevoHttp.httpPostData('remisero/finalizarcuentacorriente', datos);
+    };
+    RemiserosService.prototype.listaRemiserosVehiculos = function () {
+        return this.nuevoHttp.httpGet("remiseros/vehiculos");
     };
     RemiserosService = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
@@ -3892,6 +5424,21 @@ var ViajesService = /** @class */ (function () {
         var token = localStorage.getItem('token');
         var datos = "token=" + token + "&idRemisero=" + idRemisero;
         return this.nuevoHttp.httpPostData("viajes/remisero", datos);
+    };
+    ViajesService.prototype.buscarViaje = function (idViaje) {
+        var token = localStorage.getItem('token');
+        var datos = "token=" + token + "&idViaje=" + idViaje;
+        return this.nuevoHttp.httpPostData('viajes/buscar', datos);
+    };
+    ViajesService.prototype.obtenerViajeFecha = function (fecha) {
+        var token = localStorage.getItem('token');
+        var datos = "token=" + token + "&fecha=" + fecha;
+        return this.nuevoHttp.httpPostData('viajes/fecha', datos);
+    };
+    ViajesService.prototype.montos = function () {
+        var token = localStorage.getItem('token');
+        var datos = "token=" + token;
+        return this.nuevoHttp.httpPostData('estadisticas/ganancias', datos);
     };
     ViajesService = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({

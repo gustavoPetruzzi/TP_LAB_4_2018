@@ -35,6 +35,9 @@
                 </div>
                 <div *ngIf="verViaje.estado == 'finalizado'">
                     <h2 class="text-center"> Monto : $ {{verViaje.calcularMonto()}} </h2>
+                    <div *ngIf="tipo == 'cliente'">
+                        <button class="btn btn-info btn-block" (click)="encuesta()"> Realizar encuesta </button>
+                    </div>
                 </div>
             </div>
         </div>

@@ -25,7 +25,9 @@ export class PrincipalComponent implements OnInit {
         break;
       case 'terminados':
         this.ruteador.navigate(['/encargado/terminados']);
-        break;              
+        break;
+      case 'ganancias':
+        this.ruteador.navigate(['/encargado/ganancias'])              
       default:
         
         break;

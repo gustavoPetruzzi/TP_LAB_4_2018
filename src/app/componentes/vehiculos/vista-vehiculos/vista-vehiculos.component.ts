@@ -12,7 +12,9 @@ export class VistaVehiculosComponent implements OnInit {
   auto:vehiculo;
   autos:vehiculo[];
   nuevoForm:Boolean;
+  cargando:Boolean;
   ngOnInit() {
+    
     this.obtenerVehiculos();
   }
 
@@ -35,10 +37,13 @@ export class VistaVehiculosComponent implements OnInit {
   }
 
   public obtenerVehiculos(){
+    this.cargando = true;
     this.serviciosVehiculos.vehiculos()
     .subscribe(data =>{
       this.autos = data;
-      console.log(data);
+      setTimeout(() => {
+        this.cargando = false;
+      }, 1500);
     });
   }
 

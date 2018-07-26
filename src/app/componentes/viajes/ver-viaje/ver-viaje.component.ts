@@ -121,9 +121,17 @@ export class VerViajeComponent implements OnInit {
   public finalizar(){
     this.ruteador.navigate(['remisero/finalizar', this.verViaje.id.toString(), this.verViaje.monto.toString()]);
   }
+
   public mostrarMensaje(severidad:string, resumen:string, detalle:string) {
     this.msgs = [];
     this.msgs.push({severity:severidad, summary:resumen, detail:detalle});
-  }  
+  }
+  public asignar(){
+    this.ruteador.navigate(['encargado/remiseros/asignar', this.verViaje.id.toString()]);
+  }
+
+  public encuesta(){
+    this.ruteador.navigate(['cliente/encuesta', this.verViaje.id.toString()] );
+  }
 
 }
