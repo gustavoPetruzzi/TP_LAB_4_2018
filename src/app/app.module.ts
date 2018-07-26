@@ -64,6 +64,7 @@ import {SliderModule} from 'primeng/slider';
 import {ChartModule} from 'primeng/chart';
 
 import { GananciasComponent } from './componentes/encargado/estadisticas/ganancias/ganancias.component';
+import { CapitalizarPipe } from './pipes/capitalizar.pipe';
 export function tokenGetter() {
   return localStorage.getItem('token');
 }
@@ -100,7 +101,8 @@ export function tokenGetter() {
     AsignarViajeComponent,
     OcupadoDirective,
     ClienteEncuestaComponent,
-    GananciasComponent
+    GananciasComponent,
+    CapitalizarPipe
   ],
   imports: [
     BrowserModule,

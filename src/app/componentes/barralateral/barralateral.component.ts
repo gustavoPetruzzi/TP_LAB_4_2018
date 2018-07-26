@@ -11,7 +11,6 @@ declare interface RouteInfo {
 export const RutasRemisero: RouteInfo[] = [
     { path: '/remisero', title: 'Menu principal',  icon: 'pe-7s-graph', class: '' },
     { path: '/viajes', title: 'Viajes',  icon: 'pe-7s-graph', class: '' },
-    { path: '/vehiculos', title: 'Vehiculo',  icon:'pe-7s-user', class: '' },
     { path: '/cuenta', title: 'Configuracion',  icon:'pe-7s-science', class: '' },
 ];
 export const RutasCliente: RouteInfo[] = [

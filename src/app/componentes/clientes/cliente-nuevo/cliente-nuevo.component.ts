@@ -25,6 +25,7 @@ export class ClienteNuevoComponent implements OnInit {
   zoom: number;
   origenControl:FormControl;
   destinoControl:FormControl;
+  fechaActual:Date;
   @ViewChild('origen') 
   public origenElementRef: ElementRef;
   
@@ -32,7 +33,7 @@ export class ClienteNuevoComponent implements OnInit {
   public destinoElementRef: ElementRef;
   origen: google.maps.LatLng;
   destino: google.maps.LatLng;
-
+  msgs: any[];
   mensaje:any;
   
   constructor(
@@ -45,7 +46,8 @@ export class ClienteNuevoComponent implements OnInit {
   captchaOk:boolean;
   ngOnInit() {
     //-58.381592
-    this.captchaOk = true;
+    this.fechaActual = new Date();
+    this.captchaOk = false;
     this.modificado = null;
     this.latitude = -34.603722;
     this.longitude = -58.381592;
@@ -150,8 +152,13 @@ export class ClienteNuevoComponent implements OnInit {
     }
   }
 
-  public showResponse(evento:any){
+  public showResponse($event){
     this.captchaOk = true;
+  }  
+
+  public mostrarMensaje(severidad:string, resumen:string, detalle:string) {
+    this.msgs = [];
+    this.msgs.push({severity:severidad, summary:resumen, detail:detalle});
   }
 
 

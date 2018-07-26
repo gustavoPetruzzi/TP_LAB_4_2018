@@ -12,7 +12,8 @@ export class ViajePipe implements PipeTransform {
           return "Comun";
         }
         return "Premium";
-        
+      case "monto":
+        return "$ " + value;
       default:
         return value;
     }

@@ -10,8 +10,8 @@
   </thead>
   <tbody>
     <tr *ngFor="let vehiculo of vehiculos">
-      <td> {{vehiculo.marca}}</td>
-      <td> {{vehiculo.modelo}}</td>
+      <td> {{vehiculo.marca | capitalizar}}</td>
+      <td> {{vehiculo.modelo | capitalizar}}</td>
       <td> {{vehiculo.anio}}</td>
       <td> {{vehiculo.premium | premium}}</td>
       <td> <button class="btn btn-primary" (click)="ver( vehiculo )" > Modificar </button>

@@ -166,6 +166,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var primeng_chart__WEBPACK_IMPORTED_MODULE_55__ = __webpack_require__(/*! primeng/chart */ "./node_modules/primeng/chart.js");
 /* harmony import */ var primeng_chart__WEBPACK_IMPORTED_MODULE_55___default = /*#__PURE__*/__webpack_require__.n(primeng_chart__WEBPACK_IMPORTED_MODULE_55__);
 /* harmony import */ var _componentes_encargado_estadisticas_ganancias_ganancias_component__WEBPACK_IMPORTED_MODULE_56__ = __webpack_require__(/*! ./componentes/encargado/estadisticas/ganancias/ganancias.component */ "./src/app/componentes/encargado/estadisticas/ganancias/ganancias.component.ts");
+/* harmony import */ var _pipes_capitalizar_pipe__WEBPACK_IMPORTED_MODULE_57__ = __webpack_require__(/*! ./pipes/capitalizar.pipe */ "./src/app/pipes/capitalizar.pipe.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -192,6 +193,7 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 //reCaptcha
 
 // calendario
+
 
 
 
@@ -270,7 +272,8 @@ var AppModule = /** @class */ (function () {
                 _componentes_encargado_asignar_viaje_asignar_viaje_component__WEBPACK_IMPORTED_MODULE_49__["AsignarViajeComponent"],
                 _ocupado_directive__WEBPACK_IMPORTED_MODULE_50__["OcupadoDirective"],
                 _componentes_clientes_cliente_encuesta_cliente_encuesta_component__WEBPACK_IMPORTED_MODULE_51__["ClienteEncuestaComponent"],
-                _componentes_encargado_estadisticas_ganancias_ganancias_component__WEBPACK_IMPORTED_MODULE_56__["GananciasComponent"]
+                _componentes_encargado_estadisticas_ganancias_ganancias_component__WEBPACK_IMPORTED_MODULE_56__["GananciasComponent"],
+                _pipes_capitalizar_pipe__WEBPACK_IMPORTED_MODULE_57__["CapitalizarPipe"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
@@ -789,7 +792,6 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 var RutasRemisero = [
     { path: '/remisero', title: 'Menu principal', icon: 'pe-7s-graph', class: '' },
     { path: '/viajes', title: 'Viajes', icon: 'pe-7s-graph', class: '' },
-    { path: '/vehiculos', title: 'Vehiculo', icon: 'pe-7s-user', class: '' },
     { path: '/cuenta', title: 'Configuracion', icon: 'pe-7s-science', class: '' },
 ];
 var RutasCliente = [
@@ -1201,13 +1203,6 @@ var ClienteEncuestaComponent = /** @class */ (function () {
         $event.formData.append('foto_3', this.nombreFoto3);
         $event.formData.append('idViaje', this.viajeEncuesta.id);
     };
-    ClienteEncuestaComponent.prototype.showResponse = function ($event) {
-        if ($event.success == true) {
-            this.captchaValido = true;
-        }
-        console.log($event);
-        console.log($event.success);
-    };
     ClienteEncuestaComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'app-cliente-encuesta',
@@ -1602,7 +1597,7 @@ module.exports = ".mapa {\n  height: 300px;\n}"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<app-barralateral></app-barralateral>\n<!--<script src=\"https://www.google.com/recaptcha/api.js?render=explicit&onload=initRecaptcha\" async defer></script>-->\n<div class=\"container\">\n  <div class=\"jumbotron\">\n    <div class=\"row\">\n      <div class=\"col-sm\">\n        <h1 class=\"text-center\"> {{titulo}} </h1>\n\n\n\n        <form [formGroup]=\"viajeForm\" (submit)=\"llenarFormulario()\">\n          <div class=\"form-group\">\n            <label for=\"fecha\">Fecha</label>\n            <p-calendar [inline]=\"true\"  formControlName=\"fecha\" dateFormat=\"yy/mm/dd\" ></p-calendar>\n          </div>\n          <div class=\"form-group\">\n            <input placeholder=\"Origen\" autocorrect=\"off\" autocapitalize=\"off\" spellcheck=\"off\" type=\"text\" class=\"form-control\" #origen [formControl]=\"origenControl\">\n          </div>\n          <div class=\"form-group\">\n            <input placeholder=\"Destino\" autocorrect=\"off\" autocapitalize=\"off\" spellcheck=\"off\" type=\"text\" class=\"form-control\" #destino [formControl]=\"destinoControl\">\n          </div>\n          <div class=\"form-group\">\n            <label class=\"center-block\">Hora\n              <p-calendar [timeOnly]=\"true\" [inline]=\"true\" formControlName=\"hora\" hourFormat=\"24\"></p-calendar>\n            </label>\n            <div *ngIf=\"viajeForm.controls.hora.invalid\"\n                  class=\"alert alert-danger\">\n\n              <div *ngIf=\"!viajeForm.controls.hora.required\">\n                La hora es requerida\n              </div>\n              <div *ngIf=\"!viajeForm.controls.hora.minlength\">\n                la hora tiene que tener como minimo 4 caracteres\n              </div>\n            </div>\n\n          </div>\n          <div class=\"form-group\">\n            <h2 class=\"text-center\">Tipo de vehiculo </h2>\n            <div class=\"form-check\">\n              <input class=\"form-check-input\" type=\"radio\" formControlName=\"tipo\" value=\"comun\" checked>\n              <label class=\"form-check-label\" for=\"exampleRadios1\">\n                Comun\n              </label>\n            </div>\n            <div class=\"form-check\">\n              <input class=\"form-check-input\" type=\"radio\" formControlName=\"tipo\" value=\"premium\">\n              <label class=\"form-check-label\">\n                Premium\n              </label>\n            </div>\n          </div>\n          <div class=\"form-group\">\n            <p-captcha siteKey=\"6Lf4rF4UAAAAAPiiMTDNqSA-8mQUd9XK1T_pdKdG\" (onResponse)=\"showResponse($event)\"></p-captcha>\n          </div>\n          <!--<button type=\"submit\" class=\"btn btn-primary\"  >Reservar viaje</button> -->              \n         <button type=\"submit\" class=\"btn btn-primary\" [disabled]=\"!viajeForm.valid\" >Reservar viaje</button>\n        </form>        \n      </div>\n    </div>\n  </div>\n</div>"
+module.exports = "<app-barralateral></app-barralateral>\n<!--<script src=\"https://www.google.com/recaptcha/api.js?render=explicit&onload=initRecaptcha\" async defer></script>-->\n<script src=\"https://www.google.com/recaptcha/api.js?render=explicit&onload=initRecaptcha\" async defer></script>\n<div class=\"container\">\n  <div class=\"jumbotron\">\n    <p-messages [(value)]=\"msgs\"></p-messages>\n    <div class=\"row\">\n      <div class=\"col-sm\">\n        <h1 class=\"text-center\"> {{titulo}} </h1>\n\n\n\n        <form [formGroup]=\"viajeForm\" (submit)=\"llenarFormulario()\">\n          <div class=\"form-group\">\n            <label for=\"fecha\">Fecha</label>\n            <p-calendar [inline]=\"true\"  formControlName=\"fecha\"  [minDate]=fechaActual dateFormat=\"yy/mm/dd\" ></p-calendar>\n          </div>\n          <div class=\"form-group\">\n            <input placeholder=\"Origen\" autocorrect=\"off\" autocapitalize=\"off\" spellcheck=\"off\" type=\"text\" class=\"form-control\" #origen [formControl]=\"origenControl\">\n          </div>\n          <div class=\"form-group\">\n            <input placeholder=\"Destino\" autocorrect=\"off\" autocapitalize=\"off\" spellcheck=\"off\" type=\"text\" class=\"form-control\" #destino [formControl]=\"destinoControl\">\n          </div>\n          <div class=\"form-group\">\n            <label class=\"center-block\">Hora\n              <p-calendar [timeOnly]=\"true\"  [minDate]=\"fechaActual\" [inline]=\"true\" formControlName=\"hora\" hourFormat=\"24\"></p-calendar>\n            </label>\n            <div *ngIf=\"viajeForm.controls.hora.invalid\"\n                  class=\"alert alert-danger\">\n\n              <div *ngIf=\"!viajeForm.controls.hora.required\">\n                La hora es requerida\n              </div>\n              <div *ngIf=\"!viajeForm.controls.hora.minlength\">\n                la hora tiene que tener como minimo 4 caracteres\n              </div>\n            </div>\n\n          </div>\n          <div class=\"form-group\">\n            <h2 class=\"text-center\">Tipo de vehiculo </h2>\n            <div class=\"form-check\">\n              <input class=\"form-check-input\" type=\"radio\" formControlName=\"tipo\" value=\"comun\" checked>\n              <label class=\"form-check-label\" for=\"exampleRadios1\">\n                Comun\n              </label>\n            </div>\n            <div class=\"form-check\">\n              <input class=\"form-check-input\" type=\"radio\" formControlName=\"tipo\" value=\"premium\">\n              <label class=\"form-check-label\">\n                Premium\n              </label>\n            </div>\n          </div>\n          <p-captcha siteKey=\"6Lf4rF4UAAAAAPiiMTDNqSA-8mQUd9XK1T_pdKdG\" (onResponse)=\"showResponse($event)\"></p-captcha>\n         <button type=\"submit\" class=\"btn btn-primary\" [disabled]=\"!viajeForm.valid || !captchaOk\" >Reservar viaje</button>\n        </form>        \n      </div>\n    </div>\n  </div>\n</div>"
 
 /***/ }),
 
@@ -1648,7 +1643,8 @@ var ClienteNuevoComponent = /** @class */ (function () {
     ClienteNuevoComponent.prototype.ngOnInit = function () {
         var _this = this;
         //-58.381592
-        this.captchaOk = true;
+        this.fechaActual = new Date();
+        this.captchaOk = false;
         this.modificado = null;
         this.latitude = -34.603722;
         this.longitude = -58.381592;
@@ -1734,8 +1730,12 @@ var ClienteNuevoComponent = /** @class */ (function () {
             });
         }
     };
-    ClienteNuevoComponent.prototype.showResponse = function (evento) {
+    ClienteNuevoComponent.prototype.showResponse = function ($event) {
         this.captchaOk = true;
+    };
+    ClienteNuevoComponent.prototype.mostrarMensaje = function (severidad, resumen, detalle) {
+        this.msgs = [];
+        this.msgs.push({ severity: severidad, summary: resumen, detail: detalle });
     };
     __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"])('mapita'),
@@ -3031,7 +3031,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<app-barralateral></app-barralateral>\n<div *ngIf=\"viajesRemisero\">\n    <div class=\"container\">\n        <div class=\"jumbotron\">\n            <div class=\"row\">              \n                <div class=\"col-sm d-flex align-items-stretch \">\n                    <div class=\"card\" style=\"width: 18rem;\" (click)=\"ir('viajes')\">\n                        <img class=\"card-img-top\" height=\"200\" width=\"300\" src=\"../assets/remiseros/encurso.jpeg/\" alt=\"Card image cap\">\n                        <div class=\"card-body\">\n                            <h5 class=\"card-title\">Viajes </h5>\n                            <p class=\"card-text\"> Ve la lista de tus viajes</p>\n                        </div>\n                    </div>                    \n                </div>\n                <div class=\"col-sm d-flex align-items-stretch\">\n                    <div class=\"card\" style=\"width: 18rem;\" (click)=\"ir('vehiculo')\" >\n                        <img class=\"card-img-top\" height=\"200\" width=\"300\" src=\"../assets/remiseros/autos.jpeg/\" alt=\"Card image cap\">\n                        <div class=\"card-body\">\n                            <h5 class=\"card-title\">Vehiculo</h5>\n                            <p class=\"card-text\"> Ve el vehiculo que tienes asignado</p>\n                        </div>\n                    </div>                      \n                </div>\n                <div class=\"col-sm d-flex align-items-stretch\">\n                    <div class=\"card\" style=\"width: 18rem; \" (click)=\"ir('configuracion')\" >\n                        <img class=\"card-img-top\" height=\"200\" width=\"300\" src=\"../assets/configuracion.jpg/\" alt=\"Card image cap\">\n                        <div class=\"card-body\">\n                            <h5 class=\"card-title\">Configuracion y datos de la cuenta</h5>\n                            <p class=\"card-text\">Consulta tus datos y configura tu cuenta</p>\n                        </div>\n                    </div>                      \n                </div>\n            </div>                        \n        </div>\n<div *ngIf=\"!viajesRemisero\">\n    <p> no se cargaron los viajes </p>\n</div>"
+module.exports = "<app-barralateral></app-barralateral>\n<div *ngIf=\"viajesRemisero\">\n    <div class=\"container\">\n        <div class=\"jumbotron\">\n            <div class=\"row\">              \n                <div class=\"col-sm d-flex align-items-stretch \">\n                    <div class=\"card\" style=\"width: 18rem;\" (click)=\"ir('viajes')\">\n                        <img class=\"card-img-top\" height=\"200\" width=\"300\" src=\"https://i.imgur.com/boe1C4C.jpg\" alt=\"Card image cap\">\n                        <div class=\"card-body\">\n                            <h5 class=\"card-title\">Viajes </h5>\n                            <p class=\"card-text\"> Ve la lista de tus viajes</p>\n                        </div>\n                    </div>                    \n                </div>\n                <div class=\"col-sm d-flex align-items-stretch\">\n                    <div class=\"card\" style=\"width: 18rem; \" (click)=\"ir('configuracion')\" >\n                        <img class=\"card-img-top\" height=\"200\" width=\"300\" src=\"https://i.imgur.com/1N6Wgj3.png\" alt=\"Card image cap\">\n                        <div class=\"card-body\">\n                            <h5 class=\"card-title\">Configuracion y datos de la cuenta</h5>\n                            <p class=\"card-text\">Consulta tus datos y configura tu cuenta</p>\n                        </div>\n                    </div>                      \n                </div>\n            </div>                        \n        </div>\n<div *ngIf=\"!viajesRemisero\">\n    <p> no se cargaron los viajes </p>\n</div>"
 
 /***/ }),
 
@@ -3260,7 +3260,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<table class=\"table\">\n  <thead>\n    <tr>\n      <th> Marca </th>\n      <th> Modelo </th>\n      <th> año </th>\n      <th> Tipo </th>\n      <th> Modificar </th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr *ngFor=\"let vehiculo of vehiculos\">\n      <td> {{vehiculo.marca}}</td>\n      <td> {{vehiculo.modelo}}</td>\n      <td> {{vehiculo.anio}}</td>\n      <td> {{vehiculo.premium | premium}}</td>\n      <td> <button class=\"btn btn-primary\" (click)=\"ver( vehiculo )\" > Modificar </button>\n\n    </tr>\n  </tbody>\n</table>\n"
+module.exports = "<table class=\"table\">\n  <thead>\n    <tr>\n      <th> Marca </th>\n      <th> Modelo </th>\n      <th> año </th>\n      <th> Tipo </th>\n      <th> Modificar </th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr *ngFor=\"let vehiculo of vehiculos\">\n      <td> {{vehiculo.marca | capitalizar}}</td>\n      <td> {{vehiculo.modelo | capitalizar}}</td>\n      <td> {{vehiculo.anio}}</td>\n      <td> {{vehiculo.premium | premium}}</td>\n      <td> <button class=\"btn btn-primary\" (click)=\"ver( vehiculo )\" > Modificar </button>\n\n    </tr>\n  </tbody>\n</table>\n"
 
 /***/ }),
 
@@ -4124,7 +4124,7 @@ module.exports = ".loader {\n  border: 16px solid #f3f3f3;\n  border-radius: 50%
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<app-barralateral></app-barralateral>\n<div class=\"container mt-5\">\n  <div class=\"jumbotron\">\n    <p-messages [(value)]=\"msgs\"></p-messages>\n    <form (ngSubmit)=\"login()\" #loginForm=\"ngForm\">\n      <div class=\"form-group\">\n        <label for=\"exampleInputEmail1\"  >Usuario </label>\n        <input type=\"email\" id=\"usuario\"\n            class=\"form-control\" [(ngModel)]=\"usuarioText\" name=\"usuario\" required pattern=\"[a-zA-Z][a-zA-Z ]+\"\n            #usuario=\"ngModel\" placeholder=\"Ingrese el usuario\">  \n        <div [hidden]=\"usuario.valid  || usuario.pristine\" class=\"alert alert-danger\">\n          <div [hidden]=\"!usuario.hasError('required')\">El usuario es requerido </div>\n          <div [hidden]=\"!usuario.hasError('pattern')\">Se requiere mas de un caracter </div>\n        </div>\n      </div>\n      <div class=\"form-group\">\n        <label for=\"exampleInputPassword1\"  >Contraseña</label>\n        <input type=\"password\" class=\"form-control\" [(ngModel)]=\"passwordText\" id=\"exampleInputPassword1\" \n                required minlength=\"4\" #password=\"ngModel\" name=\"password\" placeholder=\"Contraseña\">\n        <div [hidden]=\"password.valid || password.pristine\"\n            class=\"alert alert-danger\">\n            <div [hidden]=\"!password.hasError('minlength')\">La clave es minimo de 8 caracteres</div>\n            <div [hidden]=\"!password.hasError('required')\">La clave es requerida</div>\n        </div>\n      </div>\n      <div class=\"loader\" *ngIf=\"esperando\"></div>\n      <button type=\"submit\" class=\"btn btn-primary\" [hidden]=\"esperando\" [disabled]=\"!loginForm.form.valid || captchaOk\" >Ingresar</button>\n    </form>\n    <div class=\"row\">\n      <button type=\"text\" class=\"btn btn-success btn-block\" [hidden]=\"esperando\" (click)=\"ingresar('admin')\" >Ingresar admin</button>\n    </div>\n    <div class=\"row\">\n      <button type=\"text\" class=\"btn btn-info btn-block\" [hidden]=\"esperando\" (click)=\"ingresar('remisero')\" >Ingresar remisero</button>\n    </div>\n    <div class=\"row\">\n      <button type=\"text\" class=\"btn btn-danger btn-block\" [hidden]=\"esperando\" (click)=\"ingresar('cliente')\" >Ingresar cliente</button>\n    </div>\n\n    <a class=\"text-center\" routerLink=\"/registro/cliente\"> ¿Todavia no tienes cuenta? ¡Registrate!</a>\n    <br>\n    <a class=\"text-center\" routerLink=\"/registro/remisero\">¿Queres formar parte de nuestro staff?</a>\n  </div>\n</div>\n"
+module.exports = "<app-barralateral></app-barralateral>\n<script src=\"https://www.google.com/recaptcha/api.js?render=explicit&onload=initRecaptcha\" async defer></script>\n<div class=\"container mt-5\">\n  <div class=\"jumbotron\">\n    <p-messages [(value)]=\"msgs\"></p-messages>\n    <form (ngSubmit)=\"login()\" #loginForm=\"ngForm\">\n      <div class=\"form-group\">\n        <label for=\"exampleInputEmail1\"  >Usuario </label>\n        <input type=\"email\" id=\"usuario\"\n            class=\"form-control\" [(ngModel)]=\"usuarioText\" name=\"usuario\" required pattern=\"[a-zA-Z][a-zA-Z ]+\"\n            #usuario=\"ngModel\" placeholder=\"Ingrese el usuario\">  \n        <div [hidden]=\"usuario.valid  || usuario.pristine\" class=\"alert alert-danger\">\n          <div [hidden]=\"!usuario.hasError('required')\">El usuario es requerido </div>\n          <div [hidden]=\"!usuario.hasError('pattern')\">Se requiere mas de un caracter </div>\n        </div>\n      </div>\n      <div class=\"form-group\">\n        <label for=\"exampleInputPassword1\"  >Contraseña</label>\n        <input type=\"password\" class=\"form-control\" [(ngModel)]=\"passwordText\" id=\"exampleInputPassword1\" \n                required minlength=\"4\" #password=\"ngModel\" name=\"password\" placeholder=\"Contraseña\">\n        <div [hidden]=\"password.valid || password.pristine\"\n            class=\"alert alert-danger\">\n            <div [hidden]=\"!password.hasError('minlength')\">La clave es minimo de 8 caracteres</div>\n            <div [hidden]=\"!password.hasError('required')\">La clave es requerida</div>\n        </div>\n      </div>\n      \n      <div class=\"loader\" *ngIf=\"esperando\"></div>\n      <button type=\"submit\" class=\"btn btn-primary\" [hidden]=\"esperando\" [disabled]=\"!loginForm.form.valid || captchaOk\" >Ingresar</button>\n    </form>\n    <div class=\"row\">\n      <button type=\"text\" class=\"btn btn-success btn-block\" [hidden]=\"esperando\" (click)=\"ingresar('admin')\" >Ingresar admin</button>\n    </div>\n    <div class=\"row\">\n      <button type=\"text\" class=\"btn btn-info btn-block\" [hidden]=\"esperando\" (click)=\"ingresar('remisero')\" >Ingresar remisero</button>\n    </div>\n    <div class=\"row\">\n      <button type=\"text\" class=\"btn btn-danger btn-block\" [hidden]=\"esperando\" (click)=\"ingresar('cliente')\" >Ingresar cliente</button>\n    </div>\n\n    <a class=\"text-center\" routerLink=\"/registro/cliente\"> ¿Todavia no tienes cuenta? ¡Registrate!</a>\n    <br>\n    <a class=\"text-center\" routerLink=\"/registro/remisero\">¿Queres formar parte de nuestro staff?</a>\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -4304,6 +4304,44 @@ var OcupadoDirective = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/pipes/capitalizar.pipe.ts":
+/*!*******************************************!*\
+  !*** ./src/app/pipes/capitalizar.pipe.ts ***!
+  \*******************************************/
+/*! exports provided: CapitalizarPipe */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CapitalizarPipe", function() { return CapitalizarPipe; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+var CapitalizarPipe = /** @class */ (function () {
+    function CapitalizarPipe() {
+    }
+    CapitalizarPipe.prototype.transform = function (value, args) {
+        if (value === null)
+            return value;
+        return value.charAt(0).toUpperCase() + value.slice(1);
+    };
+    CapitalizarPipe = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Pipe"])({
+            name: 'capitalizar'
+        })
+    ], CapitalizarPipe);
+    return CapitalizarPipe;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/pipes/premium.pipe.ts":
 /*!***************************************!*\
   !*** ./src/app/pipes/premium.pipe.ts ***!
@@ -4371,6 +4409,8 @@ var ViajePipe = /** @class */ (function () {
                     return "Comun";
                 }
                 return "Premium";
+            case "monto":
+                return "$ " + value;
             default:
                 return value;
         }

@@ -232,12 +232,6 @@ export class ClienteEncuestaComponent implements OnInit {
     $event.formData.append('idViaje', this.viajeEncuesta.id);
   }
 
-  public showResponse($event){
-    if($event.success == true){
-      this.captchaValido = true;
-    }
-    console.log($event);
-    console.log($event.success);
-  }
+
 
 }
